@@ -5,6 +5,7 @@
     - Messung Wellenwiderstand
     - Messung Anfang und Ende des Kabels
     - Ausbreitungsgeschwindigkeit
+      - Länge Koaxialkabel nachmessen / bestimmen
     - Messung Ausbreitungsgeschwindigkeit
         - Frequenzmessungen und auswertung für Ausbreitungsgeschwindigkeit
         - Dämpfung
