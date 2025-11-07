@@ -7,7 +7,9 @@
       - Ausbreitungsgeschwindigkeit (ML, siehe 2113.py)
          - Länge Koaxialkabel nachmessen / bestimmen (danach fertig ? -> werte überprüfen)
       - Messung Ausbreitungsgeschwindigkeit
+	 - Daten einfügen (DONE)
          - Frequenzmessungen und Auswertung für Ausbreitungsgeschwindigkeit
+	 	- wie Berechnungen durchführen?
          - Dämpfung
          - Auftragen von D
       - Messung Lichtgeschwindigeit
