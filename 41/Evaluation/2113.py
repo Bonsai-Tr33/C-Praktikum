@@ -1,7 +1,6 @@
+# measuring the propagation of speed (coaxial cable and delay cable)
+
 # Dependencies
-import matplotlib.pyplot as plt
-import scipy.optimize
-import math
 import numpy as np
 
 '''
@@ -9,7 +8,6 @@ import numpy as np
         ALL0033
         ALL0037
 '''
-
 
 # Method for calculating best value and error
 def vProp(T, l, DT=0, Dl=0):
