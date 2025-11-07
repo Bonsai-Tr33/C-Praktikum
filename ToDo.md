@@ -10,3 +10,6 @@
         - Auftragen von D
     - Messung Lichtgeschwindigeit
  - Paper schreiben
+    - Tex Vorlage cleanup (löschen, titel, autoren, Betreuer, Datum)
+    - Abstract
+    - 
