@@ -45,17 +45,15 @@
 	\end{tabular*}                                             %Kopfzeile
 	}
 \title{Messung der Ausbreitungsgeschwindigkeit von elektromagnetischen Wellen auf Kabeln}  %Titel der Versuchs
-\author{Moritz Langer & Hannes Winkler}                     %Namen der Studenten
+\author{Moritz Langer \and Hannes Winkler}                     %Namen der Studenten
 \date{07.11.2025}                                                         %ben�tigt um automatisches Datum auszuschalten
 \maketitle                                                      %erzeugt Titelseite
 \vspace{-8ex}                                                   %verringert Abstand zur �berschrift
 \begin{abstract}                                                %Beginn des Abstracts
-\\ \\ 
-\\ 
+\vspace{1em}
 Versuchsdurchführung: 06. November 2025\\       %Datum �ndern!
 Protokollabgabe: 01. März 2006                 %Datum �ndern!
-\\ 
-\\ 
+\vspace{1em}
 \end{abstract}
 }]
 
@@ -63,13 +61,57 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 
 
 \section{Theorie}
-\begin{align}
-T+R+A=1
-\end{align}
 
-\begin{align}                          %Beispiel wie man eine Gleichung TeXt
-R=\left|\frac{n-1}{n+1}\right|^2
-\end{align}
+	\subsection{Wellenausbreitung auf Kabeln}
+
+		\subsubsection{Wellenwiderstand}
+
+			Bei der Untersuchung von Kabeln gibt es zwei charakteristische Größen:
+			Die relative Induktivität   $L* = \frac{\text{Induktivität}}{\text{Längeneinheit}}$
+			und die relative Kapazität $C* = \frac{\text{Kapazität}}{\text{Längeneinheit}}$. Über
+			deren Zusammenhang mit der Spannung 
+
+			\begin{displaymath}
+				U_{\pm}(x,t) = \sqrt{\frac{L*}{C*}} \cdot I_{\pm}(x,t) = Z \cdot I_{\pm}(x,t)
+			\end{displaymath}
+	
+			lässt sich analog zu dem Ohmschen Gesetz der Wellenwiderstand Z des Kabels definieren.
+			Wichtig zu beachten ist, dass es sich nicht um ein ohmschen Widerstand mit Verlusten
+			handelt, sondern um einen Wellenwiderstand welcher das Verhältnis zwischen
+			Spannung und Strom in dem Kabel angibt.
+		
+		\subsubsection{Reflexion}
+
+			Sobald das Signal das Kabelende erreicht, wird es reflektiert. Die Art bzw. das Maß
+			der Reflexion hängt hierbei von dem Widerstand $R_v$ ab, welcher sich an dem Ende befindet.
+			Dieses Maß nennt sich der Reflexionskoeffizient $\rho$ welcher definiert ist über 
+			das Verhältnis zwischen der Amplitude der auslaufenden und der Amplitude dereinlaufenden 
+			Welle und kann mithilfe des Ohmschen Gesetzes weiter vereinfacht werden als:
+
+			\begin{displaymath}
+				\rho = \frac{U_{-}(x,t)}{U_{+}(x,t)} = \frac{R_v - Z}{R_v + Z}
+			\end{displaymath}
+
+			Anhand dieser Formel lassen sich drei Spezialfälle des Reflexionskoeffizient erkennen:
+
+			\begin{enumerate}
+				\item Kurzschluss der Leitung: \\
+						Das reflektierte Signal entspricht dem einlaufenden Signal mit entgegengesetztem
+						Vorzeichen. Die Wellen löschen sich am Kabelende aus\\
+						Es gilt: $R_v = 0 \Omega \Rightarrow \rho = -1 $
+				\item Offenes Ende der Leitung: \\
+						Das reflektiert Signal ist gleich dem einlaufenden Signal und diese 
+						addieren sich. \\
+						Es gilt: $R_v = \infty \Rightarrow \rho = 1 $
+				\item Reflexionsfreier Abschluss:
+						Durch richtige Wahl des Abschlusswiderstandes bleibt die Reflexion aus und 
+						es gibt nur eine einlaufende Welle. \\
+						Es gild $R_v = Z \Rightarrow \rho = 0 $
+			\end{enumerate}
+
+		
+		\subsubsection{Mathematische Beschreibung einer Welle}
+
 
 \section{Experiment}
 
