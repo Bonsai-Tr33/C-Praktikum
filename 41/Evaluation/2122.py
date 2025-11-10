@@ -5,6 +5,14 @@ import numpy as np
 import os
 import pandas as pd
 
+# Method for calculating speed of propagation
+def SoP(f, l, Df):
+    return f * l, l * Df
+
+# method for frequency error calculation:
+def Df (f, rel, count):
+    return rel * f + count
+
 # Get the path to the current script's directory
 base_path = os.path.dirname(__file__)
 
@@ -26,6 +34,7 @@ print('Data Import succesfull!')
 WR4 = [] # WR for λ/4
 WR34 = [] # WR for 3λ/4
 WR2 = [] # WR for λ/2
+
 for i in range(len(WavelengthRatio)):
     if WavelengthRatio[i] == 'λ/4':
         WR4.append([Frequency[i], Upp[i], div[i]])
@@ -38,9 +47,20 @@ for i in range(len(WavelengthRatio)):
 
 print('Data sorted by Wavelength Ratio.')
 
+# calculate wavelength from length of cable
+l = 50
+lam4 = l / 4
+lam34 = 3* l / 4
+lam2 = l / 2
+
+# error of f measurement: user guide, page 159
+DfRel = 51 * 10**(-6)
+DfCount = 1
+
+
+
 '''
     Mittelwerte aus frequenz und Upp bilden. 
     Wie wird Fehler von Div mitgenommen? 
-    Was ist der Fehler der Frequenz?
     Wie wird aus den aufgenommenen Daten Ausbreitungsgeschwindigkeit berechnet?
 '''
