@@ -5,8 +5,10 @@ import numpy as np
 import os
 import pandas as pd
 import statistics
+from matplotlib import pyplot as plt
+from matplotlib.ticker import AutoMinorLocator
 
-# Method for calculating speed of propagation
+# Method for calculating the speed of propagation
 def SoP(f, l, Df=0):
     return f * l, l * Df
 
@@ -14,11 +16,18 @@ def SoP(f, l, Df=0):
 def Df (f, rel, count):
     return rel * f + count
 
+# method for Damping calculation
+def Damping(U, U0, DU=0, DU0=0):
+    D = 20 * np.log10(U0 / U) #dB
+    DD = 20 / np.log(10) * np.sqrt((DU0 / U0)**2 + (DU / U)**2)
+    return D, DD
+
 # Get the path to the current script's directory
 base_path = os.path.dirname(__file__)
 
 # Build the data path relative to the script
 data_path = os.path.join(base_path, 'Data', 'Datasheet.xlsx')
+
 
 # import data from path
 Data = pd.read_excel(data_path, sheet_name='2122', engine='openpyxl')
@@ -75,13 +84,78 @@ SoP4 = SoP(f4, lam4, Df=Df4)
 SoP34 = SoP(f34, lam34, Df=Df34)
 Sop2 = SoP(f2, lam2, Df=Df2)
 
-print('lam/4 f= ' + str(f4) + ' error: ' + str(Df4))
-print('3lam/4 f= ' + str(f34) + ' error: ' + str(Df34))
-print('lam/2 f= ' + str(f2) + ' error: ' + str(Df2))
+print(f'λ/4: f = {f4} ± {Df4} Hz')
+print(f'3λ/4: f = {f34} ± {Df34} Hz')
+print(f'λ/2: f = {f2} ± {Df2} Hz')
 
+# seperating Upp values for further analysis
+Upp4 = []
+Upp34 = []
+Upp2 = []
 
-'''
-    Mittelwerte aus frequenz und Upp bilden. 
-    Wie wird Fehler von Div mitgenommen? 
-    Wie wird aus den aufgenommenen Daten Ausbreitungsgeschwindigkeit berechnet?
-'''
+for i in range(len(WavelengthRatio)):
+    if WavelengthRatio[i] == 'λ/4':
+        Upp4.append([Upp[i], 0.5 * div[i]])
+    elif WavelengthRatio[i] == '3λ/4':
+        Upp34.append([Upp[i], 0.5 * div[i]])
+    elif WavelengthRatio[i] == 'λ/2':
+        Upp2.append([Upp[i], 0.5 * div[i]])
+    else:
+        print(f'Upp Issue: {i}')
+
+print('Upp values separated successfully')
+print(Upp4)
+
+# Calculate median voltage U and error DU for each wavelength ratio
+U4 = statistics.median([x[0] for x in Upp4])
+DU4 = np.sqrt(sum([x[1]**2 for x in Upp4])) / len(Upp4)
+U34 = statistics.median([x[0] for x in Upp34])
+DU34 = np.sqrt(sum([x[1]**2 for x in Upp34])) / len(Upp34)
+U2 = statistics.median([x[0] for x in Upp2])
+DU2 = np.sqrt(sum([x[1]**2 for x in Upp2])) / len(Upp2)
+
+print(f'λ/4: U = {U4} ± {DU4} V')
+print(f'3λ/4: U = {U34} ± {DU34} V')
+print(f'λ/2: U = {U2} ± {DU2} V')
+
+# initializing U0
+U0 = 0.160
+DU0 = 0.025
+
+# calculating Damping D and error DD
+D0, DD0 = Damping(U0, U0, DU0, DU0)
+D4, DD4 = Damping(U4, U0, DU4, DU0)
+D34, DD34 = Damping(U34, U0, DU34, DU0)
+D2, DD2 = Damping(U2, U0, DU2, DU0)
+
+# creating arrays and plotting damping
+D = [D4, D2, D34]
+DD = [DD4, DD2, DD34]
+
+print(D, DD)
+
+# plotting Damping over Frequency
+plt.errorbar([f4, f2, f34], D, yerr=DD, capsize=5, label='Label1', color='black', marker='x', linestyle='None')
+plt.xlabel('Frequenz [Hz]')
+plt.ylabel('Dämpfung [dB]')
+plt.title('Dämpfung über Frequenz', loc='left')
+plt.legend()
+
+plt.gca().yaxis.set_minor_locator(AutoMinorLocator(2))
+plt.gca().xaxis.set_minor_locator(AutoMinorLocator(2))
+plt.xticks(np.arange(937000, 3000000, 300000))
+plt.yticks(np.arange(10, 25, 5))
+plt.tick_params(axis='both', which='minor', direction='in', right=True, top=True)
+plt.tick_params(axis='both', which='major', direction='in', right=True, top=True, length=5)
+
+# plt.xlim(-1.2,1.2)
+# plt.ylim(30, 220)
+
+# Build the Image path relative to the script
+img_path = os.path.join(base_path, 'Images')
+
+# plt.savefig(os.path.join(img_path, 'DOverF.png'))
+# plt.show()
+
+print(img_path)
+# /Users/Moritz/Documents/GitHub/C-Praktikum/41/Images/Images.png
