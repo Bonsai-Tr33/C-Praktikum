@@ -138,21 +138,27 @@ DD = [DD4, DD2, DD34]
 print(D, DD)
 
 # plotting Damping over Frequency
-plt.errorbar([f4, f2, f34], D, yerr=DD, capsize=5, label='Dämpfung in Abh. der Resonanzfrequenz', color='black', marker='x', linestyle='None')
+plt.errorbar([f4, f2, f34], D, yerr=DD, capsize=5, label='Dämpfung in Abh. der Resonanzfrequenz', color='black', marker='x', linestyle='None') # plot with error bars
+
 plt.xlabel(r'Frequenz $\omega$ [Hz]')
 plt.ylabel('Dämpfung D [dB]')
 plt.title('Dämpfung über Frequenz', loc='left')
 plt.text(1, 1.05, 'Hannes Winkler und Moritz Langer, 12.11.2025', ha='right', va='top', transform=plt.gca().transAxes, fontsize=10)
 plt.legend()
 
+# locating and arranging ticks
 plt.gca().yaxis.set_minor_locator(AutoMinorLocator(2))
 plt.gca().xaxis.set_minor_locator(AutoMinorLocator(2))
 plt.xticks(np.arange(800000, 3000100, 200000))
 plt.yticks(np.arange(8, 30, 1))
 plt.tick_params(axis='both', which='minor', direction='in', right=True, top=True)
 plt.tick_params(axis='both', which='major', direction='in', right=True, top=True, length=5)
+
+# limiting and setting plot layout
 plt.ylim(13, 24)
 plt.xlim(830000, 3000100)
 plt.tight_layout()
+
+# plot location
 plt.savefig(img_path / 'DoverF.png')
-plt.show()
+#plt.show() # shows plot every run of the code, used for debugging
