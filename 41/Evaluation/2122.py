@@ -7,6 +7,7 @@ import pandas as pd
 import statistics
 from matplotlib import pyplot as plt
 from matplotlib.ticker import AutoMinorLocator
+from pathlib import Path
 
 # Method for calculating the speed of propagation
 def SoP(f, l, Df=0):
@@ -22,12 +23,14 @@ def Damping(U, U0, DU=0, DU0=0):
     DD = 20 / np.log(10) * np.sqrt((DU0 / U0)**2 + (DU / U)**2)
     return D, DD
 
-# Get the path to the current script's directory
-base_path = os.path.dirname(__file__)
+# Data Path initialization
 
-# Build the data path relative to the script
-data_path = os.path.join(base_path, 'Data', 'Datasheet.xlsx')
+# Determine script directory
+base_path = Path(__file__).resolve().parent
 
+# Paths for data and images
+data_path = base_path / 'Data' / 'Datasheet.xlsx'
+img_path = base_path.parent / 'Images'
 
 # import data from path
 Data = pd.read_excel(data_path, sheet_name='2122', engine='openpyxl')
@@ -135,27 +138,21 @@ DD = [DD4, DD2, DD34]
 print(D, DD)
 
 # plotting Damping over Frequency
-plt.errorbar([f4, f2, f34], D, yerr=DD, capsize=5, label='Label1', color='black', marker='x', linestyle='None')
-plt.xlabel('Frequenz [Hz]')
-plt.ylabel('Dämpfung [dB]')
+plt.errorbar([f4, f2, f34], D, yerr=DD, capsize=5, label='Dämpfung in Abh. der Resonanzfrequenz', color='black', marker='x', linestyle='None')
+plt.xlabel(r'Frequenz $\omega$ [Hz]')
+plt.ylabel('Dämpfung D [dB]')
 plt.title('Dämpfung über Frequenz', loc='left')
+plt.text(1, 1.05, 'Hannes Winkler und Moritz Langer, 12.11.2025', ha='right', va='top', transform=plt.gca().transAxes, fontsize=10)
 plt.legend()
 
 plt.gca().yaxis.set_minor_locator(AutoMinorLocator(2))
 plt.gca().xaxis.set_minor_locator(AutoMinorLocator(2))
-plt.xticks(np.arange(937000, 3000000, 300000))
-plt.yticks(np.arange(10, 25, 5))
+plt.xticks(np.arange(800000, 3000100, 200000))
+plt.yticks(np.arange(8, 30, 1))
 plt.tick_params(axis='both', which='minor', direction='in', right=True, top=True)
 plt.tick_params(axis='both', which='major', direction='in', right=True, top=True, length=5)
-
-# plt.xlim(-1.2,1.2)
-# plt.ylim(30, 220)
-
-# Build the Image path relative to the script
-img_path = os.path.join(base_path, 'Images')
-
-# plt.savefig(os.path.join(img_path, 'DOverF.png'))
-# plt.show()
-
-print(img_path)
-# /Users/Moritz/Documents/GitHub/C-Praktikum/41/Images/Images.png
+plt.ylim(13, 24)
+plt.xlim(830000, 3000100)
+plt.tight_layout()
+plt.savefig(img_path / 'DoverF.png')
+plt.show()
