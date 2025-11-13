@@ -19,4 +19,4 @@ Bip = []
 for i in range(len(Orte)):
     Bip.append(c(Orte[i], Zeit[i]))
 
-print(Bip)
+print(sum(Bip)/len(Bip))
