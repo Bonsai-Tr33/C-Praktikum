@@ -1,20 +1,10 @@
 # ToDo Liste C-Praktikum
 ## 41
-   - Daten Oszi hochladen (DONE)
    - Auswertung (komplett)
-      - Messung Wellenwiderstand
-      - Messung Anfang und Ende des Kabels
-      - Ausbreitungsgeschwindigkeit (ML, siehe 2113.py)
-         - Länge Koaxialkabel nachmessen / bestimmen (danach fertig ? -> werte überprüfen)
-      - Messung Ausbreitungsgeschwindigkeit (siehe 2112.py, Datasheet.xlsx)
-	      - Daten einfügen (DONE)
-         - Frequenzmessungen und Auswertung für Ausbreitungsgeschwindigkeit
-	 	   - wie Berechnungen durchführen?
-         - Dämpfung
-         - Auftragen von D
-      - Messung Lichtgeschwindigeit
+      - Länge Verzögerungskabel messen!!!
+      - An sich DONE, nur nochmals überprüfen
    - Paper schreiben
-      - Tex Vorlage cleanup (löschen, titel, autoren, Betreuer, Datum) (DONE)
+      - Betreuer Name hinzufügen
       - Abstract
       - Einleitung schreiben
       - Kapitel 2 beenden
