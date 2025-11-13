@@ -27,3 +27,25 @@ for i in range(len(Orte)):
 SoL = sum([x[0] for x in Bip])/len(Bip)
 DSoL = np.sqrt((1/(len(Bip)-1)* sum([(x[0]-SoL)**2 for x in Bip])))
 print(SoL, DSoL)
+
+
+plt.errorbar(Zeit, Orte, xerr=dt, yerr=dx, marker='x', linestyle='None', label='Messpunkte mit Fehlerbalken', capsize=4)
+plt.xlabel('Zeit t [s]')
+plt.ylabel('Distanz l [m]')
+plt.title('Lichtgeschwindigkeit', loc='left')
+plt.text(1, 1.05, 'Hannes Winkler und Moritz Langer, 13.11.2025', ha='right', va='top', transform=plt.gca().transAxes, fontsize=10)
+plt.legend()
+
+# locating and arranging ticks
+plt.gca().yaxis.set_minor_locator(AutoMinorLocator(2))
+plt.gca().xaxis.set_minor_locator(AutoMinorLocator(2))
+#plt.xticks(np.arange(800000, 3000100, 200000))
+#plt.yticks(np.arange(8, 30, 1))
+plt.tick_params(axis='both', which='minor', direction='in', right=True, top=True)
+plt.tick_params(axis='both', which='major', direction='in', right=True, top=True, length=5)
+
+# limiting and setting plot layout
+plt.xlim(0, 10*10**(-8))
+plt.ylim(2, 14)
+plt.tight_layout()
+plt.show()
