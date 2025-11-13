@@ -21,8 +21,9 @@
 \usepackage{ae}                %macht sch�neres �
 \usepackage{typearea}	         %erm�glicht �nderung des Seitenspiegels
 \usepackage{scrlayer-scrpage}          %erm�glicht �nderung der Kopf-/Fu�zeile
-\usepackage{lastpage}          %l�sst auf die Seienanzahl zugreifen
+\usepackage{lastpage}         %l�sst auf die Seienanzahl zugreifen
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption} %macht die Bildbeschriftungen richtig
+\usepackage{xcolor}			  % macht Farbe
 
 \renewcommand{\figurename}{Abb.}
 
@@ -85,7 +86,7 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 			Sobald das Signal das Kabelende erreicht, wird es reflektiert. Die Art bzw. das Maß
 			der Reflexion hängt hierbei von dem Widerstand $R_v$ ab, welcher sich an dem Ende befindet.
 			Dieses Maß nennt sich der Reflexionskoeffizient $\rho$ welcher definiert ist über 
-			das Verhältnis zwischen der Amplitude der auslaufenden und der Amplitude dereinlaufenden 
+			das Verhältnis zwischen der Amplitude der auslaufenden und der Amplitude der einlaufenden 
 			Welle und kann mithilfe des Ohmschen Gesetzes weiter vereinfacht werden als:
 
 			\begin{displaymath}
@@ -111,7 +112,27 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 
 		
 		\subsubsection{Mathematische Beschreibung einer Welle}
-
+			Im Fall 2.1.2.1 (Kurzschluss der Leitung) oder 2.1.2.2 (Offenes Ende der Leitung) kommt es am Ende des Signals zu einer Reflexion.
+			Wenn zwei Wellen gleicher Frequenz und Amplitude sich überlagern entsteht eine stehende Welle, 
+			welche mathematisch als die Addition zweier gegenläufigen Wellen beschrieben wird:
+			\begin{equation*}
+			\begin{split}
+				y(x,t) &= A \sin(kx - \omega t) + A \sin(kx + \omega t) \\
+						&= 2A \sin(kx)\cos(\omega t)
+			\end{split}
+			\end{equation*}
+			Die resultierende Welle zeigt (im Idealfall) Orte, an denen die Amplitude konstant 0 ist (sog. Knoten).
+			Im Fall eines Koaxialkabels kommt es jedoch zu Dämpfung, weshalb die Knoten endliche Werte die jedoch ungleich 0 sind werden.
+			In (\textcolor{blue}{HIER HYPERLINK ZU VERSUCH 2.1.2.2}) wird mithilfe eines sinusförmigen Signals eine stehende Welle im Koaxialkabel erzeugt.
+			Das Ende wird je nach Resonanzbedingung offen gelassen oder kurzgeschlossen.\\
+			Bei offenem Kabel gilt:
+			\begin{equation*}
+				L = \frac{\lambda}{4}, \frac{3 \lambda}{4}, \frac{5 \lambda}{4}, \ldots
+			\end{equation*}
+			Bei kurzgeschlossenem Kabel gilt:
+			\begin{equation*}
+				L = \frac{\lambda}{2}, \lambda, \frac{3 \lambda}{2}, \ldots
+			\end{equation*}
 
 \section{Experiment}
 
