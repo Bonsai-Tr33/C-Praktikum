@@ -24,6 +24,7 @@
 \usepackage{lastpage}         %l�sst auf die Seienanzahl zugreifen
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption} %macht die Bildbeschriftungen richtig
 \usepackage{xcolor}			  % macht Farbe
+\usepackage{subfig}
 
 \renewcommand{\figurename}{Abb.}
 
@@ -111,8 +112,8 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 			\end{enumerate}
 
 		
-		\subsubsection{Mathematische Beschreibung einer Welle}
-			Wird durch ein Koaxialkabel eine sinus(cosinus-)förmige Welle gesendet, kann diese am Kabelende reflektiert werden (siehe \ref{Reflexion}).
+		\subsubsection{Mathematische Beschreibung einer Welle} \label{MathWell}
+			Wird durch ein Koaxialkabel eine sinusförmige Welle gesendet, kann diese am Kabelende reflektiert werden (siehe \ref{Reflexion}).
 			Wenn diese Wellen mit gleicher Frequenz und Amplitude sich überlagern entsteht eine stehende Welle, 
 			welche mathematisch als die Addition zweier gegenläufigen Wellen beschrieben wird:
 			\begin{equation*}
@@ -121,8 +122,8 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 						&= 2A \sin(kx)\cos(\omega t)
 			\end{split}
 			\end{equation*}
-			Die resultierende Welle zeigt (im Idealfall) Orte, an denen die Amplitude konstant 0 ist (sog. Knoten).
-			Im Fall eines Koaxialkabels kommt es jedoch zu Dämpfung, weshalb die Knoten endliche Werte die jedoch ungleich 0 sind werden.
+			Die resultierende Welle hat (im Idealfall) Orte, an denen die Amplitude konstant 0 ist (sog. Knoten).
+			Im Fall eines Koaxialkabels kommt es jedoch zu Dämpfung, weshalb die Knoten endliche Werte ungleich Null annehmen.
 			In (\textcolor{blue}{HIER HYPERLINK ZU VERSUCH 2.1.2.2}) wird mithilfe eines sinusförmigen Signals eine stehende Welle im Koaxialkabel erzeugt.
 			Das Ende wird je nach Resonanzbedingung offen gelassen oder kurzgeschlossen.\\
 			Bei offenem Kabel gilt:
@@ -133,39 +134,230 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 			\begin{equation*}
 				L = \frac{\lambda}{2}, \lambda, \frac{3 \lambda}{2}, \ldots
 			\end{equation*}
+			Im Versuch werden die Frequenzen so gewählt, sodass ein Amplitudenminimum am Kabelanfang beobachtet werden kann. Aus der Kabellänge lässt sich dann die Wellenlänge
+			und somit auch die Ausbreitungsgeschwindigkeit bestimmen.
 
-\section{Experiment}
+\section{Experiment und Auswertung}
 
-\begin{figure}[htbp]                                 %So bindet man Graphiken ein
-\begin{center}                                       %zentriert die Graphik
-%\includegraphics[width=0.9\linewidth]{bild1}       %das eingentliche Einbinden; "schwarz" ist der Dateiname ohne Endung
-\caption[]{}   %Beschriftung der Graphik
-\label{schwarz}                                      %das wird zu Zitiern im Text gebraucht
-\end{center}
-\end{figure}
+	\subsection{Signalübertragung auf Koaxialkabel bei verschiedenartiger Anpassung}
 
-\section{Auswertung}
+		\subsubsection{Beobachtung des Signalverlaufs}
 
-\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
-\centering
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccc}
-\hline
-\hline
-\rule[-7pt]{0pt}{23pt}  Subshell  &     $j$ values 						  		&     Area ratio \\
-\hline
-\rule[-6pt]{0pt}{21pt}   $s$ 			&     $\frac{1}{2}$ 							&       --- \\
+		Zu Beginn wurde der Funktionsgenerator an das Oszilloskop angeschlossen, um den Verlauf des Graphen zu beobachten.
+		Dazu wurde eine Peak-to-Peak-Spannung von $U_{pp} = 10V$ eingestellt und eine Amplitude von $U_{pp} = 20V$ am Oszilloskop beobachtet. 
+		Da das Oszilloskop einen vergleichsweise hohen Widerstand hat ($R_{1}\rightarrow\infty$), entspricht das anschließen des Kabels einem offenen Ende.
+		Das reflektierte Signal ist dann gleich dem einlaufenden und diese addieren sich wie in \ref{MathWell} erklärt. Um dieses Problem zu beheben, wird ein Widerstand
+		$R_2 = 50\Omega$ parallel dazu geschaltet. Dadurch ergibt sich nach \\ 
+		$\frac{1}{R_{ges}} = \frac{1}{R_{1}} + \frac{1}{R-2}$ \\
+		ein Widerstand von $R_{ges} = 50\Omega$ am Ende des Koaxialkabels. Dieser Widerstand entspricht genau der Impedanz $Z = 50\Omega$ des Kabels.
+		Dadurch ergibt sich ein reflexionsfreier Abschluss und am Oszilloskop ist eine Amplitude von $U_{pp} = 10V$ abzulesen.\\
+		Wenn nicht explizit erwähnt, wurde der Widerstand in jedem der folgenden Versuchsteile eingebaut.
+		
+		\subsubsection{Messung des Wellenwiderstandes eines Koaxialkabels}
 
-\rule[-6pt]{0pt}{21pt}   $p$ 			&     $\frac{1}{2},\frac{3}{2}$ 	&     $1:2$ \\
+		Zunächst wurde am Funktionsgenerator eine Frequenz $f = 200kHz$, eine Impulsbreite von $t = 20ns$ und eine Spannung von $U_{pp} = 10V$ eingestellt. Mittels T-Stecker
+		wird das 50m lange Koaxialkabel sowohl mit dem Funktionsgenerator als auch mit dem Oszilloskop verbunden. Des weiteren schließt man an das generatorferne Ende des Kabels
+		ein Kohleschichtpotentiometer. \\
+		Nun wird der Widerstand solange verändert, bis keine Reflexion zu erkennen ist. Dieser Widerstand $R_v$ entspricht dann der Impedanz des Kabels. Der Widerstand wird mittels 
+		Voltmeter gemessen.\\
+		Bei der Messung ergab das ein Widerstand von $R_v = Z = (50 \pm 1)\Omega$. Der Fehler des Voltmeters wurde dem Datenblatt (\textcolor{blue}{HIER HYPERLINK ZU DATENBLATT}) entnommen.
+		Das ist mit dem Literaturwert von $Z = 50\Omega$ vereinbar.
 
-\rule[-6pt]{0pt}{21pt}   $d$ 			&     $\frac{3}{2},\frac{5}{2}$ 	&     $2:3$ \\
 
-\rule[-7pt]{0pt}{22pt}   $f$ 			&     $\frac{5}{2},\frac{7}{2}$ 	&     $3:4$ \\
-\hline
-\hline
-\end{tabular*}  
-\caption[]{}  %siehe Graphik: Beschriftung
-\label{spinsplit}                             %siehe Graphik: zum Zitieren
-\end{table}
+		\begin{figure}[h]
+    		\centering
+   			 \subfloat[\centering max. Reflexion, $R_v = 2,8\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0013/F0013TEK.JPG} }}%
+    		\qquad
+   			 \subfloat[\centering keine Reflexion, $R_v = 50\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0014/F0014TEK.JPG} }}%
+			\qquad
+   			 \subfloat[\centering wenig Reflexion, $R_v = 94,3\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0015/F0015TEK.JPG} }}%
+   			 \caption{Messung mit Kohleschichtpotentiometer}
+   			 \label{AnpassungKohle}
+		\end{figure}
+
+		Des Weiteren wurde die Anpassung für ein Wendelpotentiometer und eine Widerstandsdekade durchgeführt. Dabei ließ sich der reflektierte Impuls allerdings nicht 
+		vollständig unterdrücken wie in Abb. \ref{AnpassungWendel} und Abb. \ref{AnpassungDekade} zu erkennen ist.
+
+		\begin{figure}[h]
+    		\centering
+   			 \subfloat[\centering  $R_v = 0,1\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0016/F0016TEK.JPG} }}%
+    		\qquad
+   			 \subfloat[\centering $R_v = 50\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0017/F0017TEK.JPG} }}%
+			\qquad
+   			 \subfloat[\centering $R_v = 100,1\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0018/F0018TEK.JPG} }}%
+   			 \caption{Messung mit Wendelpotentiometer}
+   			 \label{AnpassungWendel}
+		\end{figure}
+
+		\begin{figure}[h]
+    		\centering
+   			 \subfloat[\centering $R_v = 0\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0019/F0019TEK.JPG} }}%
+    		\qquad
+   			 \subfloat[\centering $R_v = 50\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0020/F0020TEK.JPG} }}%
+			\qquad
+   			 \subfloat[\centering $R_v = 100\Omega$]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0021/F0021TEK.JPG} }}%
+   			 \caption{Messung mit Widerstandsdekade}
+   			 \label{AnpassungDekade}
+		\end{figure}
+
+		Die Tatsache, dass die Reflexion nicht vollständig zu unterdrücken ist, ist dem Aufbau des Wendelpotentiometer geschuldet. Dieses beinhaltet nämlich ein
+		spiralförmig gewickelten Widerstandsdraht welcher bei Stromfluss, wie eine Spule, ein ein Magnetfeld aufbaut und eine Spannung entgegen der Stromrichtung
+		induziert. Das Wendelpotentiometer hat dadurch eine zusätzliche Impedanz.\\
+		\\ 
+		Nun wird ein $50\Omega$-Stecker an das Ende des Koaxialkabels angeschlossen. Wie in Abb. \ref{Anpassung50} zu sehen, ist keine Reflexion erkennbar. Das
+		liegt wieder daran, dass der Widerstand $R_v = Z$ der Impedanz entspricht (vgl. \ref{Reflexion}). \\
+		Wird anstelle des $50\Omega$-Steckers ein Kurzschlussstecker angeschlossen, so wird, wie in Abb. \ref{AnpassungKurz} zu sehen, das das reflektierte Signal invertiert.
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=3cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0023/F0023TEK.JPG}
+			\caption{Anpassung mit $50\Omega$-Stecker}
+			\label{Anpassung50}
+
+		\end{figure}
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=3cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0022/F0022TEK.JPG}
+			\caption{Anpassung mit Kurzschluss-Stecker}
+			\label{AnpassungKurz}
+		\end{figure}
+
+		\subsubsection{Kombinatiuon von Abschlusswiderständen am Anfang und Ende des Kabels}
+
+		Das Signal vom generatorferne Ende des Kabels wird nun auf CH I und das generatornahen Ende auf CH II gegeben. Des weiteren werden an den Kabelenden
+		Widerstände $R_a$ (generatornah) und $R_e$ (generatorfern) angeschlossen. Für $R = 0$ wird ein Kurzschlussstecker, für $R = Z$ ein $50\Omega-Stecker$ und 
+		für $R = \infty$ ein offenes Kabelende verwendet. Es werden alle möglichen Kombinationen gemessen.
+
+
+
+		\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
+		\centering
+		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c}
+
+		Kombination  	&     $R_a$  			&     $R_e$ \\
+		\hline
+  		 $i$ 			&     $0\Omega$ 		&     $0\Omega$ \\
+
+		 $ii$ 			&     $0\Omega$ 		&     $50\Omega$ \\
+
+		 $iii$ 			&     $0\Omega$ 		&     $\infty\Omega$ \\
+
+		 $iv$ 			&     $50\Omega$ 		&     $0\Omega$ \\
+
+		 $v$ 			&     $50\Omega$ 		&     $50\Omega$ \\
+
+		 $vi$ 			&     $50\Omega$	 	&     $\infty\Omega$ \\
+
+		 $vii$ 			&     $\infty\Omega$	&     $0\Omega$ \\
+
+		 $viii$ 		&     $\infty\Omega$	&     $50\Omega$ \\
+
+		 $ix$ 			&     $\infty\Omega$ 	&     $\infty\Omega$ \\
+
+		\end{tabular*}  
+		\caption{Kombinationen von Abschlusswiderständen}  %siehe Graphik: Beschriftung
+		\label{AbschlussKombi}                             %siehe Graphik: zum Zitieren
+		\end{table}
+
+		Wenn nun $R_a = 0\Omega$ wird hier das Signal am Kabelanfang reflektiert und invertiert und die Wellen überlagern sich (vgl. Abb. \ref{Kombi0}). 
+		Wenn $R_a = Z$ ergibt sich mit dem Innenwiderstands des Funktionsgenerator 
+		(vgl. Anleitung Funktionsgenerator\textcolor{blue}{HIER HYPERLINK ZU Funktionsgenerator HANDBUCH}) ein effektiver Widerstand von $R_{a,eff} = 25\Omega$
+		wodurch eine Reflexion entsteht. Die Amplitude wird reduziert (vgl. Abb. \ref{Kombi50}).
+		Zu letzt wenn $R_a = \infty\Omega$ ergibt sich mit dem Funktionsgeneratorinnenwiderstand ein effektiver Widerstand $R_{a,eff} = 50\Omega$ was der Impedanz entspricht,
+		es gibt also keine Reflexion am Kabelanfang(vgl. Abb. \ref{KombiInf}).\\
+		Zudem kommt aufgrund der Länge des Kabels noch eine Dämpfung der Amplitude hinzu, welche im folgenden Abschnitt genauer diskutiert wird.
+
+		\begin{figure}[h]
+    		\centering
+   			 \subfloat[\centering i \label{i}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0024/F0024TEK.JPG} }}%
+    		\qquad
+   			 \subfloat[\centering ii \label{ii}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0025/F0025TEK.JPG} }}%
+			\qquad
+   			 \subfloat[\centering iii \label{iii}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0026/F0026TEK.JPG} }}%
+   			 \caption{Kombinationen mit $R_e = 0\Omega$}
+   			 \label{Kombi0}
+		\end{figure}
+
+		\begin{figure}[h]
+    		\centering
+   			 \subfloat[\centering iv \label{iv}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0027/F0027TEK.JPG} }}%
+    		\qquad
+   			 \subfloat[\centering v \label{v}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0028/F0028TEK.JPG} }}%
+			\qquad
+   			 \subfloat[\centering vi \label{vi}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0029/F0029TEK.JPG} }}%
+   			 \caption{Kombinationen mit $R_e = 50\Omega$}
+   			 \label{Kombi50}
+		\end{figure}
+
+		\begin{figure}[h]
+    		\centering
+   			 \subfloat[\centering vii \label{vii}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0030/F0030TEK.JPG} }}%
+    		\qquad
+   			 \subfloat[\centering viii \label{viii}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0031/F0031TEK.JPG} }}%
+			\qquad
+   			 \subfloat[\centering ix \label{ix}]{{\includegraphics[width=2cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0032/F0032TEK.JPG} }}%
+   			 \caption{Kombinationen mit $R_e = \infty\Omega$}
+   			 \label{KombiInf}
+		\end{figure}
+
+		\subsubsection{Bestimmung der Ausbreitungsgeschwindigkeit durch Laufzeitmessung}
+
+		Um die Ausbreitungsgeschwindigkeit in einem Koaxialkabel und in einem Verzögerungskabel zu bestimmen, wird die Laufzeit $\Delta t$ zwischen einlaufendem
+		und reflektiertem Signal mittels der Cursor-Funktion des Oszilloskops gemessen. Die gemessenen Zeiten lassen sich Abb. \ref{ZeitKoax} und Abb. \ref{ZeitVerz}
+		entnehmen. Der Fehler entsteht hierbei durch die Ablesegenauigkeit von $0,1 div\cdot$Zeitempfindlichkeit. Es ergibt sich: \\
+		
+		\begin{figure}[h]
+			\includegraphics[width=3.5cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0033/F0033TEK.JPG}
+		\caption{Messung der Laufzeit, Koaxialkabel}
+		\label{ZeitKoax}
+		\end{figure}
+
+		\begin{equation*}
+			\Delta t_{Koaxialkabel} = (520 \pm \textcolor{red}{FEHLER})ns 
+		\end{equation*}
+
+		\begin{figure}[h]
+			\includegraphics[width=3.5cm]{/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/41/Images/ALL0037/F0037TEK.JPG}
+		\caption{Messung der Laufzeit, Verzögerungskabel}
+		\label{ZeitVerz}
+		\end{figure}
+
+		\begin{equation*}
+			\Delta t_{Verzögerungskabel} = (2,120 \pm \textcolor{red}{FEHLER})\mu s
+		\end{equation*}
+
+		Mithilfe der Länge L der Kabel lässt sich die Ausbreitungsgeschwindigkeit bestimmen:
+
+		\begin{equation*}
+			v = \frac{\Delta x}{\Delta t} = \frac{2 \cdot L}{\Delta t}
+		\end{equation*}
+
+		Es ergeben sich folgende Werte:
+
+		\begin{displaymath}
+			v_{Koaxialkabel} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \frac{m}{s}
+		\end{displaymath}
+
+		\begin{displaymath}
+			v_{Verzögerungskabel} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \frac{m}{s}
+		\end{displaymath}
+
+		Die Fehler ergeben sich mithilfe Gaußscherfehlerfortpflanzung. Da die Messung der Länge des Verzögerungskabels ungenau war, wurde eine Messreihe von
+		fünf Messungen erstellt, daraus ergab sich auch entsprechender Längenfehler. Die Länge des Koaxialkabels wurde von der Kabelbeschriftung abgelesen und
+		als fehlerfrei angenommen.
+
+	\subsection{Messung der Ausbreitungsgeschwindigkeit mithilfe von stehenden Wellen}
+
+		\subsubsection{Modellversuch zur Darstellung von stehenden Wellen}
+
+		Um stehende Wellen zu erzeugen wird dem Oszilloskop das Triggersignal des Funktionsgenerators zugeführt. Die Buchsen A und B des Generators werden an die Eingänge
+		CH I und CH II des Oszilloskops angeschlossen. An dem Generator kann man die Amplitude und die Geschwindigkeit des ausgehenden Signals einstellen. Die Mathematische
+		Funktion des Oszilloskops wird genutzt, um die auf den Kanälen eingehenden Signale zu addieren. Damit wird die Überlagerung der Wellen simuliert.
+		\textcolor{green}{Hier muss noch weitergemacht werden, bin aber müde. LG Hannes}
+
+
+	\subsection{Messung der Lichtgeschwindigkeit}
 
 \section{Zusammenfassung}
 
