@@ -27,14 +27,21 @@ DT_C = 50 * 10**(-9)
 l_C = 50
 Dl_C = 0
 
-# Time difference (T_D) and length (l_D = ?) for the delay cable
+# Time difference (T_D) and length for the delay cable
 T_D = 2.120 * 10**(-6)
 DT_D = 50 * 10**(-9)
-l_D = 0
-Dl_D = 0
+
+# calculating l_D and Dl_D from measurement series
+L_D = [[0.480, 0.0005], [0.491, 0.0005], [0.487, 0.0005], [0.486, 0.0005], [0.490, 0.0005]]
+l_D = sum([x[0] for x in L_D]) / len(L_D)
+Dl_D = np.sqrt((1/(len(L_D)-1)) * sum([(x[0]-l_D)**2 for x in L_D]))
 
 vProp_C = vProp(T_C, l_C, DT_C, Dl_C)
 vProp_D = vProp(T_D, l_D, DT_D, Dl_D)
 
-print(f'Best value and error of the propagation speed of the coaxial cable in m/s: {vProp_C}')
-print(f'Best value and error of the propagation speed of the delay cable in m/s: {vProp_D}') # will remain 0 until length of delay cable is measured
+print(f't for coaxial cable: {T_C} s ± {DT_C} s')
+print(f't for delay cable: {T_D} s ± {DT_D} s')
+
+
+# print(f'Best value and error of the propagation speed of the coaxial cable in m/s: {vProp_C}')
+# print(f'Best value and error of the propagation speed of the delay cable in m/s: {vProp_D}') # will remain 0 until length of delay cable is measured
