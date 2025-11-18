@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  18 NOV 2025 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  18 NOV 2025 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,7 +325,11 @@ Package typearea Info: These are the values describing the layout:
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box55
-) (./main.aux)
+) (./main.aux
+
+LaTeX Warning: Label `AnpassungKohle' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -562,52 +566,41 @@ LaTeX Warning: Reference `321Dest' on page 4 undefined on input line 379.
 
 LaTeX Warning: Reference `321Asym' on page 4 undefined on input line 381.
 
-
-Underfull \hbox (badness 1533) in paragraph at lines 376--385
-\T1/aer/m/n/10 lo-skop das Trig-ger-si-gnal des Funk-ti-ons-ge-ne-ra-tors
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 376--385
-\T1/aer/m/n/10 Funk-ti-on des Os-zil-lo-skops wird ge-nutzt, um die
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 376--385
-\T1/aer/m/n/10 ist so-wohl kon-struk-ti-ve (vgl. Abb []) als auch
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 376--385
-[]\T1/aer/m/n/10 ABBBILDUNGEN HIN-ZU-FÜ-GEN!!! ES SIND
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 376--385
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+<../Images/ALL0034/F0034TEK.png, id=53, 321.2pt x 240.9pt>
+File: ../Images/ALL0034/F0034TEK.png Graphic file (type png)
+<use ../Images/ALL0034/F0034TEK.png>
+Package pdftex.def Info: ../Images/ALL0034/F0034TEK.png  used on input line 386.
+(pdftex.def)             Requested size: 56.9055pt x 42.67642pt.
+<../Images/ALL0035/F0035TEK.png, id=54, 321.2pt x 240.9pt>
+File: ../Images/ALL0035/F0035TEK.png Graphic file (type png)
+<use ../Images/ALL0035/F0035TEK.png>
+Package pdftex.def Info: ../Images/ALL0035/F0035TEK.png  used on input line 390.
+(pdftex.def)             Requested size: 56.9055pt x 42.67642pt.
+<../Images/ALL0036/F0036TEK.png, id=55, 321.2pt x 240.9pt>
+File: ../Images/ALL0036/F0036TEK.png Graphic file (type png)
+<use ../Images/ALL0036/F0036TEK.png>
+Package pdftex.def Info: ../Images/ALL0036/F0036TEK.png  used on input line 394.
+(pdftex.def)             Requested size: 56.9055pt x 42.67642pt.
+[4 <../Images/ALL0033/F0033TEK.JPG> <../Images/ALL0037/F0037TEK.JPG> <../Images/ALL0034/F0034TEK.png> <../Images/ALL0035/F0035TEK.png> <../Images/ALL0036/F0036TEK.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 \T1/aer/m/n/10 TE MIT LI-TE-RA-TUR-WER-TEN. KA-BEL-TYP
  []
 
-[4 <../Images/ALL0033/F0033TEK.JPG> <../Images/ALL0037/F0037TEK.JPG>]
 
-LaTeX Warning: Reference `AufbauLichtgeschwindigkeit' on page 5 undefined on input line 429.
+LaTeX Warning: Reference `AufbauLichtgeschwindigkeit' on page 5 undefined on input line 442.
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 453--456
+Underfull \hbox (badness 3219) in paragraph at lines 466--469
 []\T1/aer/m/n/10 Der Best-wert stimmt mit dem Li-te-ra-tur-wert
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 459--462
+Underfull \hbox (badness 1371) in paragraph at lines 472--475
 \T1/aer/m/n/10 Der Wel-len-wi-der-stand ei-nes Ko-axi-al-ka-bels wur-de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
 []\T1/aer/m/n/10 https://physics.nist.gov/cgi-bin/cuu/Value?c,
  []
 
@@ -617,20 +610,23 @@ enddocument/afterlastpage: lastpage setting LastPage.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 9761 strings out of 476025
- 209560 string characters out of 5790016
+ 9786 strings out of 476025
+ 210287 string characters out of 5790016
  1879388 words of memory out of 5000000
- 30041 multiletter control sequences out of 15000+600000
+ 30059 multiletter control sequences out of 15000+600000
  554311 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10645b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main.pdf (5 pages, 1958806 bytes).
+Output written on main.pdf (5 pages, 1970098 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
+ 140 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
