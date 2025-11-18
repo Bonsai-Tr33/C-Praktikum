@@ -129,11 +129,24 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 			Bei offenem Kabel gilt:
 			\begin{equation*}
 				L = \frac{\lambda}{4}, \frac{3 \lambda}{4}, \frac{5 \lambda}{4}, \ldots
+			\label{WellenlängeOffen}
 			\end{equation*}
 			Bei kurzgeschlossenem Kabel gilt:
 			\begin{equation*}
 				L = \frac{\lambda}{2}, \lambda, \frac{3 \lambda}{2}, \ldots
+			\label{WellenlängeGeschlossen}
 			\end{equation*}
+			Die Ausbreitungsgeschwindigkeit der Welle ergibt sich dann (unabhängig von der Resonanzbedingung) volgendermaßen:
+			\begin{equation*}
+				v = \lambda \cdot f
+			\label{Ausbreitungsgeschwindigkeit}
+			\end{equation*}
+			Durch lösen der eindimensionalen Wellengleichung und durch einsetzen von $L*$ und $C*$ ergibt sich zudem folgender Zusammenhang:
+			\begin{equation*}
+				v = \frac{1}{L*C*} = \frac{c}{\mu_r \epsilon_r}
+			\label{Ausbreitungsgeschwindigkeit2}
+			\end{equation*}
+			Hierbei ist c die Lichtgeschwindigkeit, $\mu_r$ die Permeabilität und $\epsilon_r$ die Dielektrizitätskonstante.\\
 			Im Versuch werden die Frequenzen so gewählt, sodass ein Amplitudenminimum am Kabelanfang beobachtet werden kann. Aus der Kabellänge lässt sich dann die Wellenlänge
 			und somit auch die Ausbreitungsgeschwindigkeit bestimmen.
 
@@ -354,7 +367,55 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 		Um stehende Wellen zu erzeugen wird dem Oszilloskop das Triggersignal des Funktionsgenerators zugeführt. Die Buchsen A und B des Generators werden an die Eingänge
 		CH I und CH II des Oszilloskops angeschlossen. An dem Generator kann man die Amplitude und die Geschwindigkeit des ausgehenden Signals einstellen. Die Mathematische
 		Funktion des Oszilloskops wird genutzt, um die auf den Kanälen eingehenden Signale zu addieren. Damit wird die Überlagerung der Wellen simuliert.
-		\textcolor{green}{Hier muss noch weitergemacht werden, bin aber müde. LG Hannes}
+		Wenn die Amplituden beider Wellen gleich sind, ist sowohl konstruktive (vgl. Abb \ref{321Konst}) als auch destruktive Interferenz (vgl. Abb \ref{321Dest})
+		zu erkennen. Wenn die Wellen gegenläufig sind, gleiche Frequenz aber unterschiedliche Amplituden haben, ergibt sich eine stehende Welle
+		mit asymmetrischer Amplitudenverteilung (vgl. Abb \ref{321Asym}).
+		\\
+		\textcolor{red}{ABBBILDUNGEN HINZUFÜGEN!!! ES SIND KEINE JPGs, HELP!} 
+		\\
+
+		\subsubsection{Messung der Ausbreitungsgeschwindigkeit}
+
+		Um die Ausbreitungsgeschwindigkeit einer Welle in deinem Koaxialkabel zu messen, wurd zunächst eine stehende, sinusförmige Welle erzeugt.
+		Dazu wird wie schon aus den in den vorhergehenden Versuchen das Koaxialkabel mit dem einen Ende an den Funktionsgenerator angeschlossen,
+		das andere Ende wieder mit einem T-Stecker an das Oszilloskop um dort Widerstände parallel zu schalten. Je nach Widerstand ergibt sich 
+		durch Reflexion (vgl. \ref{Reflexion}) eine stehende Welle mit offenem Ende (kein Widerstasnd, kein Phasensprung) oder mit festem Ende 
+		(Kurzschlussstecker, Phasensprung von $\pi$).\\
+		Da das Koaxialkabel kein idealer Leiter ist, wird die Welle über den Verlauf im Kabel gedämpft. Dadurch ist die zu messende Amplitude an den 
+		Knotenpunkten nicht mehr null, sondern nimmt ein endlichen Wert an. \\
+		Nun wird die Frequenz so variiert, dass am Anfang (generatornah) des Kabels eine Knoten bzw. ein lokales Minimum ist. Das wird zwei mal bei
+		offenem Ende getan (gemessen wird die Frequenz für $\frac{\lambda}{4}$, $\frac{3\cdot \lambda}{4}$) und einmal bei festem Ende 
+		(Frequenz für $\frac{\lambda}{2}$). Die jeweils gemessenen Frequenzen lassen sich in Tab. \ref{TabAusbreitungsgeschwindigkeit} entnehmen. 
+		Der Fehler der Frequenz wurde der Anleitung des Oszilloskops (\textcolor{blue}{HIER HYPERLINK EINFÜGEN ANLEITUNG OSZI}) entnommen.\\
+		Die Wellenlängen ergeben sich hierbei mithilfe von Gl. \ref{WellenlängeOffen} und Gl. \ref{WellenlängeGeschlossen}. Die Länge des Koaxialkabels
+		wurde von dessen Beschriftung abgelesen und als fehlerfrei angenommen.
+		Mithilfe der Frequenzen und Wellenlänge wurde dann nach Gl. \ref{Ausbreitungsgeschwindigkeit} die Ausbreitungsgeschwindigkeit bestimmt, welche ebenfalls
+		Tab. \ref{TabAusbreitungsgeschwindigkeit} zu entnehmen ist. \\
+		Bei handelsüblichen Koaxialkabeln ist die Permeabilität $\mu_r = 1$ wodurch sich nach Gl. \ref{Ausbreitungsgeschwindigkeit2} die Dielektrizitätskonstante
+		$\epsilon_r$ berechnen lässt.
+
+		\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
+		\centering
+		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
+
+		$\lambda$ (in m) 					&     f (in kHz)  		&     v (in $\frac{m}{s}$) 	& $\epsilon_r$ \\
+		\hline
+  		 $\frac{\lambda}{4}$ 				&     ---------- 		&     ---------- 			& ---------- \\
+
+		 $\frac{\lambda}{2}$ 				&     ---------- 		&     ---------- 			& ---------- \\
+
+		 $\frac{3 \cdot \lambda}{4}$ 		&     ---------- 		&     ---------- 			& ---------- \\
+
+		\end{tabular*}  
+		\caption{Ausbreitungsgeschwindigkeit im Koaxialkabel} 			   %siehe Graphik: Beschriftung
+		\label{TabAusbreitungsgeschwindigkeit}                             %siehe Graphik: zum Zitieren
+		\end{table}
+
+		\textcolor{red}{HIER NOCH VERGLEICH GEMESSENE WERTE MIT LITERATURWERTEN. KABELTYP RG213/U GOOGEL UND VGL SHEESH}
+
+		\subsubsection{}
+
+
 
 
 	\subsection{Messung der Lichtgeschwindigkeit}
