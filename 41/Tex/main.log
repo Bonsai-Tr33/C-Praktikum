@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  18 NOV 2025 20:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  18 NOV 2025 22:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -355,28 +355,28 @@ Package lastpage Info: Please have a look at the pageslts package at
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+aess on input line 60.
+LaTeX Font Info:    Trying to load font information for T1+aess on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <10> not available
-(Font)              Font shape `T1/aess/bx/n' tried instead on input line 60.
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <20.74> not available
-(Font)              Font shape `T1/aess/bx/n' tried instead on input line 60.
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <14.4> not available
-(Font)              Font shape `T1/aess/bx/n' tried instead on input line 62.
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 63.
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <12> not available
-(Font)              Font shape `T1/aess/bx/n' tried instead on input line 67.
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 68.
 
-Underfull \hbox (badness 1337) in paragraph at lines 71--75
+Underfull \hbox (badness 1337) in paragraph at lines 72--76
 \T1/aer/m/n/10 Bei der Un-ter-su-chung von Ka-beln gibt es zwei
  []
 
@@ -390,65 +390,65 @@ Underfull \hbox (badness 1337) in paragraph at lines 71--75
 <../Images/ALL0013/F0013TEK.JPG, id=16, 192.72pt x 256.96pt>
 File: ../Images/ALL0013/F0013TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0013/F0013TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0013/F0013TEK.JPG  used on input line 184.
+Package pdftex.def Info: ../Images/ALL0013/F0013TEK.JPG  used on input line 185.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0014/F0014TEK.JPG, id=17, 192.72pt x 256.96pt>
 File: ../Images/ALL0014/F0014TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0014/F0014TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0014/F0014TEK.JPG  used on input line 188.
+Package pdftex.def Info: ../Images/ALL0014/F0014TEK.JPG  used on input line 189.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0015/F0015TEK.JPG, id=18, 192.72pt x 256.96pt>
 File: ../Images/ALL0015/F0015TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0015/F0015TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0015/F0015TEK.JPG  used on input line 192.
+Package pdftex.def Info: ../Images/ALL0015/F0015TEK.JPG  used on input line 193.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0016/F0016TEK.JPG, id=19, 192.72pt x 256.96pt>
 File: ../Images/ALL0016/F0016TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0016/F0016TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0016/F0016TEK.JPG  used on input line 203.
+Package pdftex.def Info: ../Images/ALL0016/F0016TEK.JPG  used on input line 204.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0017/F0017TEK.JPG, id=20, 192.72pt x 256.96pt>
 File: ../Images/ALL0017/F0017TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0017/F0017TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0017/F0017TEK.JPG  used on input line 205.
+Package pdftex.def Info: ../Images/ALL0017/F0017TEK.JPG  used on input line 206.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0018/F0018TEK.JPG, id=21, 192.72pt x 256.96pt>
 File: ../Images/ALL0018/F0018TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0018/F0018TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0018/F0018TEK.JPG  used on input line 207.
+Package pdftex.def Info: ../Images/ALL0018/F0018TEK.JPG  used on input line 208.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0019/F0019TEK.JPG, id=22, 192.72pt x 256.96pt>
 File: ../Images/ALL0019/F0019TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0019/F0019TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0019/F0019TEK.JPG  used on input line 214.
+Package pdftex.def Info: ../Images/ALL0019/F0019TEK.JPG  used on input line 215.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0020/F0020TEK.JPG, id=23, 192.72pt x 256.96pt>
 File: ../Images/ALL0020/F0020TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0020/F0020TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0020/F0020TEK.JPG  used on input line 216.
+Package pdftex.def Info: ../Images/ALL0020/F0020TEK.JPG  used on input line 217.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0021/F0021TEK.JPG, id=24, 192.72pt x 256.96pt>
 File: ../Images/ALL0021/F0021TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0021/F0021TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0021/F0021TEK.JPG  used on input line 218.
+Package pdftex.def Info: ../Images/ALL0021/F0021TEK.JPG  used on input line 219.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 
-Underfull \hbox (badness 1132) in paragraph at lines 223--230
+Underfull \hbox (badness 1132) in paragraph at lines 224--231
 \T1/aer/m/n/10 rich-tung in-du-ziert. Das Wen-del-po-ten-tio-me-ter hat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--230
+Underfull \hbox (badness 10000) in paragraph at lines 224--231
 
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 223--230
+Underfull \hbox (badness 2096) in paragraph at lines 224--231
 \T1/aer/m/n/10 ist kei-ne Re-fle-xi-on er-kenn-bar. Das liegt wie-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--230
+Underfull \hbox (badness 10000) in paragraph at lines 224--231
 \T1/aer/m/n/10 Wird an-stel-le des $\OT1/cmr/m/n/10 50
 $\T1/aer/m/n/10 -Steckers ein Kurz-
  []
@@ -457,72 +457,72 @@ $\T1/aer/m/n/10 -Steckers ein Kurz-
 <../Images/ALL0023/F0023TEK.JPG, id=35, 192.72pt x 256.96pt>
 File: ../Images/ALL0023/F0023TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0023/F0023TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0023/F0023TEK.JPG  used on input line 233.
+Package pdftex.def Info: ../Images/ALL0023/F0023TEK.JPG  used on input line 234.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0022/F0022TEK.JPG, id=36, 192.72pt x 256.96pt>
 File: ../Images/ALL0022/F0022TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0022/F0022TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0022/F0022TEK.JPG  used on input line 241.
+Package pdftex.def Info: ../Images/ALL0022/F0022TEK.JPG  used on input line 242.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0024/F0024TEK.JPG, id=37, 192.72pt x 256.96pt>
 File: ../Images/ALL0024/F0024TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0024/F0024TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0024/F0024TEK.JPG  used on input line 293.
+Package pdftex.def Info: ../Images/ALL0024/F0024TEK.JPG  used on input line 294.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0025/F0025TEK.JPG, id=38, 192.72pt x 256.96pt>
 File: ../Images/ALL0025/F0025TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0025/F0025TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0025/F0025TEK.JPG  used on input line 295.
+Package pdftex.def Info: ../Images/ALL0025/F0025TEK.JPG  used on input line 296.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0026/F0026TEK.JPG, id=39, 192.72pt x 256.96pt>
 File: ../Images/ALL0026/F0026TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0026/F0026TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0026/F0026TEK.JPG  used on input line 297.
+Package pdftex.def Info: ../Images/ALL0026/F0026TEK.JPG  used on input line 298.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0027/F0027TEK.JPG, id=40, 192.72pt x 256.96pt>
 File: ../Images/ALL0027/F0027TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0027/F0027TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0027/F0027TEK.JPG  used on input line 304.
+Package pdftex.def Info: ../Images/ALL0027/F0027TEK.JPG  used on input line 305.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0028/F0028TEK.JPG, id=41, 192.72pt x 256.96pt>
 File: ../Images/ALL0028/F0028TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0028/F0028TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0028/F0028TEK.JPG  used on input line 306.
+Package pdftex.def Info: ../Images/ALL0028/F0028TEK.JPG  used on input line 307.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0029/F0029TEK.JPG, id=42, 192.72pt x 256.96pt>
 File: ../Images/ALL0029/F0029TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0029/F0029TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0029/F0029TEK.JPG  used on input line 308.
+Package pdftex.def Info: ../Images/ALL0029/F0029TEK.JPG  used on input line 309.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0030/F0030TEK.JPG, id=43, 192.72pt x 256.96pt>
 File: ../Images/ALL0030/F0030TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0030/F0030TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0030/F0030TEK.JPG  used on input line 315.
+Package pdftex.def Info: ../Images/ALL0030/F0030TEK.JPG  used on input line 316.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0031/F0031TEK.JPG, id=44, 192.72pt x 256.96pt>
 File: ../Images/ALL0031/F0031TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0031/F0031TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0031/F0031TEK.JPG  used on input line 317.
+Package pdftex.def Info: ../Images/ALL0031/F0031TEK.JPG  used on input line 318.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 <../Images/ALL0032/F0032TEK.JPG, id=45, 192.72pt x 256.96pt>
 File: ../Images/ALL0032/F0032TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0032/F0032TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0032/F0032TEK.JPG  used on input line 319.
+Package pdftex.def Info: ../Images/ALL0032/F0032TEK.JPG  used on input line 320.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--329
+Underfull \hbox (badness 10000) in paragraph at lines 327--330
 \T1/aer/m/n/10 Um die Aus-brei-tungs-ge-schwin-dig-keit in ei-nem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--329
+Underfull \hbox (badness 10000) in paragraph at lines 327--330
 
  []
 
 <../Images/ALL0033/F0033TEK.JPG, id=46, 192.72pt x 256.96pt>
 File: ../Images/ALL0033/F0033TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0033/F0033TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0033/F0033TEK.JPG  used on input line 332.
+Package pdftex.def Info: ../Images/ALL0033/F0033TEK.JPG  used on input line 333.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -530,65 +530,64 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../Images/ALL0037/F0037TEK.JPG, id=47, 192.72pt x 256.96pt>
 File: ../Images/ALL0037/F0037TEK.JPG Graphic file (type jpg)
 <use ../Images/ALL0037/F0037TEK.JPG>
-Package pdftex.def Info: ../Images/ALL0037/F0037TEK.JPG  used on input line 343.
+Package pdftex.def Info: ../Images/ALL0037/F0037TEK.JPG  used on input line 344.
 (pdftex.def)             Requested size: 192.71951pt x 256.95937pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 349.
+LaTeX Warning: Command \" invalid in math mode on input line 350.
 
 Missing character: There is no ö in font cmr7!
 [3 <../Images/ALL0023/F0023TEK.JPG> <../Images/ALL0022/F0022TEK.JPG> <../Images/ALL0024/F0024TEK.JPG> <../Images/ALL0025/F0025TEK.JPG> <../Images/ALL0026/F0026TEK.JPG> <../Images/ALL0027/F0027TEK.JPG> <../Images/ALL0028/F0028TEK.JPG> <../Images/ALL0029/F0029TEK.JPG> <../Images/ALL0030/F0030TEK.JPG> <../Images/ALL0031/F0031TEK.JPG> <../Images/ALL0032/F0032TEK.JPG>]
 
-LaTeX Warning: Command \" invalid in math mode on input line 365.
+LaTeX Warning: Command \" invalid in math mode on input line 366.
 
 Missing character: There is no ö in font cmr7!
-
-LaTeX Warning: Reference `321Konst' on page 4 undefined on input line 379.
-
-
-LaTeX Warning: Reference `321Dest' on page 4 undefined on input line 379.
-
-
-LaTeX Warning: Reference `321Asym' on page 4 undefined on input line 381.
-
 <../Images/ALL0034/F0034TEK.png, id=53, 321.2pt x 240.9pt>
 File: ../Images/ALL0034/F0034TEK.png Graphic file (type png)
 <use ../Images/ALL0034/F0034TEK.png>
-Package pdftex.def Info: ../Images/ALL0034/F0034TEK.png  used on input line 386.
+Package pdftex.def Info: ../Images/ALL0034/F0034TEK.png  used on input line 387.
 (pdftex.def)             Requested size: 56.9055pt x 42.67642pt.
 <../Images/ALL0035/F0035TEK.png, id=54, 321.2pt x 240.9pt>
 File: ../Images/ALL0035/F0035TEK.png Graphic file (type png)
 <use ../Images/ALL0035/F0035TEK.png>
-Package pdftex.def Info: ../Images/ALL0035/F0035TEK.png  used on input line 390.
+Package pdftex.def Info: ../Images/ALL0035/F0035TEK.png  used on input line 391.
 (pdftex.def)             Requested size: 56.9055pt x 42.67642pt.
 <../Images/ALL0036/F0036TEK.png, id=55, 321.2pt x 240.9pt>
 File: ../Images/ALL0036/F0036TEK.png Graphic file (type png)
 <use ../Images/ALL0036/F0036TEK.png>
-Package pdftex.def Info: ../Images/ALL0036/F0036TEK.png  used on input line 394.
+Package pdftex.def Info: ../Images/ALL0036/F0036TEK.png  used on input line 395.
 (pdftex.def)             Requested size: 56.9055pt x 42.67642pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+[4 <../Images/ALL0033/F0033TEK.JPG> <../Images/ALL0037/F0037TEK.JPG> <../Images/ALL0034/F0034TEK.png> <../Images/ALL0035/F0035TEK.png> <../Images/ALL0036/F0036TEK.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 \T1/aer/m/n/10 TE MIT LI-TE-RA-TUR-WER-TEN. KA-BEL-TYP
  []
 
-[4 <../Images/ALL0033/F0033TEK.JPG> <../Images/ALL0037/F0037TEK.JPG> <../Images/ALL0034/F0034TEK.png> <../Images/ALL0035/F0035TEK.png> <../Images/ALL0036/F0036TEK.png>]
 
-LaTeX Warning: Reference `AufbauLichtgeschwindigkeit' on page 5 undefined on input line 442.
+LaTeX Warning: Reference `AufbauLichtgeschwindigkeit' on page 5 undefined on input line 443.
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 466--469
+Underfull \hbox (badness 3219) in paragraph at lines 467--470
 []\T1/aer/m/n/10 Der Best-wert stimmt mit dem Li-te-ra-tur-wert
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 472--475
+Underfull \hbox (badness 1371) in paragraph at lines 473--478
 \T1/aer/m/n/10 Der Wel-len-wi-der-stand ei-nes Ko-axi-al-ka-bels wur-de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Overfull \hbox (224.10359pt too wide) detected at line 486
+\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = ([][] \OMS/cmsy/m/n/10 ^^F [][]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[][]\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = ([][] \OMS/cmsy/m/n/10 ^^F [][]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[][]\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = ([][] \OMS/cmsy/m/n/10 ^^F [][]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[][]
+ []
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 492.
+
+Missing character: There is no ö in font cmr7!
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 []\T1/aer/m/n/10 https://physics.nist.gov/cgi-bin/cuu/Value?c,
  []
 
@@ -603,15 +602,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9573 strings out of 478287
- 205207 string characters out of 5849289
- 648254 words of memory out of 5000000
- 27599 multiletter control sequences out of 15000+600000
+ 9576 strings out of 478287
+ 205247 string characters out of 5849289
+ 648314 words of memory out of 5000000
+ 27602 multiletter control sequences out of 15000+600000
  511283 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10656b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main.pdf (5 pages, 1968903 bytes).
+Output written on main.pdf (5 pages, 1973533 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
