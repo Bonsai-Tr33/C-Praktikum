@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  18 NOV 2025 20:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  18 NOV 2025 20:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -581,11 +581,12 @@ File: ../Images/ALL0036/F0036TEK.png Graphic file (type png)
 <use ../Images/ALL0036/F0036TEK.png>
 Package pdftex.def Info: ../Images/ALL0036/F0036TEK.png  used on input line 394.
 (pdftex.def)             Requested size: 56.9055pt x 42.67642pt.
-[4 <../Images/ALL0033/F0033TEK.JPG> <../Images/ALL0037/F0037TEK.JPG> <../Images/ALL0034/F0034TEK.png> <../Images/ALL0035/F0035TEK.png> <../Images/ALL0036/F0036TEK.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 436--437
 \T1/aer/m/n/10 TE MIT LI-TE-RA-TUR-WER-TEN. KA-BEL-TYP
  []
 
+[4 <../Images/ALL0033/F0033TEK.JPG> <../Images/ALL0037/F0037TEK.JPG> <../Images/ALL0034/F0034TEK.png> <../Images/ALL0035/F0035TEK.png> <../Images/ALL0036/F0036TEK.png>]
 
 LaTeX Warning: Reference `AufbauLichtgeschwindigkeit' on page 5 undefined on input line 442.
 
@@ -621,9 +622,9 @@ Here is how much of TeX's memory you used:
  30059 multiletter control sequences out of 15000+600000
  554311 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,106p,10645b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,20n,106p,10645b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main.pdf (5 pages, 1970098 bytes).
+Output written on main.pdf (5 pages, 1968888 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
