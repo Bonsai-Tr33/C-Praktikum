@@ -43,7 +43,7 @@
 \twocolumn[{\csname @twocolumnfalse\endcsname                %erlaubt "Abstrakt" �ber beide Spalten
 \titlehead{                                                  %Kopfzeile
 	\begin{tabular*}{\textwidth}[]{@{\extracolsep{\fill}}lr}   %Kopfzeile
-	Betreuer: Der Betreuer & \today\\                          %Kopfzeile      hier den Betreuer eintragen!!!
+	Betreuer: Prof. Dr. V. Hinkov & \today\\                          %Kopfzeile      hier den Betreuer eintragen!!!
 	\end{tabular*}                                             %Kopfzeile
 	}
 \title{Messung der Ausbreitungsgeschwindigkeit von elektromagnetischen Wellen auf Kabeln}  %Titel der Versuchs
@@ -54,7 +54,7 @@
 \begin{abstract}                                                %Beginn des Abstracts
 \vspace{1em}
 Versuchsdurchführung: 06. November 2025\\       %Datum �ndern!
-Protokollabgabe: 01. März 2006                 %Datum �ndern!
+Protokollabgabe: 20. November 2025                 %Datum �ndern!
 \vspace{1em}
 \end{abstract}
 }]
@@ -413,17 +413,50 @@ Protokollabgabe: 01. März 2006                 %Datum �ndern!
 
 		\textcolor{red}{HIER NOCH VERGLEICH GEMESSENE WERTE MIT LITERATURWERTEN. KABELTYP RG213/U GOOGEL UND VGL SHEESH}
 
-		\subsubsection{}
+		\subsubsection{Bestimmung der Dämpfung des Signals im Koaxialkabel}
 
 
 
 
 	\subsection{Messung der Lichtgeschwindigkeit}
 
+	Die Lichtgeschwindigkeit wird mittels Laufzeitmessung bestimmt. Der Versuchsaufbau ist Abb. \ref{AufbauLichtgeschwindigkeit}  zu entnehmen.
+	Eine Hochleistungs-LED sendet sehr kurze, rote Lichpulse von einer Breite von
+	20ns aus. Diese Signale werden nach hin- und zurücklaufen der Messstrecke s in
+	Spannungspulse umgewandelt, welche am Oszilloskop beobachtet werden.
+	Das Fenser $F_1$ der Linse L bildet die Lichtquelle in das Unendliche ab. Der 
+	Tripelspiegel $T_1$ faltet den Strahlengang in sich zurück, sodass die LED auf
+	sich selbst abgebildet wird. Der Strahlteiler S reflektiert das von $T_1$ 
+	kommende Lichtsignal auf die Photodiode D. Zudem reflektiert dieser die Hälfte 
+	des Lichts nach oben durch das Fenster $F_2$ auf den Tripelspiegel $T_2$ welcher
+	das Signal ebenfalls auf die Photodiode D sendet, was als Referenzsignal dient.
+	Diese Laufzeitverzögerung ist allerdings vernachlässigbar klein. \\
+	Die Laufzeit wird für 9 verschiedene Lichtwege gemessen. Dabei ist darauf zu achten,
+	dass die LED bei der Startposition $s_LED = $\textcolor{red}{LÄNGE EINFÜGEN} steht.
+	Daraus lässt sich die Lichtgeschwindigkeit berechnen:
+	\begin{equation*}
+		c = \frac{s}{\Delta t}
+	\end{equation*}
+	Der Fehler der Lichtgeschwindigkeit ergibt sich durch Gaußschefehlerfortpflanzung.
+	Der letztendliche Wert der Lichtgeschwindigkeit ergibt sich aus dem Bestwert der
+	Messreihe: 
+	\begin{equation*}
+		c = (\textcolor{red}{BESTWER} \pm \textcolor{red}{FEHLER}) \cdot 10^8\frac{m}{s}
+	\end{equation*}
+
+	Der Bestwert stimmt mit dem Literaturwert $c_{Literaturwert} = 299792458 \frac{m}{s}$ \cite{Lichtgeschwindigkeit}
+	innerhalb des Fehlers überein. Bei manchen der Messungen wurde allerdings Überlichtgeschwindigkeit gemessen,
+	was unphysikalisch ist. Das liegt an der Ungenauigkeit in der Messmethode.
+
 \section{Zusammenfassung}
 
+Der Wellenwiderstand eines Koaxialkabels wurde durch Reflexionsunterdrückung
+mittels Kohleschichtpotentiometer am Kabelende bestimmt. Dieser beläuft sich auf
+$Z = (50 \pm 1)\Omega$.
+
 \begin{thebibliography}{}    %so wird das Literaturverzeicnis erstellt
-\bibitem{a}
+\bibitem{Lichtgeschwindigkeit}
+	https://physics.nist.gov/cgi-bin/cuu/Value?c, besucht am 18.11.2025 um 16.29 Uhr
 \bibitem{b} 
 
 \end{thebibliography}
