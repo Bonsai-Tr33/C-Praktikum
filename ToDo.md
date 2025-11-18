@@ -12,3 +12,5 @@
       - Bilder in Kap. 3 drehen
       - Hyperlinks einfügen
       - Ausbreitungsgeschwindigkeit hinzufügen sobald Verzögerungskabel getan
+      - Werte in Tabelle bei asubreitungsgeschw. einfügen
+      - diskussion zuendeführen bei ausbreitungsgeschw., vgl mit literaturwerten
