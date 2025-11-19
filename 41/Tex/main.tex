@@ -56,6 +56,7 @@
 \noindent Versuchsdurchführung: 06. November 2025\\% Datum ändern!
 \noindent Protokollabgabe: 20. November 2025% Datum ändern!
 \vspace{1em}
+Das ist ein Abstract und hier wird abstrahiert.
 \end{abstract}
 }]
 
@@ -381,18 +382,18 @@
 		mit asymmetrischer Amplitudenverteilung (vgl. Abb \ref{321Asym}).
 		\begin{figure}[h]
 			\centering
-			\subfloat[\centering \textcolor{red}{CAPTION}]{
+			\subfloat[\centering konst. Interferenz \label{321Konst}]{
 				\includegraphics[width=2cm]{../Images/ALL0034/F0034TEK.png}
 			}%
 			\qquad
-			\subfloat[\centering \textcolor{red}{CAPTION}]{
+			\subfloat[\centering asym. Amplitude \label{321Asym}]{
 				\includegraphics[width=2cm]{../Images/ALL0035/F0035TEK.png}
 			}%
 			\qquad
-			\subfloat[\centering \textcolor{red}{CAPTION}]{
+			\subfloat[\centering dest. Interferenz \label{321Dest}]{
 				\includegraphics[width=2cm]{../Images/ALL0036/F0036TEK.png}
 			}%
-			\caption{Messung mit Kohleschichtpotentiometer}
+			\caption{Modellversuch stehende Wellen}
 			\label{AnpassungKohle}
 		\end{figure}
 
@@ -471,8 +472,30 @@
 
 Der Wellenwiderstand eines Koaxialkabels wurde durch Reflexionsunterdrückung
 mittels Kohleschichtpotentiometer am Kabelende bestimmt. Dieser beläuft sich auf
-$Z = (50 \pm 1)\Omega$.
-
+$Z = (50 \pm 1)\Omega$. Diese Messung wurde des weiteren mit einem Wendelpotentiometer als auch mit einer Widerstandsdekade durchgeführt. Hier war zu beobachten,
+dass es trotz einstellen der Impedanz, zu Reflexion kam. Bei Verwendung des Kurzschlusssteckers wurde eine Reflexion mit invertierter Amplitude festgestellt.\\
+Des weiteren wurde die Ausbreitungsgeschwindigkeit in dem Koaxialkabel mittels Laufzeitmessung bestimmt. Das ergab:
+\begin{equation*}
+	v_{koaxial} = (192 \pm 18) \cdot 10^6 \frac{m}{s}
+\end{equation*}
+ Die Ausbreitungsgeschwindigkeit wurde zudem auch noch mithilfe von stehenden Wellen für drei unterschiedliche Wellenlängen bestimmt:
+ \begin{equation*}
+	v_{\frac{\lambda}{4}} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \cdot 10^6 \frac{m}{s} 
+	v_{\frac{\lambda}{2}} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \cdot 10^6 \frac{m}{s} 
+	v_{\frac{3\lambda}{4}} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \cdot 10^6 \frac{m}{s} 
+ \end{equation*}
+ \textcolor{red}{EVENTUELL EQUATION FIXEN WEIL ALLES IN EINER ZEILE}\\
+Bei der Messung der mittels stehender Welle ist spannend zu beobachten, dass hier der Effekt der Dispersion merklich zum tragen kommt.
+Durch geringere Fehlerquellen ist die Messung mit stehenden Wellen auch genauer als die über die Laufzeitmessung. \\
+Zudem wurde die Ausbreitungsgeschwindigkeit in einem Verzögerungskabel mithilfe der Laufzeitmessung gemessen:
+\begin{equation*}
+	v_{verzögerungskabel} = (459 \pm 12) \cdot 10^3 \frac{m}{s}
+\end{equation*}
+Ebenfalls durch Laufzeitmessung für verscheidene Distanzen wurde die Lichtgeschwindigkeit gemessen. Es ergibt sich ein Wert von
+\begin{equation*}
+	c = (293 \pm 16)\cdot 10^6 \frac{m}{s}
+\end{equation*}
+welcher mit dem Literaturwert überein stimmt.
 \begin{thebibliography}{}    %so wird das Literaturverzeicnis erstellt
 \bibitem{Lichtgeschwindigkeit}
 	https://physics.nist.gov/cgi-bin/cuu/Value?c, besucht am 18.11.2025 um 16.29 Uhr
