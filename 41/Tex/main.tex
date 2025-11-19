@@ -25,6 +25,7 @@
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption} %macht die Bildbeschriftungen richtig
 \usepackage{xcolor}			  % macht Farbe
 \usepackage{subfig}
+\usepackage{hyperref}
 
 \renewcommand{\figurename}{Abb.}
 
@@ -398,6 +399,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 		\end{figure}
 
 		\subsubsection{Messung der Ausbreitungsgeschwindigkeit}
+		\label{sec:Ausbreitungsgeschwindigkeit}
 
 		Um die Ausbreitungsgeschwindigkeit einer Welle in deinem Koaxialkabel zu messen, wurd zunächst eine stehende, sinusförmige Welle erzeugt.
 		Dazu wird wie schon aus den in den vorhergehenden Versuchen das Koaxialkabel mit dem einen Ende an den Funktionsgenerator angeschlossen,
@@ -421,13 +423,13 @@ Das ist ein Abstract und hier wird abstrahiert.
 		\centering
 		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
 
-		$\lambda$ (in m) 					&     f (in kHz)  		&     v (in $\frac{m}{s}$) 	& $\epsilon_r$ \\
+		$\lambda$ (in m) 					&     $f$ (in Hz)  		&     v (in $\frac{m}{s}$) 	& $\epsilon_r$ \\
 		\hline
-  		 $\frac{\lambda}{4}$ 				&     ---------- 		&     ---------- 			& ---------- \\
+  		 $\frac{\lambda}{4}$ 				&     ($937991,0 \pm 3,1$)		&     $(11724,888 \pm 0,039)\cdot 10^3$ 			& ---------- \\
 
-		 $\frac{\lambda}{2}$ 				&     ---------- 		&     ---------- 			& ---------- \\
+		 $\frac{\lambda}{2}$ 				&     ($1891980,0 \pm 4,4$)	&     $(47299,50 \pm 0,11)\cdot 10^3$ 			& ---------- \\
 
-		 $\frac{3 \cdot \lambda}{4}$ 		&     ---------- 		&     ---------- 			& ---------- \\
+		 $\frac{3 \cdot \lambda}{4}$ 		&     ($2874970,0 \pm 5,4$) 		&     $(107811,38 \pm 0,20)\cdot 10^3$ 			& ---------- \\
 
 		\end{tabular*}  
 		\caption{Ausbreitungsgeschwindigkeit im Koaxialkabel} 			   %siehe Graphik: Beschriftung
@@ -437,6 +439,37 @@ Das ist ein Abstract und hier wird abstrahiert.
 		\textcolor{red}{HIER NOCH VERGLEICH GEMESSENE WERTE MIT LITERATURWERTEN. KABELTYP RG213/U GOOGEL UND VGL SHEESH}
 
 		\subsubsection{Bestimmung der Dämpfung des Signals im Koaxialkabel}
+			Wie bereits in Abschnitt~\ref{sec:Ausbreitungsgeschwindigkeit} angedeutet ist der ohmsche Widerstand des Koaxialkabels nicht vernachlässigbar,
+			da dieser eine Dämpfung auf das Eingangssignal ausübt.
+			Diese Dämpfung ist Frequenzabhängig und soll nun quantitativ untersucht werden.
+			Um den Zusammenhang zu verstehen wird zunächst das Dämpfungsmaß $D$ bestimmt. Es ist allgemein definiert über:
+			\begin{equation*}
+				D = 20 \cdot \log_{10} \frac{U(0)}{U(x)} \, dB
+			\end{equation*}
+			Die Spannungen als $U_{pp}$ (peak to peak) werden mit dem Oszilloskop bestimmt und das Dämpfungsmaß wird für verschiedene Wellenlängenverhältnisse berechnet.
+			Die aus den Wellenlängenverhältnissen berechneten Frequenzen lassen sich aus Tabelle~\ref{TabAusbreitungsgeschwindigkeit} entnehmen.\\
+			Die gedämpfte Spannung und das daraus berechnete Dämpfungsmaß sind (bei $U(0) = (160 \pm 25)\cdot 10^{-3} \, V$):
+			\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
+				\centering
+				\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
+				$\lambda$ (in $m$) 					& $U(x)$ (in $V$) & $D$ (in $dB$)\\
+				\hline
+				$\frac{\lambda}{4}$ 				& $(14,20 \pm 0,45)\cdot 10^{-3}$ & $(21,0 \pm 1,4)$\\
+				$\frac{\lambda}{2}$ 				& $(21,8 \pm 1,1)\cdot 10^{-3}$ & $(17,3 \pm 1,4)$\\
+				$\frac{3 \cdot \lambda}{4}$ 		& $(26,4 \pm 1,1)\cdot 10^{-3}$ & $(15,7 \pm 1,4)$\\
+				\end{tabular*}  
+				\caption{Dämpfung im Koaxialkabel} 			   %siehe Graphik: Beschriftung
+				\label{TabU-D}                             %siehe Graphik: zum Zitieren
+			\end{table}
+			\\
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=6cm]{../Images/DoverF.png}
+				\caption{Dämpfung in Abh. der Frequenz}
+				\label{Img:D-F}
+			\end{figure}
+
+
 
 	\subsection{Messung der Lichtgeschwindigkeit}
 
