@@ -86,10 +86,16 @@ Df2 = np.sqrt(sum([x[1] for x in WR2])) / len([x[1] for x in WR2])
 SoP4 = SoP(f4, lam4, Df=Df4)
 SoP34 = SoP(f34, lam34, Df=Df34)
 Sop2 = SoP(f2, lam2, Df=Df2)
-
+'''
 print(f'λ/4: f = {f4} ± {Df4} Hz')
 print(f'3λ/4: f = {f34} ± {Df34} Hz')
 print(f'λ/2: f = {f2} ± {Df2} Hz')
+
+
+print(f'λ/4: SoP = {SoP4[0]} ± {SoP4[1]} m/s')
+print(f'3λ/4: SoP = {SoP34[0]} ± {SoP34[1]} m/s')
+print(f'λ/2: SoP = {Sop2[0]} ± {Sop2[1]} m/s')
+'''
 
 # seperating Upp values for further analysis
 Upp4 = []
@@ -107,7 +113,7 @@ for i in range(len(WavelengthRatio)):
         print(f'Upp Issue: {i}')
 
 print('Upp values separated successfully')
-print(Upp4)
+#print(Upp4)
 
 # Calculate median voltage U and error DU for each wavelength ratio
 U4 = statistics.median([x[0] for x in Upp4])
@@ -136,7 +142,6 @@ D = [D4, D2, D34]
 DD = [DD4, DD2, DD34]
 
 print(D, DD)
-
 # plotting Damping over Frequency
 plt.errorbar([f4, f2, f34], D, yerr=DD, capsize=5, label='Dämpfung in Abh. der Resonanzfrequenz', color='black', marker='x', linestyle='None') # plot with error bars
 
