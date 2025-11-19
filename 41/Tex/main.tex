@@ -26,6 +26,8 @@
 \usepackage{xcolor}			  % macht Farbe
 \usepackage{subfig}
 \usepackage{hyperref}
+\usepackage{float}
+\usepackage{comment}
 
 \renewcommand{\figurename}{Abb.}
 
@@ -63,7 +65,6 @@ Das ist ein Abstract und hier wird abstrahiert.
 
 \section{Einleitung}
 
-
 \section{Theorie}
 
 	\subsection{Wellenausbreitung auf Kabeln}
@@ -79,7 +80,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 				U_{\pm}(x,t) = \sqrt{\frac{L*}{C*}} \cdot I_{\pm}(x,t) = Z \cdot I_{\pm}(x,t)
 			\end{displaymath}
 	
-			lässt sich analog zu dem Ohmschen Gesetz der Wellenwiderstand Z des Kabels definieren.
+			\noindent lässt sich analog zu dem Ohmschen Gesetz der Wellenwiderstand Z des Kabels definieren.
 			Wichtig zu beachten ist, dass es sich nicht um ein ohmschen Widerstand mit Verlusten
 			handelt, sondern um einen Wellenwiderstand welcher das Verhältnis zwischen
 			Spannung und Strom in dem Kabel angibt.
@@ -96,7 +97,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 				\rho = \frac{U_{-}(x,t)}{U_{+}(x,t)} = \frac{R_v - Z}{R_v + Z}
 			\end{displaymath}
 
-			Anhand dieser Formel lassen sich drei Spezialfälle des Reflexionskoeffizient erkennen:
+			\noindent Anhand dieser Formel lassen sich drei Spezialfälle des Reflexionskoeffizient erkennen:
 
 			\begin{enumerate}
 				\item Kurzschluss der Leitung: \\
@@ -113,7 +114,6 @@ Das ist ein Abstract und hier wird abstrahiert.
 						Es gild $R_v = Z \Rightarrow \rho = 0 $
 			\end{enumerate}
 
-		
 		\subsubsection{Mathematische Beschreibung einer Welle} \label{MathWell}
 			Wird durch ein Koaxialkabel eine sinusförmige Welle gesendet, kann diese am Kabelende reflektiert werden (siehe \ref{Reflexion}).
 			Wenn diese Wellen mit gleicher Frequenz und Amplitude sich überlagern entsteht eine stehende Welle, 
@@ -126,7 +126,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 			\end{equation*}
 			Die resultierende Welle hat (im Idealfall) Orte, an denen die Amplitude konstant 0 ist (sog. Knoten).
 			Im Fall eines Koaxialkabels kommt es jedoch zu Dämpfung, weshalb die Knoten endliche Werte ungleich Null annehmen.
-			In (\textcolor{blue}{HIER HYPERLINK ZU VERSUCH 2.1.2.2}) wird mithilfe eines sinusförmigen Signals eine stehende Welle im Koaxialkabel erzeugt.
+			In Abschnitt \ref{sec:Ausbreitungsgeschwindigkeit} wird mithilfe eines sinusförmigen Signals eine stehende Welle im Koaxialkabel erzeugt.
 			Das Ende wird je nach Resonanzbedingung offen gelassen oder kurzgeschlossen.\\
 			Bei offenem Kabel gilt:
 			\begin{equation*}
@@ -145,7 +145,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 			\end{equation*}
 			Durch lösen der eindimensionalen Wellengleichung und durch einsetzen von $L*$ und $C*$ ergibt sich zudem folgender Zusammenhang:
 			\begin{equation*}
-				v = \frac{1}{L*C*} = \frac{c}{\mu_r \epsilon_r}
+				v = \frac{1}{L*C*} = \frac{c}{\sqrt{\mu_r \epsilon_r}}
 			\label{Ausbreitungsgeschwindigkeit2}
 			\end{equation*}
 			Hierbei ist c die Lichtgeschwindigkeit, $\mu_r$ die Permeabilität und $\epsilon_r$ die Dielektrizitätskonstante.\\
@@ -170,34 +170,36 @@ Das ist ein Abstract und hier wird abstrahiert.
 		
 		\subsubsection{Messung des Wellenwiderstandes eines Koaxialkabels}
 
-		Zunächst wurde am Funktionsgenerator eine Frequenz $f = 200kHz$, eine Impulsbreite von $t = 20ns$ und eine Spannung von $U_{pp} = 10V$ eingestellt. Mittels T-Stecker
-		wird das 50m lange Koaxialkabel sowohl mit dem Funktionsgenerator als auch mit dem Oszilloskop verbunden. Des weiteren schließt man an das generatorferne Ende des Kabels
+		Zunächst wurde am Funktionsgenerator eine Frequenz $f = 200 \, kHz$, eine Impulsbreite von $t = 20ns$ und eine Spannung von $U_{pp} = 10V$ eingestellt. Mittels T-Stecker
+		wird das 50m lange Koaxialkabel sowohl mit dem Funktionsgenerator als auch mit dem Oszilloskop verbunden. 
+		Des weiteren schließt man an das generatorferne Ende des Kabels
 		ein Kohleschichtpotentiometer. \\
-		Nun wird der Widerstand solange verändert, bis keine Reflexion zu erkennen ist. Dieser Widerstand $R_v$ entspricht dann der Impedanz des Kabels. Der Widerstand wird mittels 
+		Nun wird der Widerstand solange verändert, bis keine Reflexion zu erkennen ist. Dieser Widerstand $R_v$ entspricht dann der Impedanz des Kabels. 
+		Der Widerstand wird mittels 
 		Voltmeter gemessen.\\
-		Bei der Messung ergab das ein Widerstand von $R_v = Z = (50,0 \pm 1,0)\Omega$. Der Fehler des Voltmeters wurde dem Datenblatt (\textcolor{blue}{HIER HYPERLINK ZU DATENBLATT}) entnommen.
+		Bei der Messung ergab das ein Widerstand von $R_v = Z = (50,0 \pm 1,0)\Omega$. 
+		Der Fehler des Voltmeters wurde dem Datenblatt (\href{https://www.physik.uni-wuerzburg.de/fileadmin/11000000/03_Studium/02_Bachelor/Grundpraktikum/_imported/fileadmin/11016800/Geraete/VOLTCRAFT_VC_150_DMM_de_en_fr_nl.pdf}{Multimeter V150}) entnommen.
 		Das ist mit dem Literaturwert von $Z = 50\Omega$ vereinbar.
 
 
-	\begin{figure}[h]
-		\centering
-		\subfloat[\centering max. Reflexion, $R_v = 2{,}8\Omega$]{
-			\includegraphics[angle=90, width=2cm]{../Images/ALL0013/F0013TEK.JPG}
-		}%
-		\qquad
-		\subfloat[\centering keine Reflexion, $R_v = 50\Omega$]{
-			\includegraphics[angle=90, width=2cm]{../Images/ALL0014/F0014TEK.JPG}
-		}%
-		\qquad
-		\subfloat[\centering wenig Reflexion, $R_v = 94{,}3\Omega$]{
-			\includegraphics[angle=90, width=2cm]{../Images/ALL0015/F0015TEK.JPG}
-		}%
-		\caption{Messung mit Kohleschichtpotentiometer}
-		\label{AnpassungKohle}
-	\end{figure}
+		\begin{figure}[h]
+			\centering
+			\subfloat[\centering max. Reflexion, $R_v = 2{,}8\Omega$]{
+				\includegraphics[angle=90, width=2cm]{../Images/ALL0013/F0013TEK.JPG}
+			}%
+			\qquad
+			\subfloat[\centering keine Reflexion, $R_v = 50\Omega$]{
+				\includegraphics[angle=90, width=2cm]{../Images/ALL0014/F0014TEK.JPG}
+			}%
+			\qquad
+			\subfloat[\centering wenig Reflexion, $R_v = 94{,}3\Omega$]{
+				\includegraphics[angle=90, width=2cm]{../Images/ALL0015/F0015TEK.JPG}
+			}%
+			\caption{Messung mit Kohleschichtpotentiometer}
+			\label{AnpassungKohle}
+		\end{figure}
 
-
-		Des Weiteren wurde die Anpassung für ein Wendelpotentiometer und eine Widerstandsdekade durchgeführt. Dabei ließ sich der reflektierte Impuls allerdings nicht 
+		\noindent Des Weiteren wurde die Anpassung für ein Wendelpotentiometer und eine Widerstandsdekade durchgeführt. Dabei ließ sich der reflektierte Impuls allerdings nicht 
 		vollständig unterdrücken wie in Abb. \ref{AnpassungWendel} und Abb. \ref{AnpassungDekade} zu erkennen ist.
 
 		\begin{figure}[h]
@@ -222,7 +224,7 @@ Das ist ein Abstract und hier wird abstrahiert.
    			 \label{AnpassungDekade}
 		\end{figure}
 
-		Die Tatsache, dass die Reflexion nicht vollständig zu unterdrücken ist, ist dem Aufbau des Wendelpotentiometer geschuldet. Dieses beinhaltet nämlich ein
+		\noindent Die Tatsache, dass die Reflexion nicht vollständig zu unterdrücken ist, ist dem Aufbau des Wendelpotentiometer geschuldet. Dieses beinhaltet nämlich ein
 		spiralförmig gewickelten Widerstandsdraht welcher bei Stromfluss, wie eine Spule, ein ein Magnetfeld aufbaut und eine Spannung entgegen der Stromrichtung
 		induziert. Das Wendelpotentiometer hat dadurch eine zusätzliche Impedanz.\\
 		\\ 
@@ -245,13 +247,11 @@ Das ist ein Abstract und hier wird abstrahiert.
 			\label{AnpassungKurz}
 		\end{figure}
 
-		\subsubsection{Kombinatiuon von Abschlusswiderständen am Anfang und Ende des Kabels}
+		\subsubsection{Kombination von Abschlusswiderständen am Anfang und Ende des Kabels}
 
 		Das Signal vom generatorferne Ende des Kabels wird nun auf CH I und das generatornahen Ende auf CH II gegeben. Des weiteren werden an den Kabelenden
 		Widerstände $R_a$ (generatornah) und $R_e$ (generatorfern) angeschlossen. Für $R = 0$ wird ein Kurzschlussstecker, für $R = Z$ ein $50\Omega-Stecker$ und 
 		für $R = \infty$ ein offenes Kabelende verwendet. Es werden alle möglichen Kombinationen gemessen.
-
-
 
 		\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
 		\centering
@@ -282,9 +282,9 @@ Das ist ein Abstract und hier wird abstrahiert.
 		\label{AbschlussKombi}                             %siehe Graphik: zum Zitieren
 		\end{table}
 
-		Wenn nun $R_a = 0\Omega$ wird hier das Signal am Kabelanfang reflektiert und invertiert und die Wellen überlagern sich (vgl. Abb. \ref{Kombi0}). 
+		\noindent Wenn nun $R_a = 0\Omega$ wird hier das Signal am Kabelanfang reflektiert und invertiert und die Wellen überlagern sich (vgl. Abb. \ref{Kombi0}). 
 		Wenn $R_a = Z$ ergibt sich mit dem Innenwiderstands des Funktionsgenerator 
-		(vgl. Anleitung Funktionsgenerator\textcolor{blue}{HIER HYPERLINK ZU Funktionsgenerator HANDBUCH}) ein effektiver Widerstand von $R_{a,eff} = 25\Omega$
+		(vgl. \href{https://www.physik.uni-wuerzburg.de/fileadmin/11000000/03_Studium/02_Bachelor/Grundpraktikum/_imported/fileadmin/11016800/Geraete/Agilent-33220.pdf}{Anleitung Funktionsgenerator}) ein effektiver Widerstand von $R_{a,eff} = 25\Omega$
 		wodurch eine Reflexion entsteht. Die Amplitude wird reduziert (vgl. Abb. \ref{Kombi50}).
 		Zu letzt wenn $R_a = \infty\Omega$ ergibt sich mit dem Funktionsgeneratorinnenwiderstand ein effektiver Widerstand $R_{a,eff} = 50\Omega$ was der Impedanz entspricht,
 		es gibt also keine Reflexion am Kabelanfang(vgl. Abb. \ref{KombiInf}).\\
@@ -351,7 +351,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 			\Delta t_{Verzögerungskabel} = (2,120 \pm 0,050) \, \mu s
 		\end{equation*}
 
-		Mithilfe der Länge L der Kabel lässt sich die Ausbreitungsgeschwindigkeit bestimmen:
+		\noindent Mithilfe der Länge L der Kabel lässt sich die Ausbreitungsgeschwindigkeit bestimmen:
 
 		\begin{equation*}
 			v = \frac{\Delta x}{\Delta t} = \frac{2 \cdot L}{\Delta t}
@@ -367,7 +367,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 			v_{Verzögerungskabel} = (459 \pm 12) \cdot 10^{3} \, \frac{m}{s}
 		\end{displaymath}
 
-		Die Fehler ergeben sich mithilfe Gaußscherfehlerfortpflanzung. Da die Messung der Länge des Verzögerungskabels ungenau war, wurde eine Messreihe von
+		\noindent Die Fehler ergeben sich mithilfe Gaußscherfehlerfortpflanzung. Da die Messung der Länge des Verzögerungskabels ungenau war, wurde eine Messreihe von
 		fünf Messungen erstellt, daraus ergab sich auch entsprechender Längenfehler. Die Länge des Koaxialkabels wurde von der Kabelbeschriftung abgelesen und
 		als fehlerfrei angenommen.
 
@@ -411,7 +411,7 @@ Das ist ein Abstract und hier wird abstrahiert.
 		Nun wird die Frequenz so variiert, dass am Anfang (generatornah) des Kabels eine Knoten bzw. ein lokales Minimum ist. Das wird zwei mal bei
 		offenem Ende getan (gemessen wird die Frequenz für $\frac{\lambda}{4}$, $\frac{3\cdot \lambda}{4}$) und einmal bei festem Ende 
 		(Frequenz für $\frac{\lambda}{2}$). Die jeweils gemessenen Frequenzen lassen sich in Tab. \ref{TabAusbreitungsgeschwindigkeit} entnehmen. 
-		Der Fehler der Frequenz wurde der Anleitung des Oszilloskops (\textcolor{blue}{HIER HYPERLINK EINFÜGEN ANLEITUNG OSZI}) entnommen.\\
+		Der Fehler der Frequenz wurde der Anleitung des Oszilloskops (\href{https://www.physik.uni-wuerzburg.de/fileadmin/11000000/03_Studium/02_Bachelor/Grundpraktikum/_imported/fileadmin/11016800/Geraete/Digitalspeicher-Oszilloskop-1001B.pdf}{Digitalspeicher-Oszilloskop 1001B}) entnommen.\\
 		Die Wellenlängen ergeben sich hierbei mithilfe von Gl. \ref{WellenlängeOffen} und Gl. \ref{WellenlängeGeschlossen}. Die Länge des Koaxialkabels
 		wurde von dessen Beschriftung abgelesen und als fehlerfrei angenommen.
 		Mithilfe der Frequenzen und Wellenlänge wurde dann nach Gl. \ref{Ausbreitungsgeschwindigkeit} die Ausbreitungsgeschwindigkeit bestimmt, welche ebenfalls
@@ -420,23 +420,23 @@ Das ist ein Abstract und hier wird abstrahiert.
 		$\epsilon_r$ berechnen lässt.
 
 		\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
-		\centering
-		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
+			\centering
+			\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
 
-		$\lambda$ (in m) 					&     $f$ (in Hz)  		&     v (in $\frac{m}{s}$) 	& $\epsilon_r$ \\
-		\hline
-  		 $\frac{\lambda}{4}$ 				&     ($937991,0 \pm 3,1$)		&     $(11724,888 \pm 0,039)\cdot 10^3$ 			& ---------- \\
+			$\lambda$ (in $m$) 					&     $f$ (in $Hz$)  		&     $v$ (in $10^6 \, \frac{m}{s}$) 	& $\epsilon_r$ \\
+			\hline
+			$\frac{\lambda}{4}$ 				&     ($937991,0 \pm 3,1$)		&     $(187,598200 \pm 0,000625)$ 			& $(2,553783 \pm 0,000017)$ \\
 
-		 $\frac{\lambda}{2}$ 				&     ($1891980,0 \pm 4,4$)	&     $(47299,50 \pm 0,11)\cdot 10^3$ 			& ---------- \\
+			$\frac{\lambda}{2}$ 				&     ($1891980,0 \pm 4,4$)	&     $(189,19800 \pm 0,00044)$ 			& $(2,510778 \pm 0,000012)$ \\
 
-		 $\frac{3 \cdot \lambda}{4}$ 		&     ($2874970,0 \pm 5,4$) 		&     $(107811,38 \pm 0,20)\cdot 10^3$ 			& ---------- \\
+			$\frac{3 \cdot \lambda}{4}$ 		&     ($2874970,0 \pm 5,4$) 		&     $(191,66467 \pm 0,00036)$ 			& $(2,4465680 \pm 0,0000092)$ \\
 
-		\end{tabular*}  
-		\caption{Ausbreitungsgeschwindigkeit im Koaxialkabel} 			   %siehe Graphik: Beschriftung
-		\label{TabAusbreitungsgeschwindigkeit}                             %siehe Graphik: zum Zitieren
+			\end{tabular*}  
+			\caption{Ausbreitungsgeschwindigkeit im Koaxialkabel} 			   %siehe Graphik: Beschriftung
+			\label{TabAusbreitungsgeschwindigkeit}                             %siehe Graphik: zum Zitieren
 		\end{table}
-
-		\textcolor{red}{HIER NOCH VERGLEICH GEMESSENE WERTE MIT LITERATURWERTEN. KABELTYP RG213/U GOOGEL UND VGL SHEESH}
+		\textcolor{red}{HIER NOCH VERGLEICH GEMESSENE WERTE MIT LITERATURWERTEN. KABELTYP RG213/U GOOGEL UND VGL SHEESH}\\
+		\textcolor{red}{FORMAT TABELLE ÜBERDENKEN}
 
 		\subsubsection{Bestimmung der Dämpfung des Signals im Koaxialkabel}
 			Wie bereits in Abschnitt~\ref{sec:Ausbreitungsgeschwindigkeit} angedeutet ist der ohmsche Widerstand des Koaxialkabels nicht vernachlässigbar,
@@ -452,24 +452,23 @@ Das ist ein Abstract und hier wird abstrahiert.
 			\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
 				\centering
 				\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
-				$\lambda$ (in $m$) 					& $U(x)$ (in $V$) & $D$ (in $dB$)\\
+				$\lambda$ (in $m$) 					& $U(x)$ (in $10^{-3} \, V$) & $D$ (in $dB$)\\
 				\hline
-				$\frac{\lambda}{4}$ 				& $(14,20 \pm 0,45)\cdot 10^{-3}$ & $(21,0 \pm 1,4)$\\
-				$\frac{\lambda}{2}$ 				& $(21,8 \pm 1,1)\cdot 10^{-3}$ & $(17,3 \pm 1,4)$\\
-				$\frac{3 \cdot \lambda}{4}$ 		& $(26,4 \pm 1,1)\cdot 10^{-3}$ & $(15,7 \pm 1,4)$\\
+				$\frac{\lambda}{4}$ 				& $(14,20 \pm 0,45)$ & $(21,0 \pm 1,4)$\\
+				$\frac{\lambda}{2}$ 				& $(21,8 \pm 1,1)$ & $(17,3 \pm 1,4)$\\
+				$\frac{3 \cdot \lambda}{4}$ 		& $(26,4 \pm 1,1)$ & $(15,7 \pm 1,4)$\\
 				\end{tabular*}  
 				\caption{Dämpfung im Koaxialkabel} 			   %siehe Graphik: Beschriftung
 				\label{TabU-D}                             %siehe Graphik: zum Zitieren
 			\end{table}
 			\\
-			\begin{figure}[h]
+			\begin{figure}[H]
 				\centering
 				\includegraphics[width=6cm]{../Images/DoverF.png}
 				\caption{Dämpfung in Abh. der Frequenz}
 				\label{Img:D-F}
 			\end{figure}
-
-
+			\noindent In Abbildung~\ref{Img:D-F} ist deutlich zu erkennen, dass das Dämpfungsmaß von der Frequenz abhängt.
 
 	\subsection{Messung der Lichtgeschwindigkeit}
 
@@ -513,9 +512,9 @@ Des weiteren wurde die Ausbreitungsgeschwindigkeit in dem Koaxialkabel mittels L
 \end{equation*}
  Die Ausbreitungsgeschwindigkeit wurde zudem auch noch mithilfe von stehenden Wellen für drei unterschiedliche Wellenlängen bestimmt:
  \begin{equation*}
-	v_{\frac{\lambda}{4}} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \cdot 10^6 \frac{m}{s} 
-	v_{\frac{\lambda}{2}} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \cdot 10^6 \frac{m}{s} 
-	v_{\frac{3\lambda}{4}} = (\textcolor{red}{WERT} \pm \textcolor{red}{FEHLER}) \cdot 10^6 \frac{m}{s} 
+	v_{\frac{\lambda}{4}} = (187,59820 \pm 0,00063) \cdot 10^6 \frac{m}{s}
+	v_{\frac{\lambda}{2}} = (189,19800 \pm 0,00044) \cdot 10^6 \frac{m}{s}
+	v_{\frac{3\lambda}{4}} = (191,66467 \pm 0,00036) \cdot 10^6 \frac{m}{s} 
  \end{equation*}
  \textcolor{red}{EVENTUELL EQUATION FIXEN WEIL ALLES IN EINER ZEILE}\\
 Bei der Messung der mittels stehender Welle ist spannend zu beobachten, dass hier der Effekt der Dispersion merklich zum tragen kommt.
@@ -526,7 +525,7 @@ Zudem wurde die Ausbreitungsgeschwindigkeit in einem Verzögerungskabel mithilfe
 \end{equation*}
 Ebenfalls durch Laufzeitmessung für verscheidene Distanzen wurde die Lichtgeschwindigkeit gemessen. Es ergibt sich ein Wert von
 \begin{equation*}
-	c = (293 \pm 16)\cdot 10^6 \frac{m}{s}
+	c = (293 \pm 16)\cdot 10^6 \, \frac{m}{s}
 \end{equation*}
 welcher mit dem Literaturwert überein stimmt.
 \begin{thebibliography}{}    %so wird das Literaturverzeicnis erstellt
