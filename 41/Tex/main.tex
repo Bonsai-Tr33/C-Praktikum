@@ -59,12 +59,23 @@
 \noindent Versuchsdurchführung: 06. November 2025\\% Datum ändern!
 \noindent Protokollabgabe: 20. November 2025% Datum ändern!
 \vspace{1em}
-Das ist ein Abstract und hier wird abstrahiert.
+
+	An einem Koaxialkabel des Typs RG213/U wird durch Reflexionsunterdrückung der Wellenwiderstand $Z = (50,0 \pm 1,0)\Omega$ bestimmt. Das Reflexionsverhalten wird durch benutzen
+	verschiedener Abschlusswiderstände untersucht. An selbigem Kabel und an einem Verzögerungskabel wird durch Laufzeitmessung die Ausbreitungsgeschwindigkeit
+	von Signalen gemessen und an dem RG213/U Koaxialkabel auch mittels stehender Wellen. Bei der Methode der stehenden Wellen lässt sich die Dispersion der 
+	Ausbreitungsgeschwindigkeit und die Dämpfung im Kabel beobachten. Des weiteren wurde ebenfalls durch Laufzeitmessung die Lichtgeschwindigkeit bestimmt welche
+	ein Wert von $c = (293 \pm 16)\cdot 10^6 \frac{m}{s}$ ergab.
 \end{abstract}
 }]
 
 \section{Einleitung}
 
+	Das Koaxialkabel hat sich aufgrund seiner besonderen elektromagnetischen Eigenschaften in der Informationsübertragung als sinnvolles Medium etabliert.
+	Durch den Aufbau des Kabels mit Innenleiter, Dielektrikum und Außenleiter wird das elektromagnetische Feld in Ausbreitungsrichtung verringert bzw. komplett
+	unterdrückt, was zu einer verringerten Dämpfung, Dispersion und auch Reflexion führt, was eine stabile und störungsfreie Signalübertragung ermöglicht.\\
+	Diese Arbeit beschäftigt sich damit, diese Eigenschaften von Koaxialkabel zu genauer beleuchten, deren Hintergrund zu verstehen und auch ein Umgang mit Koaxialkabeln
+	zu erlernen.\\
+	Des weiteren wird eine zentrale Naturkonstante, die Lichtgeschwindigkeit, gemessen und diskutiert.
 \section{Theorie}
 
 	\subsection{Wellenausbreitung auf Kabeln}
@@ -423,20 +434,25 @@ Das ist ein Abstract und hier wird abstrahiert.
 			\centering
 			\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
 
-			$\lambda$ (in $m$) 					&     $f$ (in $Hz$)  		&     $v$ (in $10^6 \, \frac{m}{s}$) 	& $\epsilon_r$ \\
+			$\lambda$ (in $m$) 					&     $f$ (in $Hz$)  			&     $v$ (in $10^6 \, \frac{m}{s}$) 		& $\epsilon_r$ \\
 			\hline
 			$\frac{\lambda}{4}$ 				&     ($937991,0 \pm 3,1$)		&     $(187,598200 \pm 0,000625)$ 			& $(2,553783 \pm 0,000017)$ \\
 
-			$\frac{\lambda}{2}$ 				&     ($1891980,0 \pm 4,4$)	&     $(189,19800 \pm 0,00044)$ 			& $(2,510778 \pm 0,000012)$ \\
+			$\frac{\lambda}{2}$ 				&     ($1891980,0 \pm 4,4$)		&     $(189,19800 \pm 0,00044)$ 			& $(2,510778 \pm 0,000012)$ \\
 
-			$\frac{3 \cdot \lambda}{4}$ 		&     ($2874970,0 \pm 5,4$) 		&     $(191,66467 \pm 0,00036)$ 			& $(2,4465680 \pm 0,0000092)$ \\
+			$\frac{3 \cdot \lambda}{4}$ 		&     ($2874970,0 \pm 5,4$) 	&     $(191,66467 \pm 0,00036)$ 			& $(2,4465680 \pm 0,0000092)$ \\
 
 			\end{tabular*}  
 			\caption{Ausbreitungsgeschwindigkeit im Koaxialkabel} 			   %siehe Graphik: Beschriftung
 			\label{TabAusbreitungsgeschwindigkeit}                             %siehe Graphik: zum Zitieren
 		\end{table}
-		\textcolor{red}{HIER NOCH VERGLEICH GEMESSENE WERTE MIT LITERATURWERTEN. KABELTYP RG213/U GOOGEL UND VGL SHEESH}\\
 		\textcolor{red}{FORMAT TABELLE ÜBERDENKEN}
+		Vergleicht man nun die gemessene Ausbreitungsgeschwindigkeit mit den Literaturwerten des RG214/U Kabels, zeigt sich, dass dieses Koaxialkabel
+		eine Ausbreitungsgeschwindigkeit von $~66\%$\\ der Lichtgeschwindigkeit besitzt, während nach unsere Messungen es ~63\%-64\% der Lichtgeschwindigkeit
+		sind. Die Begründung dieser Abweichung liegt in größtenteils an der Ungenauigkeit der Bestimmung der Resonanzfrequenz. Diese Unsicherheit rührt daher, 
+		dass der Knotenpunkt durch Dämpfung nicht ein Nullpunkt, sondern eher ein kontinuierliches lokales Minimunm ist. Dadurch lässt sich die genaue Resonanzfrequenz 
+		nicht gut einstellen. 
+		\textcolor{red}{Hier noch bissi ausarbeiten, mach ich morgen}
 
 		\subsubsection{Bestimmung der Dämpfung des Signals im Koaxialkabel}
 			Wie bereits in Abschnitt~\ref{sec:Ausbreitungsgeschwindigkeit} angedeutet ist der ohmsche Widerstand des Koaxialkabels nicht vernachlässigbar,
@@ -531,8 +547,10 @@ welcher mit dem Literaturwert überein stimmt.
 \begin{thebibliography}{}    %so wird das Literaturverzeicnis erstellt
 \bibitem{Lichtgeschwindigkeit}
 	https://physics.nist.gov/cgi-bin/cuu/Value?c, besucht am 18.11.2025 um 16.29 Uhr
-\bibitem{b} 
-
+\bibitem{Koaxialkabel}
+	https://kabel-kusch.de/storage/276/01K4CBCD32TZ3J5E6MXYEJXR9E.pdf, besucht am 20.11.2025 um 00.53 Uhr
+\bibitem{Koaxialkabel2}
+	https://docs.rs-online.com/75d1/A700000011339821.pdf, besucht am 20.11.2025 um 00.59 Uhr
 \end{thebibliography}
 
 \end{document}
