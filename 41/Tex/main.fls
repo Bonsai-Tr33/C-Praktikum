@@ -1018,9 +1018,11 @@ INPUT ../Images/DoverF.png
 INPUT ../Images/DoverF.png
 INPUT ../Images/DoverF.png
 INPUT ../Images/DoverF.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aeb10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aeb10.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmb10.tfm
+INPUT ../Images/Screenshot from 2025-11-20 16-54-51.png
+INPUT ../Images/Screenshot from 2025-11-20 16-54-51.png
+INPUT ../Images/Screenshot from 2025-11-20 16-54-51.png
+INPUT ../Images/Screenshot from 2025-11-20 16-54-51.png
+INPUT ../Images/Screenshot from 2025-11-20 16-54-51.png
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
