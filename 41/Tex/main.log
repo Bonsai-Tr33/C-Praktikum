@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  20 NOV 2025 10:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  20 NOV 2025 10:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -774,26 +774,21 @@ Underfull \hbox (badness 1371) in paragraph at lines 525--530
  []
 
 
-Overfull \hbox (217.677pt too wide) detected at line 538
-\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = (187\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 59820 \OMS/cmsy/m/n/10 ^^F \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 00063) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[][]\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = (189\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 19800 \OMS/cmsy/m/n/10 ^^F \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 00044) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[][]\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = (191\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 66467 \OMS/cmsy/m/n/10 ^^F \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 00036) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[][]
- []
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 544.
+LaTeX Warning: Command \" invalid in math mode on input line 547.
 
 Missing character: There is no ö in font cmr7!
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 []\T1/aer/m/n/10 https://physics.nist.gov/cgi-bin/cuu/Value?c,
  []
 
 
-Overfull \hbox (33.3799pt too wide) in paragraph at lines 555--556
+Overfull \hbox (33.3799pt too wide) in paragraph at lines 558--559
 []\T1/aer/m/n/10 https://docs.rs-online.com/75d1/A700000011339821.pdf,
  []
 
 
-Overfull \hbox (71.51826pt too wide) in paragraph at lines 557--558
+Overfull \hbox (71.51826pt too wide) in paragraph at lines 560--561
 []\T1/aer/m/n/10 https://www.auer-kunststofftechnik.de/pdf/Technisch.Datenblatt 
  []
 
@@ -818,7 +813,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10656b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main.pdf (6 pages, 2005420 bytes).
+Output written on main.pdf (6 pages, 2004673 bytes).
 PDF statistics:
  327 PDF objects out of 1000 (max. 8388607)
  251 compressed objects within 3 object streams
