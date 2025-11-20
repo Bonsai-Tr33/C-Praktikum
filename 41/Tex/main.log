@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  20 NOV 2025 13:39
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  20 NOV 2025 17:03
->>>>>>> a2f921f55d758d863c1fe933570d0a069be4a827
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  20 NOV 2025 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,47 +740,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 484--506
 <../Images/Screenshot from 2025-11-20 16-54-51.png, id=162, 444.66125pt x 264.99pt>
 File: ../Images/Screenshot from 2025-11-20 16-54-51.png Graphic file (type png)
 <use ../Images/Screenshot from 2025-11-20 16-54-51.png>
-Package pdftex.def Info: ../Images/Screenshot from 2025-11-20 16-54-51.png  used on input line 514.
+Package pdftex.def Info: ../Images/Screenshot from 2025-11-20 16-54-51.png  used on input line 518.
 (pdftex.def)             Requested size: 161.16562pt x 96.04327pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--536
+[]\T1/aer/m/n/10 Eine Hochleistungs-LED sen-det sehr kur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--536
+\T1/aer/m/n/10 ze, ro-te Lich-pul-se von ei-ner Brei-te von
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--536
+\T1/aer/m/n/10 20ns aus. Die-se Si-gna-le wer-den nach hin-
+ []
+
+
+Underfull \hbox (badness 5622) in paragraph at lines 522--536
+\T1/aer/m/n/10 und zu-rück-lau-fen der Mess-strecke s in >>>>>>>
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 522--536
+\T1/aer/m/n/10 a2f921f55d758d863c1fe933570d0a069be4a827 Span-
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 522--536
+\T1/aer/m/n/10 nungspul-se um-ge-wan-delt, wel-che am Os-zil-lo-skop
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 522--536
+\T1/aer/m/n/10 Die Lauf-zeit wird für 9 ver-schie-de-ne Licht-we-ge
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 522--536
+\T1/aer/m/n/10 steht. Dar-aus lässt sich die Licht-ge-schwin-dig-keit
+ []
+
 [6 <../Images/DoverF.png> <../Images/Screenshot from 2025-11-20 16-54-51.png>]
-Underfull \hbox (badness 3219) in paragraph at lines 541--544
+Underfull \hbox (badness 3219) in paragraph at lines 546--549
 []\T1/aer/m/n/10 Der Best-wert stimmt mit dem Li-te-ra-tur-wert
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 547--552
+Underfull \hbox (badness 1371) in paragraph at lines 552--557
 \T1/aer/m/n/10 Der Wel-len-wi-der-stand ei-nes Ko-axi-al-ka-bels wur-de
  []
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 569.
+LaTeX Warning: Command \" invalid in math mode on input line 574.
 
 Missing character: There is no ö in font cmr7!
-<<<<<<< HEAD
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 572.
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 583.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/ae/t1aett.fd
-=======
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 578.
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
->>>>>>> a2f921f55d758d863c1fe933570d0a069be4a827
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 578--579
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
 [][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--581
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
 [][]$\T1/aett/m/n/10 https : / / docs . rs-[]online . com / 75d1 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
 [][]$\T1/aett/m/n/10 https : / / www . auer-[]kunststofftechnik . de /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
 \T1/aett/m/n/10 pdf / Technisch . Datenblatt % 20PE % 20-[]LD %
  []
 
@@ -798,27 +829,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 16950 strings out of 476025
- 324632 string characters out of 5790016
+ 16956 strings out of 476025
+ 324997 string characters out of 5790016
  1878388 words of memory out of 5000000
- 37024 multiletter control sequences out of 15000+600000
- 554800 words of font info for 118 fonts, out of 8000000 for 9000
+ 37029 multiletter control sequences out of 15000+600000
+ 552981 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10645b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (7 pages, 2022310 bytes).
-=======
- 16766 strings out of 478287
- 319213 string characters out of 5849289
- 767993 words of memory out of 5000000
- 34590 multiletter control sequences out of 15000+600000
- 509953 words of font info for 112 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 108i,20n,106p,10656b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (7 pages, 2054852 bytes).
->>>>>>> a2f921f55d758d863c1fe933570d0a069be4a827
+Output written on main.pdf (7 pages, 2055544 bytes).
 PDF statistics:
  350 PDF objects out of 1000 (max. 8388607)
  270 compressed objects within 3 object streams
