@@ -13,9 +13,15 @@ from pathlib import Path
 def SoP(f, l, Df=0):
     return f * l, l * Df
 
+'''
 # method for frequency error calculation:
 def Df (f, rel, count):
     return rel * f + count
+'''
+
+def Df(F):
+    x = statistics.median(F)
+    return np.sqrt(1/(len(F)*(len(F)-1)) * sum([(xi-x)**2 for xi in F]))
 
 # method for Damping calculation
 def Damping(U, U0, DU=0, DU0=0):
@@ -50,6 +56,10 @@ WR4 = [] # WR for λ/4
 WR34 = [] # WR for 3λ/4
 WR2 = [] # WR for λ/2
 
+F4 = [] # frequencies for λ/4 for error calculation
+F34 = [] # frequencies for 3λ/4 for error calculation
+F2 = [] # frequencies for λ/2 for error calculation
+'''
 # error of f measurement: user guide, page 159
 DfRel = 51 * 10**(-6)
 DfCount = 1
@@ -63,34 +73,45 @@ for i in range(len(WavelengthRatio)):
         WR2.append([Frequency[i], Df(Frequency[i], DfRel, DfCount), Upp[i], div[i]])
     else:
         print(f'WavelengthRatio Issue: {i}')
+'''
+for i in range(len(WavelengthRatio)):
+    if WavelengthRatio[i] == 'λ/4':
+        WR4.append([Frequency[i], Upp[i], div[i]])
+        F4.append(Frequency[i])
+    elif WavelengthRatio[i] == '3λ/4':
+        WR34.append([Frequency[i], Upp[i], div[i]])
+        F34.append(Frequency[i])
+    elif WavelengthRatio[i] == 'λ/2':
+        WR2.append([Frequency[i], Upp[i], div[i]])
+        F2.append(Frequency[i])
+    else:
+        print(f'WavelengthRatio Issue: {i}')
 
-# Sanity check: (uncomment first argument in next line)
-# print(WR4) #should print in position 0: [939991, 48.939541, 0.0136, 0.002]
 
-# calculate wavelength from length of cable
-l = 50
-lam4 = 4*l
-lam34 = 4/3 * l
-lam2 = 2 * l
+Df4 = Df(F4)
+f4 = statistics.median(F4)
 
-# calculating the medians and errors
-f4 = statistics.median([x[0] for x in WR4])
-Df4 = np.sqrt(sum([x[1] for x in WR4])) / len([x[1] for x in WR4])
-f34 = statistics.median([x[0] for x in WR34])
-Df34 = np.sqrt(sum([x[1] for x in WR34])) / len([x[1] for x in WR34])
-f2 = statistics.median([x[0] for x in WR2])
-Df2 = np.sqrt(sum([x[1] for x in WR2])) / len([x[1] for x in WR2])
+Df34 = Df(F34)
+f34 = statistics.median(F34)
 
-# calculating speed of propagation for each frequency
-SoP4 = SoP(f4, lam4, Df=Df4)
-SoP34 = SoP(f34, lam34, Df=Df34)
-SoP2 = SoP(f2, lam2, Df=Df2)
+Df2 = Df(F2)
+f2 = statistics.median(F2)
 
 print(f'λ/4: f = {f4} ± {Df4} Hz')
 print(f'3λ/4: f = {f34} ± {Df34} Hz')
 print(f'λ/2: f = {f2} ± {Df2} Hz')
 
 print('---------------------------------')
+# calculate wavelength from length of cable
+l = 50
+lam4 = 4*l
+lam34 = 4/3 * l
+lam2 = 2 * l
+
+# calculating speed of propagation for each frequency
+SoP4 = SoP(f4, lam4, Df=Df4)
+SoP34 = SoP(f34, lam34, Df=Df34)
+SoP2 = SoP(f2, lam2, Df=Df2)
 
 print(f'λ/4: SoP = {SoP4[0]} ± {SoP4[1]} m/s')
 print(f'3λ/4: SoP = {SoP34[0]} ± {SoP34[1]} m/s')
@@ -112,8 +133,6 @@ for i in range(len(WavelengthRatio)):
         Upp2.append([Upp[i], 0.5 * div[i]])
     else:
         print(f'Upp Issue: {i}')
-
-#print(Upp4)
 
 # Calculate median voltage U and error DU for each wavelength ratio
 U4 = statistics.median([x[0] for x in Upp4])
@@ -170,7 +189,7 @@ plt.xlim(830000, 3000100)
 plt.tight_layout()
 
 # plot location
-# plt.savefig(img_path / 'DoverF.png')
+plt.savefig(img_path / 'DoverF.png')
 # plt.show() # shows plot every run of the code, used for debugging
 
 er4 = e_r(299792458, SoP4[0], SoP4[1])

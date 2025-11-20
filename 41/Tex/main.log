@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  20 NOV 2025 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  20 NOV 2025 11:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -745,11 +745,14 @@ Package pdftex.def Info: ../Images/ALL0036/F0036TEK.png  used on input line 407.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (145.76428pt too wide) in alignment at lines 435--445
+Overfull \hbox (60.76402pt too wide) in alignment at lines 435--445
 [] [] [] []
  []
 
-[4 <../Images/ALL0022/F0022TEK.JPG> <../Images/ALL0024/F0024TEK.JPG> <../Images/ALL0025/F0025TEK.JPG> <../Images/ALL0026/F0026TEK.JPG> <../Images/ALL0027/F0027TEK.JPG> <../Images/ALL0028/F0028TEK.JPG> <../Images/ALL0029/F0029TEK.JPG> <../Images/ALL0030/F0030TEK.JPG> <../Images/ALL0031/F0031TEK.JPG> <../Images/ALL0032/F0032TEK.JPG>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <../Images/ALL0022/F0022TEK.JPG> <../Images/ALL0024/F0024TEK.JPG> <../Images/ALL0025/F0025TEK.JPG> <../Images/ALL0026/F0026TEK.JPG> <../Images/ALL0027/F0027TEK.JPG> <../Images/ALL0028/F0028TEK.JPG> <../Images/ALL0029/F0029TEK.JPG> <../Images/ALL0030/F0030TEK.JPG> <../Images/ALL0031/F0031TEK.JPG> <../Images/ALL0032/F0032TEK.JPG>]
 <../Images/DoverF.png, id=152, 462.528pt x 346.896pt>
 File: ../Images/DoverF.png Graphic file (type png)
 <use ../Images/DoverF.png>
@@ -765,10 +768,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 468--490
 
  []
 
-
-LaTeX Warning: Reference `AufbauLichtgeschwindigkeit' on page 5 undefined on input line 495.
-
 [5 <../Images/ALL0033/F0033TEK.JPG> <../Images/ALL0037/F0037TEK.JPG> <../Images/ALL0034/F0034TEK.png> <../Images/ALL0035/F0035TEK.png> <../Images/ALL0036/F0036TEK.png> <../Images/DoverF.png>]
+
+LaTeX Warning: Reference `AufbauLichtgeschwindigkeit' on page 6 undefined on input line 495.
+
+
 Underfull \hbox (badness 3219) in paragraph at lines 519--522
 []\T1/aer/m/n/10 Der Best-wert stimmt mit dem Li-te-ra-tur-wert
  []
@@ -818,15 +822,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16946 strings out of 476025
- 324573 string characters out of 5790016
+ 16947 strings out of 476025
+ 324582 string characters out of 5790016
  1886388 words of memory out of 5000000
- 37022 multiletter control sequences out of 15000+600000
+ 37023 multiletter control sequences out of 15000+600000
  554800 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10645b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (6 pages, 2021096 bytes).
+Output written on main.pdf (6 pages, 2021040 bytes).
 PDF statistics:
  339 PDF objects out of 1000 (max. 8388607)
  261 compressed objects within 3 object streams
