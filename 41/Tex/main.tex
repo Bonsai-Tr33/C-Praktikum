@@ -342,7 +342,7 @@
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[angle=90, width=3.5cm]{../Images/ALL0033/F0033TEK.JPG}
+			\includegraphics[angle=90, width=0.5\linewidth]{../Images/ALL0033/F0033TEK.JPG}
 			\caption{Messung der Laufzeit, Koaxialkabel}
 			\label{ZeitKoax}
 		\end{figure}
@@ -351,9 +351,9 @@
 			\Delta t_{Koaxialkabel} = (520 \pm 50) \, ns 
 		\end{equation*}
 
-		\begin{figure}[h]
+		\begin{figure}[H]
 			\centering
-			\includegraphics[angle=90, width=3.5cm]{../Images/ALL0037/F0037TEK.JPG}
+			\includegraphics[angle=90, width=0.5\linewidth]{../Images/ALL0037/F0037TEK.JPG}
 			\caption{Messung der Laufzeit, Verzögerungskabel}
 			\label{ZeitVerz}
 		\end{figure}
@@ -395,15 +395,15 @@
 		\begin{figure}[H]
 			\centering
 			\subfloat[\centering konst. Interferenz \label{321Konst}]{
-				\includegraphics[width=2cm]{../Images/ALL0034/F0034TEK.png}
+				\includegraphics[width=0.4\linewidth]{../Images/ALL0034/F0034TEK.png}
 			}%
 			\qquad
 			\subfloat[\centering asym. Amplitude \label{321Asym}]{
-				\includegraphics[width=2cm]{../Images/ALL0035/F0035TEK.png}
+				\includegraphics[width=0.4\linewidth]{../Images/ALL0035/F0035TEK.png}
 			}%
 			\qquad
 			\subfloat[\centering dest. Interferenz \label{321Dest}]{
-				\includegraphics[width=2cm]{../Images/ALL0036/F0036TEK.png}
+				\includegraphics[width=0.4\linewidth]{../Images/ALL0036/F0036TEK.png}
 			}%
 			\caption{Modellversuch stehende Wellen}
 			\label{AnpassungKohle}
@@ -432,22 +432,38 @@
 
 		\begin{table}[H]          %so funktionieren die Tabellen in LaTeX
 			\centering
-			\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c|c}
+			\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c}
 
-			$\lambda$ (in $m$) 					&     $f$ (in $10^{3} \, Hz$)	&     $v$ (in $10^6 \, \frac{m}{s}$)	& $\epsilon_r$ \\
+			$\lambda$ (in $m$) 					&     $f$ (in $10^{3} \, Hz$)	&     $v$ (in $10^6 \, \frac{m}{s}$)	\\
 			\hline
-			$\frac{\lambda}{4}$ 				&     ($938,0 \pm 1,9$)			&     $(187,60 \pm 0,38)$ 				& $(2,554 \pm 0,010)$ \\
+			$\frac{\lambda}{4}$ 				&     ($938,0 \pm 1,9$)			&     $(187,60 \pm 0,38)$ 				\\
 
-			$\frac{\lambda}{2}$ 				&     ($1892,0 \pm 5,2$)	 	&     $(189,20 \pm 0,52)$ 				& $(2,511 \pm 0,014)$ \\
+			$\frac{\lambda}{2}$ 				&     ($1892,0 \pm 5,2$)	 	&     $(189,20 \pm 0,52)$ 				\\
 
-			$\frac{3 \cdot \lambda}{4}$ 		&     ($2875,0 \pm 1,9$) 		&     $(191,66 \pm 0,13)$ 				& $(2,4466 \pm  0,0033)$ \\
+			$\frac{3 \cdot \lambda}{4}$ 		&     ($2875,0 \pm 1,9$) 		&     $(191,66 \pm 0,13)$ 				\\
 
 			\end{tabular*}  
 			\caption{Ausbreitungsgeschwindigkeit im Koaxialkabel} 			   %siehe Graphik: Beschriftung
 			\label{TabAusbreitungsgeschwindigkeit}                             %siehe Graphik: zum Zitieren
 		\end{table}
-		\textcolor{red}{FORMAT TABELLE ÜBERDENKEN} \\
-		Vergleicht man nun die gemessene Ausbreitungsgeschwindigkeit mit den Literaturwerten des RG214/U Kabels, zeigt sich, dass dieses Koaxialkabel
+		\noindent Für die Elektrizitätskonstante ergibt sich:
+		\begin{table}[H]          %so funktionieren die Tabellen in LaTeX
+			\centering
+			\begin{tabular}{c|c}
+
+			$\lambda$ (in $m$) & $\epsilon_r$ \\
+			\hline
+			$\frac{\lambda}{4}$ & $(2,554 \pm 0,010)$ \\
+
+			$\frac{\lambda}{2}$ & $(2,511 \pm 0,014)$ \\
+
+			$\frac{3 \cdot \lambda}{4}$ & $(2,4466 \pm  0,0033)$ \\
+			\end{tabular}  
+			\caption{Elektrizitätskonstante in Wellenlängenabhängigkeit} 			   %siehe Graphik: Beschriftung
+			\label{TabElektrizitaetskonstante}                             %siehe Graphik: zum Zitieren
+		\end{table}
+
+		\noindent Vergleicht man nun die gemessene Ausbreitungsgeschwindigkeit mit den Literaturwerten des RG214/U Kabels, zeigt sich, dass dieses Koaxialkabel
 		eine Ausbreitungsgeschwindigkeit von $~66\%$\\ der Lichtgeschwindigkeit besitzt\cite{Koaxialkabel1}, während nach unsere Messungen es ~63\%-64\% der Lichtgeschwindigkeit
 		sind. Die Begründung dieser Abweichung liegt in größtenteils an der Ungenauigkeit der Bestimmung der Resonanzfrequenz. Diese Unsicherheit rührt daher, 
 		dass der Knotenpunkt durch Dämpfung nicht ein Nullpunkt, sondern eher ein kontinuierliches lokales Minimunm ist. Dadurch lässt sich die genaue Resonanzfrequenz 
@@ -484,7 +500,7 @@
 			\\
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=6cm]{../Images/DoverF.png}
+				\includegraphics[width=0.8\linewidth]{../Images/DoverF.png}
 				\caption{Dämpfung in Abh. der Frequenz}
 				\label{Img:D-F}
 			\end{figure}
