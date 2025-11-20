@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  20 NOV 2025 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  20 NOV 2025 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,21 +751,46 @@ LaTeX Font Info:    Trying to load font information for T1+aett on input line 57
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 578--579
-[][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
+[][]$\T1/aett/m/n/10 https : / / www . physik . uni-[]wuerzburg .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+\T1/aett/m/n/10 de / fileadmin / 11000000 / 03 _ Studium / 02 _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+\T1/aett/m/n/10 Bachelor / Grundpraktikum / _imported /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+\T1/aett/m/n/10 fileadmin / 11016800 / Modulbeschreibungen /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+\T1/aett/m/n/10 C-[]Modul / Versuch _ 41 _ ueberarbeitet . pdf$[]\T1/aer/m/n/10 , be-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 580--581
+[][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
 [][]$\T1/aett/m/n/10 https : / / docs . rs-[]online . com / 75d1 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 [][]$\T1/aett/m/n/10 https : / / www . auer-[]kunststofftechnik . de /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 \T1/aett/m/n/10 pdf / Technisch . Datenblatt % 20PE % 20-[]LD %
  []
 
@@ -779,18 +804,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16766 strings out of 478287
- 319213 string characters out of 5849289
+ 16768 strings out of 478287
+ 319232 string characters out of 5849289
  767993 words of memory out of 5000000
- 34590 multiletter control sequences out of 15000+600000
+ 34591 multiletter control sequences out of 15000+600000
  509953 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10656b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (7 pages, 2054852 bytes).
+Output written on main.pdf (7 pages, 2056789 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
  280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
