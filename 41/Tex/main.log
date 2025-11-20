@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  20 NOV 2025 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  20 NOV 2025 13:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -606,7 +606,7 @@ Underfull \hbox (badness 2096) in paragraph at lines 238--245
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 238--245
-\T1/aer/m/n/10 Wird an-stel-le des $\OT1/cmr/m/n/10 50
+\T1/aer/m/n/10 Wird an-stel-le des $\OT1/cmr/m/n/10 50 
 $\T1/aer/m/n/10 -Steckers ein Kurz-
  []
 
@@ -672,6 +672,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \hbox (badness 10000) in paragraph at lines 339--342
 \T1/aer/m/n/10 Um die Aus-brei-tungs-ge-schwin-dig-keit in ei-nem
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 339--342
+\T1/aer/m/n/10 des Os-zil-lo-skops ge-mes-sen. Die ge-mes-se-nen Zei-
  []
 
 
@@ -793,7 +798,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  108i,20n,106p,10645b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (7 pages, 2022270 bytes).
+Output written on main.pdf (7 pages, 2022344 bytes).
 PDF statistics:
  347 PDF objects out of 1000 (max. 8388607)
  268 compressed objects within 3 object streams
