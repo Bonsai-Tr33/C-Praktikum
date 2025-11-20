@@ -1,10 +1,7 @@
 # ToDo Liste C-Praktikum
 ## 41
-   - Auswertung Fehler für Ausbreitungsgeschwindigkeit Koaxialkabel sehr niedrig (?)   
+   - Auswertung Fehler für Ausbreitungsgeschwindigkeit Koaxialkabel sehr niedrig (?), schon sehr, vll nochmal mit standardfehler machen?
    - Paper schreiben
-      - Abstract
-      - Einleitung schreiben
-      - diskussion zuendeführen bei ausbreitungsgeschw., vgl mit literaturwerten
       - Biblography verfollständigen, Literatur ergänzen
       - Formatfehler beheben
       - Größe Bilder anpassen
