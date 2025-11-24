@@ -1,0 +1,86 @@
+%Diese LaTeX-Vorlage f�r Praktikumsprotokolle in Form einer Ver�ffentlichung f�r das 
+%F-Praktikum wurde erstellt von Andreas Nuber EP II, Uni W�rzburg.
+%Es wurde das Koma-Skript verwendet und sollte somit installiert sein
+%desweiteren sollten alle packages installiert sein, die mit \usepackage{} 
+%eingebunden werden.
+%Zum Testen dieser Vorlage wurde MikTex verwendet sowie TeXnicCenter als Editor
+%beim Compilieren waren 0 Fehler, 1 Warnung und 3 zu volle/leere Boxen. Das ist ok :)
+
+%F�r das Erstellen einfach den sinnfreien Text, der zum ausf�llen genommen wurde 
+%ersetzen. Was sonst noch ver�ndert werden sollte steht in den Kommentaren!
+
+
+\documentclass[a4paper,10pt,twocolumn]{scrartcl} %Koma-Skript-�quivalent zu "article"
+
+\usepackage{german}            %macht deutsche �berschriften
+\usepackage{amsmath}           %macht
+\usepackage{amsfonts}          %       Mathe
+\usepackage{amssymb}           %              m�chtiger
+\usepackage{graphicx}          %erlaubt Graphiken einzubinden (.eps f�r dvi und ps sowie .jpg f�r pdf)
+\usepackage[T1]{fontenc}       %Zeichenbelegung der verwendeten Schrift
+\usepackage{ae}                %macht sch�neres �
+\usepackage{typearea}	         %erm�glicht �nderung des Seitenspiegels
+\usepackage{scrlayer-scrpage}          %erm�glicht �nderung der Kopf-/Fu�zeile
+\usepackage{lastpage}         %l�sst auf die Seienanzahl zugreifen
+\usepackage[margin=10pt,font=small,labelfont=bf]{caption} %macht die Bildbeschriftungen richtig
+\usepackage{xcolor}			  % macht Farbe
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{comment}
+
+\renewcommand{\figurename}{Abb.}
+
+\pagestyle{scrheadings}        %sagt Koma-Skript, dass selbstdefiniers Kopfzeilen verwendet werden
+\typearea{16}                  %stellt Seitenspiegel ein
+\columnsep25pt								 %definiert Breite zwischen den zwei Spalten von \twocolumns
+
+\renewcommand{\pnumfont}{%     %�ndert die Schriftart der Seitennummerierung
+\normalfont\rmfamily\slshape}  %�ndert die Schriftart der Seitennummerierung 
+
+
+
+\begin{document}
+\cfoot{\thepage /\pageref{LastPage}}     %macht die Seitennumerierung der Fom 2/5 (ausser auf der Titelseite)
+
+\twocolumn[{\csname @twocolumnfalse\endcsname                %erlaubt "Abstrakt" �ber beide Spalten
+\titlehead{                                                  %Kopfzeile
+	\begin{tabular*}{\textwidth}[]{@{\extracolsep{\fill}}lr}   %Kopfzeile
+	Betreuer: Prof. Dr. V. Hinkov & \today\\                          %Kopfzeile      hier den Betreuer eintragen!!!
+	\end{tabular*}                                             %Kopfzeile
+	}
+\title{Messung der Ausbreitungsgeschwindigkeit von elektromagnetischen Wellen auf Kabeln}  %Titel der Versuchs
+\author{Hannes Winkler \and Moritz Langer}                     %Namen der Studenten
+\date{}			                                               %ben�tigt um automatisches Datum auszuschalten
+\maketitle                                                      %erzeugt Titelseite
+\vspace{-8ex}                                                   %verringert Abstand zur �berschrift
+\begin{abstract}                                                %Beginn des Abstracts
+\vspace{1em}
+\noindent Versuchsdurchführung: 20. November 2025\\% Datum ändern!
+\noindent Protokollabgabe: 20. November 2025% Datum ändern!
+\vspace{1em}
+
+	\noindent abstrahiertes abstract
+\end{abstract}
+}]
+
+\section{Einleitung}
+
+\section{Theorie}
+
+\section{Experiment und Auswertung}
+
+\section{Zusammenfassung}
+
+\begin{thebibliography}{}    %so wird das Literaturverzeicnis erstellt
+\bibitem{BipBop}
+	\url{https://www.physik.uni-wuerzburg.de/fileadmin/11000000/03_Studium/02_Bachelor/Grundpraktikum/_imported/fileadmin/11016800/Modulbeschreibungen/C-Modul/Versuch_41_ueberarbeitet.pdf}, besucht am 20.11.2025
+\bibitem{Lichtgeschwindigkeit}
+	\url{https://physics.nist.gov/cgi-bin/cuu/Value?c}, besucht am 18.11.2025 um 16.29 Uhr
+\bibitem{Koaxialkabel1}
+	\url{https://docs.rs-online.com/75d1/A700000011339821.pdf}, besucht am 20.11.2025 um 00.59 Uhr
+\bibitem{Koaxialkabel2}
+	\url{https://www.auer-kunststofftechnik.de/pdf/Technisch.Datenblatt\%20PE\%20-LD\%20natur\%2070093.pdf}, besucht am 20.11.2025 um 08:05 Uhr
+\end{thebibliography}
+
+\end{document}
