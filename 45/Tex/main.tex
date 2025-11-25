@@ -91,7 +91,33 @@
 
 	\subsection{Boltzmannkonstante}
 
-		Durch Messung der Spannungsabhängigkeit des Diffusionsstroms
+		Durch Messung der Spannungsabhängigkeit des Diffusionsstroms eines npn-Leistungstransistors kann die Boltzmannkonstante 
+		bestimmt werden. Dieser Transistor besteht aus zwei n-dotierten Halbleiterschichten (Emitter und Kollektor) und einer
+		p-dotierung (Basis). Ohne von außen angelegte Spannung bildet sich eine Potentialdifferenz, die sogenannte
+		Antidiffusionsspannung $U_A$. Dadurch kommt es in der Sperrschicht zu zwei Arten von Ladungsträgerbewegungen. Einerseits
+		treten thermisch angeregte Elektronen ins Leitungsband und verursachen ein Eigenleitungsstrom $I_0$. Zum anderen können
+		Elektronen hinreichender Energien $E > e \cdot U_A$ gegen die Antidiffusionsspannung ankommen un einen dem entgegengerichteten
+		Diffusionsstroms $I_D$ erzeugen. \\
+		Die Häufigkeitsverteilung der Teilchenenergien folgen der Boltzmann-Statistik:
+		\begin{equation*}
+			N(E)dE = const. exp(-\frac{E}{k_BT})dE
+		\label{BesetzteZustaende}
+		\end{equation*}
+		T ist hierbei die Temperatur des Transistors und $k_B$ die Boltzmannkonstante.\\
+		Der Diffusionsstroms ergibt dann durch:
+		\begin{equation*}
+			I_D(U_A) = const. exp(-\frac{e \cdot U_A}{k_B T})
+		\label{Diffusionsstrom1}
+		\end{equation*}
+		Sobald keine äußere Spannung anliegt, heben sich der Eigenleitungsstrom und der Diffusionsstrom auf.
+		Wird an den p-n-Übergang nun eine Spannung $U_{BE}$ in Durchlassrichtung angelegt, benötigen Elektronen eine geringere Energie um
+		das verringerte Potential $e \cdot (U_A-U_{BE})$ zu überwinden. Dadurch verändert sich der Diffusionsstroms zu:
+		\begin{equation*}
+			I_D(U_{BE}) = \mid I_0 \cdot xp(-\frac{e \cdot U_{BE}}{k_B T})
+		\label{Diffusionsstrom2}
+		\end{equation*}
+		Durch wissen über die Temperatur und die Elementarladung lässt sich so durch Aufrtragung des 
+		Diffusionsstroms über die Spannung die Boltzmannkonstante mittels Steigung bestimmen.
 
 \section{Experiment und Auswertung}
 
