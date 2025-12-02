@@ -206,11 +206,11 @@
 		Nach dem Aufbau in Abbildung \ref{IMG:AufbauBoltz} wird gemessen. 
 		Der npn-Leistungstransistor wird in das Kältethermostat Lauda RE104 eingebaut um eine konstante Temperatur zu gewährleisten. Die Bremsspannung $U_{BE}$ 
 		wird zwischen Basis und Emitter des Transistors abgegriffen. Damit diese besser einzustellen ist, wird sie an ein Spannungsteiler angeschlossen. \\
-		Es wird bei drei verschiedenen Temperaturen $(T = 40 \circ C, 80 \circ C, 120 \circ C )$ die Kennlinie $I_D$ in Abhängigkeit der Spannung $U_{BE}$ 
+		Es wird bei drei verschiedenen Temperaturen $(T = 40 ^\circ C, 80 ^\circ C, 120 ^\circ C)$die Kennlinie $I_D$ in Abhängigkeit der Spannung $U_{BE}$ 
 		gemessen. Hierbei wird die Spannung $U_{BE}$ erhöht bist ein Diffusionsstrom von $I_D \approx 10 mA$ erreicht ist.\\
 		Für die Bestimmung der Boltzmannkonstante werden die für die jeweiligen Temperaturen gemessene $I_D(U_{BE})$-Kennlinien graphisch aufgetragen.
 		Da es sich um exponentiell ansteigende Kurven handelt, werden die Kennlinien halblogarithmisch aufgetragen.\\
-		Beispielhaft für $T = 40 \circ C$:
+		Beispielhaft für $T = 40 ^circ C$:
 		\begin{figure} [H]
 			\centering
    			 \includegraphics[width=1\linewidth]{../Images/Boltz40.png}
@@ -224,18 +224,19 @@
 
 		\noindent Es ergeben sich folgende Werte:\\
 		
-		
-		\begin{tabular}{c|c|c}
+		\begin{table}[H]
 		\centering
-		T $[\circ C]$  	& m $[\frac{1}{V}]$		& $k_B \, [10^{-23} J/K]$\\
+		\begin{tabular}{c|c|c}
+		T $[^\circ C]$  	& m $[\frac{1}{V}]$		& $k_B \, [10^{-23} J/K]$\\
 		\hline
   		$40$			& $(35.60 \pm 0.16)$	& $(1.4374 \pm 0.0066)$\\
 		$80$			& $(31.75 \pm 0.15)$	& $(1.4291 \pm 0.0069)$\\
 		$120$			& $(28.70 \pm 0.12)$	& $(1.4199 \pm 0.0059)$
 		\end{tabular}
-		\\
-		\\
-		 Aus diesen drei Werten wird nun das arithmetische Mittel gebildet, um einen Endwert für die Boltzmannkonstante zu erhalten.
+		\caption{Steigung des $I_D$(U)-Graphen und daraus berechnete Boltzmannkonstante für die jeweiligen Temperaturen}
+		\end{table}
+
+		\noindent Aus diesen drei Werten wird nun das arithmetische Mittel gebildet, um einen Endwert für die Boltzmannkonstante zu erhalten.
 		\begin{equation*}
 			k_B = (1.4291 \pm 0.0087) \cdot 10^{-23} J/K
 		\end{equation*}
