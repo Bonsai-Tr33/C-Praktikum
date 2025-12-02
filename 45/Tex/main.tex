@@ -50,7 +50,7 @@
 	\end{tabular*}                                             %Kopfzeile
 	}
 \title{Plancksches Wirkungsquantum und Boltzmann-Konstante}  %Titel der Versuchs
-\author{Hannes Winkler \and Moritz Langer}                     %Namen der Studenten
+\author{Moritz Langer \and Hannes Wikler}                     %Namen der Studenten
 \date{}			                                               %ben�tigt um automatisches Datum auszuschalten
 \maketitle                                                      %erzeugt Titelseite
 \vspace{-8ex}                                                   %verringert Abstand zur �berschrift
@@ -60,7 +60,11 @@
 \noindent Protokollabgabe: 4. Dezember 2025% Datum ändern!
 \vspace{1em}
 
-	\noindent abstrahiertes abstract
+	\noindent Das Plancksche Wirkungsquantum wurde durch den Photoeffekt als $\textit{h} = (3.32 \pm 0.12)\cdot 10^{-34} \, J s$ bestimmt - damit
+	ist es nicht mit dem Literaturwert von $h_{lit} = 6.62607015 \cdot 10^{-34} \, J s$ \cite{PlanckKonstante} vereinbar. \\
+	Zusätzlich wurde die Boltzmannkonstante durch Messung des Diffusionsstroms eines npn-Leistungstransistors bei verschiedenen Temperaturen auf
+	$k_B = (1.4291 \pm 0.0087) \cdot 10^{-23} J/K$ bestimmt - damit ist auch dieser Wert ist nicht mit dem Literaturwert von 
+	$k_{B,lit} = 1.380649 \cdot 10^{-23} J/K$ \cite{BoltzmannKonstante} vereinbar, liegt
 \end{abstract}
 }]
 
@@ -132,7 +136,7 @@
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\linewidth]{../Images/AufbauPlank.png}
-			\caption{Schematischer Versuchsaufbau zur Bestimmung des Planckschen Wirkungsquantums mit einer Quecksilberhodrucklampe}
+			\caption{Schematischer Versuchsaufbau zur Bestimmung des Planckschen Wirkungsquantums mit einer Quecksilberhodrucklampe \cite{BipBop}}
 			\label{Img:AufbauPlank}
 		\end{figure}
 		Nach dem Aufbau in Abbildung \ref{Img:AufbauPlank} wird gemessen. 
@@ -144,7 +148,7 @@
 		\begin{figure}[H]
     		\centering
    			 \includegraphics[width=1\linewidth]{../Images/Planck366.png}
-   			 \caption{Bremsspannung für $\lambda = 366 \, nm$}
+   			 \caption{Photostrom in Abhängigkeit der Bremsspannung für $\lambda = 366 \, nm$}
    			 \label{Img:Brems366}
 		\end{figure}
 		Dies wird nun für alle Wellenlängen durchgeführt. Die Ergebnisse sind:
@@ -160,10 +164,10 @@
 		$546$				& $(-0.388 \pm 0.012)$\\
 		$578$				& $(-0.31 \pm 0.11)$
 		\end{tabular}  
-		\caption{Kniespannungen für die unterschiedlichen Wellenlängen}  %siehe Graphik: Beschriftung
+		\caption{Kniespannungen der Photodiode für die unterschiedlichen Wellenlängen}  %siehe Graphik: Beschriftung
 		\label{Tab:WellenU}                             %siehe Graphik: zum Zitieren
 		\end{table}
-		\noindent Nun wird mit der Lichtgeschwindigkeit ($c = 299792458 \, \frac{m}{s}$) und der Gleichung
+		\noindent Nun wird mit der Lichtgeschwindigkeit ($c = 299792458 \, \frac{m}{s}$) \cite{Lichtgeschwindigkeit} und der Gleichung
 		\begin{equation*}
 			\nu = \frac{c}{\lambda}
 		\end{equation*}
@@ -173,15 +177,15 @@
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\linewidth]{../Images/U_nu.png}
-			\caption{Kniespannung in Abhängigkeit der Lichtfrequenz}
+			\caption{Kniespannung der Photodiode in Abhängigkeit der Lichtfrequenz}
 			\label{Img:Inu}
 		\end{figure}
 		\noindent Der Fit in Abb.\ref{Img:Inu} steigt mit $m = (-2.069 \pm 0.073)\cdot 10^{-15} \, V s$ an.
 		Aus
 		\begin{equation*}
-			h = m \, e
+			h = -m \, e
 		\end{equation*}
-		(Gleichung resultiert aus (\ref{eq:EinsteinGleichung})) berechnet sich $h = (-3.32 \pm 0.12)\cdot 10^{-34} \, J s$.
+		(Gleichung resultiert aus (\ref{eq:EinsteinGleichung})) berechnet sich $h = (3.32 \pm 0.12)\cdot 10^{-34} \, J s$.
 		Dieser Wert ist nicht mit dem Literaturwert von $h_{lit} = 6.62607015 \cdot 10^{-34} \, J s$ \cite{PlanckKonstante} vereinbar. Die Hauptunsicherheit
 		resultiert hierbei aus der begrenzten Anzahl an Messpunkten im Übergangsbereich der $I_D(U_{BE})$-Kurve. Dadurch ist die Bestimmung der Kniespannung
 		mit dem Asymptotenverfahren nur ungenau möglich. Um diesen Fehler zu umgehen wäre größere Anzahl an Messpunkten sinnvoll. Diese könnten beistpielsweise
@@ -196,7 +200,7 @@
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\linewidth]{../Images/AufbauBoltzmann.png}
-			\caption{Schaltskizze zur Bestimmung der Boltzmannkonstante mit einem 2N 3055 npn-Leistungstransistor}
+			\caption{Schaltskizze zur Bestimmung der Boltzmannkonstante mit einem 2N 3055 npn-Leistungstransistor \cite{BipBop}}
 			\label{IMG:AufbauBoltz}
 		\end{figure}
 		Nach dem Aufbau in Abbildung \ref{IMG:AufbauBoltz} wird gemessen. 
@@ -230,14 +234,18 @@
 		$120$			& $(28.70 \pm 0.12)$	& $(1.4199 \pm 0.0059)$
 		\end{tabular}
 		\\
+		\\
 		 Aus diesen drei Werten wird nun das arithmetische Mittel gebildet, um einen Endwert für die Boltzmannkonstante zu erhalten.
-		\textcolor{blue}{HIER MITTELWERT UND FEHLER IN EQUATION UMGEBUNG}
+		\begin{equation*}
+			k_B = (1.4291 \pm 0.0087) \cdot 10^{-23} J/K
+		\end{equation*}
 		
 		Der errechnete Mittelwert ist nicht mit dem Literaturwert von $k_{B,lit} = 1.380649 \cdot 10^{-23} J/K$ \cite{BoltzmannKonstante} vereinbar, liegt
 		aber dennoch in der selben Größenordnung.
 		Die Hauptunsicherheit liegt hierbei an den zahlreichen Lötstellen in der Verkabelung des Transistors. Diese Löstellen haben einen Widerstand, 
 		welcher sich in der Messung des Stroms $I_D$ bemerkbar macht. Zudem ist aufgrund der begrenzten Zeit nur eine begrenzte Anzahl an Messpunkten
-		möglich gewesen. Duch digitale Erfassung könnten auch hier deutlich mehr Messungen vorgenommen werden, was den Fehler reduzieren würde. \\
+		möglich gewesen. Duch digitale Erfassung könnten auch hier deutlich mehr Messungen vorgenommen werden, was den Fehler reduzieren und das Messergebnis
+		näher an den Literaturwert bringen würde. \\
 		Des weiteren könnte die Temperatur des Transistors aufgrund von Fehlern im Thermostat nicht konstant gehalten worden sein, was ebenfalls 
 		ein großen Einfluss auf die Bestimmung der Boltzmannkonstante hat, da die Temperatur (vgl. \ref{Diffusionsstrom2}) ebenfalls in die Gleichung eingeht.
 
@@ -248,7 +256,7 @@
 		Aus der Knickspannung der Photodiode wurde das Wirkungsquantum zu $h = (-3.32 \pm 0.12)\cdot 10^{-34} \, J s$ bestimmt.
 		Damit ist es nicht mit dem Literaturwert von $h_{lit} = 6.62607015 \cdot 10^{-34} \, J s$ \cite{PlanckKonstante} vereinbar. \\
 		Die Boltzmannkonstante wurde durch Messung des Diffusionsstroms eines npn-Leistungstransistors bei verschiedenen Temperaturen bestimmt.
-		Aus den gemessenen Kennlinien wurde die Boltzmannkonstante zu $k_B = (1.4288 \pm 0.0065) \cdot 10^{-23} J/K$ bestimmt.
+		Aus den gemessenen Kennlinien wurde die Boltzmannkonstante zu $k_B = (1.4291 \pm 0.0087) \cdot 10^{-23} J/K$ bestimmt.
 		Dieser Wert ist nicht mit dem Literaturwert von $k_{B,lit} = 1.380649 \cdot 10^{-23} J/K$ \cite{BoltzmannKonstante} vereinbar, liegt
 		aber dennoch in der selben Größenordnung. \\ 
 		In beiden Messungen sind die Unsicherheiten zum einen auf die begrenzte Anzahl an Messpunkten zurückzuführen. 
@@ -263,7 +271,9 @@
 	
 \begin{thebibliography}{}    %so wird das Literaturverzeicnis erstellt
 \bibitem{BipBop}
-	\url{https://www.physik.uni-wuerzburg.de/fileadmin/11000000/03_Studium/02_Bachelor/Grundpraktikum/_imported/fileadmin/11016800/Modulbeschreibungen/C-Modul/Versuch_41_ueberarbeitet.pdf}, besucht am 20.11.2025
+	\url{https://www.physik.uni-wuerzburg.de/fileadmin/11000000/03_Studium/02_Bachelor/Grundpraktikum/_imported/fileadmin/11016800/Modulbeschreibungen/C-Modul/Versuch_41_ueberarbeitet.pdf}, besucht am 02.12.2025 um 20.13 Uhr
+\bibitem{Lichtgeschwindigkeit}
+	\url{https://physics.nist.gov/cgi-bin/cuu/Value?c|search_for=Speed+of+light}, besucht am 01.12.2025 um 20.05 Uhr
 \bibitem{PlanckKonstante}
 	\url{https://physics.nist.gov/cgi-bin/cuu/Value?h|search_for=planck+constant}, besucht am 01.12.2025 um 20.22 Uhr
 \bibitem{BoltzmannKonstante}
