@@ -61,7 +61,7 @@
 \vspace{1em}
 
 	\noindent An einem Koaxialkabel des Typs RG213/U wird durch Reflexionsunterdrückung der Wellenwiderstand $Z = (50,0 \pm 1,0) \, \Omega$ bestimmt. Das Reflexionsverhalten wird durch benutzen
-	verschiedener Abschlusswiderstände untersucht. An selbigem Kabel und an einem Verzögerungskabel wird durch Laufzeitmessung die Ausbreitungsgeschwindigkeit
+	verschiedener Abschlusswiderstände untersucht. An selbigem Kabel und an einem Verzögerungskabel wird durch Laufzeitmessung die Ausbreitungsgeschwindigkeit \textcolor{red}{Ausbreitungsgeschwindigkeit einfügen}
 	von Signalen gemessen und an dem RG213/U Koaxialkabel auch mittels stehender Wellen. Bei der Methode der stehenden Wellen lässt sich die Dispersion der 
 	Ausbreitungsgeschwindigkeit und die Dämpfung im Kabel beobachten. Des weiteren wurde ebenfalls durch Laufzeitmessung die Lichtgeschwindigkeit bestimmt welche
 	ein Wert von $c = (293 \pm 16)\cdot 10^6 \, \frac{m}{s}$ ergab.
@@ -71,9 +71,9 @@
 \section{Einleitung}
 
 	Das Koaxialkabel hat sich aufgrund seiner besonderen elektromagnetischen Eigenschaften in der Informationsübertragung als sinnvolles Medium etabliert.
-	Durch den Aufbau des Kabels mit Innenleiter, Dielektrikum und Außenleiter wird das elektromagnetische Feld in Ausbreitungsrichtung verringert bzw. komplett
-	unterdrückt, was zu einer verringerten Dämpfung, Dispersion und auch Reflexion führt, was eine stabile und störungsfreie Signalübertragung ermöglicht.\\
-	Diese Arbeit beschäftigt sich damit, diese Eigenschaften von Koaxialkabeln genauer zu beleuchten, deren Hintergrund zu verstehen und auch den Umgang mit Koaxialkabeln
+	Durch den Aufbau des Kabels mit Innenleiter, Dielektrikum und Außenleiter \textcolor{red}{gibt es in Ausbreitungsrichtung kein elektromagnetisches Feld.}
+	\textcolor{red}{Dabei auftretende Dämpfung, Dispersion und Reflexion sind abhängig von Materialparametern, Verlusten im Kabel und von Impedanzanpassungen.} \\
+	\textcolor{red}{Dieser Versuch} beschäftigt sich damit, diese Eigenschaften von Koaxialkabeln genauer zu beleuchten, deren Hintergrund zu verstehen und auch den Umgang mit Koaxialkabeln
 	zu erlernen.\\
 	Des weiteren wird eine zentrale Naturkonstante, die Lichtgeschwindigkeit, gemessen und diskutiert.
 \section{Theorie}
@@ -83,8 +83,8 @@
 		\subsubsection{Wellenwiderstand}
 
 			Bei der Untersuchung von Kabeln gibt es zwei charakteristische Größen:
-			Die relative Induktivität   $L^{\ast} = \frac{\text{Induktivität}}{\text{Längeneinheit}}$
-			und die relative Kapazität $C^{\ast} = \frac{\text{Kapazität}}{\text{Längeneinheit}}$. Über
+			\textcolor{red}{Die Induktivität}   $L^{\ast} = \frac{\text{Induktivität}}{\text{Längeneinheit}}$
+			und \textcolor{red}{die Kapazität} $C^{\ast} = \frac{\text{Kapazität}}{\text{Längeneinheit}}$. Über
 			deren Zusammenhang mit der Spannung 
 
 			\begin{displaymath}
@@ -136,19 +136,20 @@
 			\end{split}
 			\end{equation*}
 			Die resultierende Welle hat (im Idealfall) Orte, an denen die Amplitude konstant 0 ist (sog. Knoten).
-			Im Fall eines Koaxialkabels kommt es jedoch zu Dämpfung, weshalb die Knoten endliche Werte ungleich Null annehmen.
+			Im Fall eines Koaxialkabels kommt es jedoch zu Dämpfung, \textcolor{red}{welche die Amplitude der einlaufenden und der rücklaufenden Welle verschiebt.
+			Dadurch nimmt die Amplitude an den Knotenpunkten endliche Werte ungleich Null an.} 
 			In Abschnitt \ref{sec:Ausbreitungsgeschwindigkeit} wird mithilfe eines sinusförmigen Signals eine stehende Welle im Koaxialkabel erzeugt.
 			Das Ende wird je nach Resonanzbedingung offen gelassen oder kurzgeschlossen.\\
 			Bei offenem Kabel gilt:
-			\begin{equation*}
+			\begin{equation}
 				L = \frac{\lambda}{4}, \frac{3 \lambda}{4}, \frac{5 \lambda}{4}, \ldots
 			\label{WellenlängeOffen}
-			\end{equation*}
+			\end{equation}
 			Bei kurzgeschlossenem Kabel gilt:
-			\begin{equation*}
+			\begin{equation}
 				L = \frac{\lambda}{2}, \lambda, \frac{3 \lambda}{2}, \ldots
 			\label{WellenlängeGeschlossen}
-			\end{equation*}
+			\end{equation}
 			Die Ausbreitungsgeschwindigkeit der Welle ergibt sich dann (unabhängig von der Resonanzbedingung) volgendermaßen:
 			\begin{equation*}
 				v = \lambda \cdot f
@@ -387,7 +388,7 @@
 		\subsubsection{Modellversuch zur Darstellung von stehenden Wellen}
 
 		Um stehende Wellen zu erzeugen wird dem Oszilloskop das Triggersignal des Funktionsgenerators zugeführt. Die Buchsen A und B des Generators werden an die Eingänge
-		CH I und CH II des Oszilloskops angeschlossen. An dem Generator kann man die Amplitude und die Geschwindigkeit des ausgehenden Signals einstellen. Die Mathematische
+		CH I und CH II des Oszilloskops angeschlossen. An dem Generator kann man die Amplitude und die \textcolor{red}{Frequenz} des ausgehenden Signals einstellen. Die Mathematische
 		Funktion des Oszilloskops wird genutzt, um die auf den Kanälen eingehenden Signale zu addieren. Damit wird die Überlagerung der Wellen simuliert.
 		Wenn die Amplituden beider Wellen gleich sind, ist sowohl konstruktive (vgl. Abb \ref{321Konst}) als auch destruktive Interferenz (vgl. Abb \ref{321Dest})
 		zu erkennen. Wenn die Wellen gegenläufig sind, gleiche Frequenz aber unterschiedliche Amplituden haben, ergibt sich eine stehende Welle
@@ -412,7 +413,7 @@
 		\subsubsection{Messung der Ausbreitungsgeschwindigkeit}
 		\label{sec:Ausbreitungsgeschwindigkeit}
 
-		Um die Ausbreitungsgeschwindigkeit einer Welle in deinem Koaxialkabel zu messen, wurd zunächst eine stehende, sinusförmige Welle erzeugt.
+		Um die Ausbreitungsgeschwindigkeit einer Welle in deinem Koaxialkabel zu messen, \textcolor{red}{wurde} zunächst eine stehende, sinusförmige Welle erzeugt.
 		Dazu wird wie schon aus den in den vorhergehenden Versuchen das Koaxialkabel mit dem einen Ende an den Funktionsgenerator angeschlossen,
 		das andere Ende wieder mit einem T-Stecker an das Oszilloskop um dort Widerstände parallel zu schalten. Je nach Widerstand ergibt sich 
 		durch Reflexion (vgl. \ref{Reflexion}) eine stehende Welle mit offenem Ende (kein Widerstasnd, kein Phasensprung) oder mit festem Ende 
@@ -509,10 +510,10 @@
 	\subsection{Messung der Lichtgeschwindigkeit}
 
 	Die Lichtgeschwindigkeit wird mittels Laufzeitmessung bestimmt. Der Versuchsaufbau ist Abb. \ref{AufbauLichtgeschwindigkeit}  zu entnehmen.
-<<<<<<< HEAD
+%<<<<<<< HEAD
 	Eine Hochleistungs-LED sendet sehr kurze, rote Lichtpulse von einer Breite von
 	$20 \, ns$ aus. Diese Signale werden nach hin- und zurücklaufen der Messstrecke $s$ in
-=======
+%=======
 	\begin{figure}[H]
 	\centering
 		\includegraphics[width=0.7\linewidth]{../Images/Screenshot from 2025-11-20 16-54-51.png}
@@ -521,7 +522,7 @@
 	\end{figure}
 	Eine Hochleistungs-LED sendet sehr kurze, rote Lichpulse von einer Breite von
 	20ns aus. Diese Signale werden nach hin- und zurücklaufen der Messstrecke s in
->>>>>>> a2f921f55d758d863c1fe933570d0a069be4a827
+%>>>>>>> a2f921f55d758d863c1fe933570d0a069be4a827
 	Spannungspulse umgewandelt, welche am Oszilloskop beobachtet werden.
 	Das Fenser $F_1$ der Linse L bildet die Lichtquelle in das Unendliche ab. Der 
 	Tripelspiegel $T_1$ faltet den Strahlengang in sich zurück, sodass die LED auf
