@@ -43,6 +43,18 @@
     \end{equation}
     \subsection{Ermittlung der Dampfdruckkurve}
 
+    Mithilfe des kritischen Drucks wird nun die kritische Temperatur \(T_K\) bestimmt. \\
+    In einem p(T)-Diagramm gibt die Sättigungsdampfdruckkurve die Werte an, bei denen ein Gas
+    gleichzeitig flüssig und gasförmig vorliegt. Diese Kurve endet im kritischen Punkt \((T_K, p_K)\).
+    \begin{equation}
+        p_D = b e^{-\frac{E}{k_B T}}
+    \label{eq:Dampfdruck}
+    \end{equation}
+    Hier ist \(E\) die Verdampfungsenergie pro Molekül, \(k_B\) die Boltzmann-Konstante und \(b\) eine Konstante, welche geringfügig 
+    temperaturabhängig ist, was allerdings in der folgenden Auswertung vernachlässigt wird. \\
+    Um die kritische Temperatur zu bestimmen, wird die Gleichung \ref{eq:Dampfdruck} logarithmiert und \(ln(p)\) gegen \(\frac{1}{T}\) aufgetragen.
+    An dem Punkt von \(ln(p_{K})\) wird die kritische Temperatur \(T_K\) abgelesen.
+
     \subsection{Ermittlung der Konstanten \(a\) und \(b\) der Van-der-Waals-Gleichung und des kritischen Koeffizienten \(K_K\)}
      
     Mit den Gleichungen \ref{eq:VanDerWaals} und \ref{eq:Ableitungen} lassen sich die Konstanten \(a\) und \(b\) bestimmen.
@@ -58,7 +70,7 @@
     \end{equation}
     Der kritische Koeffizient \(K_K\) ergibt sich aus dem Verhältnis der kritischen Parameter:
     \begin{equation}
-        K_K = \frac{R T_K} = (217 \pm 91)
+        K_K = \frac{R T_K}{p_K V_K} = (217 \pm 91)
     \label{eq:KritischerKoeffizient}
     \end{equation}
     
