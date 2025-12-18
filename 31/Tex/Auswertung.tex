@@ -18,6 +18,7 @@
 
     \begin{equation}
         \frac{dp}{dV} = 0 |_{V=V_K} \quad \text{und} \quad \frac{d^2p}{dV^2} = 0 |_{V=V_K}
+    \label{eq:Ableitungen}
     \end{equation}
 
     Die Start- und Endvolumina der Maxwell-Geraden wurden experimentell beobachtet. Aus diesen Volumina und den zugehörigen
@@ -33,11 +34,33 @@
     \end{equation}
 
     \textcolor{red}{BILD EINFÜGEN VON SCHNITTPUNKT}
-    \textcolor{red}{LITERATURWERTE EINFÜGEN}
+    
+    Der kritische Druck stimmt innerhalb des Fehlers mit dem Literaturwert von \(p_{K,lit} = 37,53 \, \text{bar}\) überein \cite{SF6LITERATUR} überein.
+    Um das kritische Volumen mit dem Literaturwert vergleichen zu können, muss dieses noch in die Einheiten \(ml/mol\) umgerechnet werden.
+    Die Stoffmenge ist ebenfalls experimentell bestimmt worden.
+    \begin{equation}
+        V_{K,mol} = (\textcolor{red}{HIER UMRECHNEN}) \frac{m^3}{mol}
+    \end{equation}
     \subsection{Ermittlung der Dampfdruckkurve}
 
-    \subsection{MORITZ FÜGT MESSWERTE EIN}
-        Fehler Temperatur: $\pm 2K$. Fehler kommt von Basti aus der Bedienungsanleitung...\\
-        $a = (78,1 \pm 9,7) \cdot 10^{3} \, J^2 \frac{ml}{mol^2}$\\
-        $b = (8,67 \pm 0,95) \, \frac{ml}{mol}$\\
-        $K_k = (217 \pm 91)$
+    \subsection{Ermittlung der Konstanten \(a\) und \(b\) der Van-der-Waals-Gleichung und des kritischen Koeffizienten \(K_K\)}
+     
+    Mit den Gleichungen \ref{eq:VanDerWaals} und \ref{eq:Ableitungen} lassen sich die Konstanten \(a\) und \(b\) bestimmen.
+
+    \begin{equation}
+        a = \frac{27 R^2 T_K^2}{64 p_K} = (78,1 \pm 9,7) \cdot 10^{3} \, J^2 \frac{ml}{mol^2}
+    \label{eq:KonstanteA}
+    \end{equation}
+
+    \begin{equation}
+        b = \frac{R T_K}{8 p_K} = (8,67 \pm 0,95) \, \frac{ml}{mol}
+    \label{eq:KonstanteB}
+    \end{equation}
+    Der kritische Koeffizient \(K_K\) ergibt sich aus dem Verhältnis der kritischen Parameter:
+    \begin{equation}
+        K_K = \frac{R T_K} = (217 \pm 91)
+    \label{eq:KritischerKoeffizient}
+    \end{equation}
+    
+    
+    \textcolor{red}{VGL MIT LITERATURWERTE}
