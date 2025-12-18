@@ -486,15 +486,16 @@
 			\end{equation*}
 			Die Spannungen als $U_{pp}$ (peak to peak) werden mit dem Oszilloskop bestimmt und das Dämpfungsmaß wird für verschiedene Wellenlängenverhältnisse berechnet.
 			Die aus den Wellenlängenverhältnissen berechneten Frequenzen lassen sich aus Tabelle~\ref{TabAusbreitungsgeschwindigkeit} entnehmen.\\
-			Die gedämpfte Spannung und das daraus berechnete Dämpfungsmaß sind (bei $U(0) = (160 \pm 25)\cdot 10^{-3} \, V$):
+			Die gedämpfte Spannung und das daraus berechnete Dämpfungsmaß sind (bei $U(0) = (160 \pm 25)\cdot 10^{-3} \, V$).\\
+			Um die verschiedenen Werte der Dämpfung sinvoll zu veranschaulichen werden sie auf die Kabellänge normiert. Das Ergebnis wird also nicht in $dB$ sondern $dB/m$ angegeben.
 			\begin{table}[htbp]          %so funktionieren die Tabellen in LaTeX
 				\centering
 				\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}c|c|c}
-				$\lambda$ (in $m$) 					& $U(x)$ (in $10^{-3} \, V$) & $D$ (in $dB$)\\
+				$\lambda$ (in $m$) 					& $U(x)$ (in $10^{-3} \, V$) & $D$ (in $dB/m$)\\
 				\hline
-				$\frac{\lambda}{4}$ 				& $(14,20 \pm 0,45)$ & $(21,0 \pm 1,4)$\\
-				$\frac{\lambda}{2}$ 				& $(21,8 \pm 1,1)$ & $(17,3 \pm 1,4)$\\
-				$\frac{3 \cdot \lambda}{4}$ 		& $(26,4 \pm 1,1)$ & $(15,7 \pm 1,4)$\\
+				$\frac{\lambda}{4}$ 				& $(14,20 \pm 0,45)$ & $(0,000 \pm 0,025)$\\
+				$\frac{\lambda}{2}$ 				& $(21,8 \pm 1,1)$ & $(-0,075 \pm 0,016)$\\
+				$\frac{3 \cdot \lambda}{4}$ 		& $(26,4 \pm 1,1)$ & $(-0,108 \pm 0,013)$\\
 				\end{tabular*}  
 				\caption{Dämpfung im Koaxialkabel} 			   %siehe Graphik: Beschriftung
 				\label{TabU-D}                             %siehe Graphik: zum Zitieren
@@ -506,15 +507,13 @@
 				\caption{Dämpfung in Abh. der Frequenz}
 				\label{Img:D-F}
 			\end{figure}
-			\noindent In Abbildung~\ref{Img:D-F} ist deutlich zu erkennen, dass das Dämpfungsmaß von der Frequenz abhängt.
+			\noindent In Abbildung~\ref{Img:D-F} ist deutlich zu erkennen, dass das Dämpfungsmaß von der Frequenz abhängt und mit steigender Frequenz singt.
 
 	\subsection{Messung der Lichtgeschwindigkeit}
 
 	Die Lichtgeschwindigkeit wird mittels Laufzeitmessung bestimmt. Der Versuchsaufbau ist Abb. \ref{AufbauLichtgeschwindigkeit}  zu entnehmen.
-%<<<<<<< HEAD
 	Eine Hochleistungs-LED sendet sehr kurze, rote Lichtpulse von einer Breite von
 	$20 \, ns$ aus. Diese Signale werden nach hin- und zurücklaufen der Messstrecke $s$ in
-%=======
 	\begin{figure}[H]
 	\centering
 		\includegraphics[width=0.7\linewidth]{../Images/Screenshot from 2025-11-20 16-54-51.png}
@@ -523,7 +522,6 @@
 	\end{figure}
 	Eine Hochleistungs-LED sendet sehr kurze, rote Lichpulse von einer Breite von
 	20ns aus. Diese Signale werden nach hin- und zurücklaufen der Messstrecke s in
-%>>>>>>> a2f921f55d758d863c1fe933570d0a069be4a827
 	Spannungspulse umgewandelt, welche am Oszilloskop beobachtet werden.
 	Das Fenser $F_1$ der Linse L bildet die Lichtquelle in das Unendliche ab. Der 
 	Tripelspiegel $T_1$ faltet den Strahlengang in sich zurück, sodass die LED auf
