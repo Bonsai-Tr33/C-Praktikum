@@ -297,9 +297,10 @@
 		\noindent Wenn nun $R_a = 0 \, \Omega$ wird hier das Signal am Kabelanfang reflektiert und invertiert und die Wellen überlagern sich (vgl. Abb. \ref{Kombi0}). 
 		Wenn $R_a = Z$ ergibt sich mit dem Innenwiderstands des Funktionsgenerator 
 		(vgl. \href{https://www.physik.uni-wuerzburg.de/fileadmin/11000000/03_Studium/02_Bachelor/Grundpraktikum/_imported/fileadmin/11016800/Geraete/Agilent-33220.pdf}{Anleitung Funktionsgenerator}) ein effektiver Widerstand von $R_{a,eff} = 25 \, \Omega$
-		wodurch eine Reflexion entsteht. Die Amplitude wird reduziert (vgl. Abb. \ref{Kombi50}).
+		wodurch eine Reflexion mit \textcolor{red}{$\rho = -frac{1}{3}$} entsteht. Die Amplitude wird reduziert (vgl. Abb. \ref{Kombi50}).
 		Zu letzt wenn $R_a = \infty \, \Omega$ ergibt sich mit dem Funktionsgeneratorinnenwiderstand ein effektiver Widerstand $R_{a,eff} = 50 \, \Omega$ was der Impedanz entspricht,
 		es gibt also keine Reflexion am Kabelanfang(vgl. Abb. \ref{KombiInf}).\\
+		\textcolor{red}{Die jeweiligen effektiven Widerstände $R_{a,eff}$ wurden mittels der Parallelschaltung von der Leitungsimpedanz und den Zusatzwiderständen berechnet.} \\
 		Zudem kommt aufgrund der Länge des Kabels noch eine Dämpfung der Amplitude hinzu, welche im folgenden Abschnitt genauer diskutiert wird.
 
 		\begin{figure}[h]
@@ -437,30 +438,30 @@
 
 			$\lambda$ (in $m$) 					&     $f$ (in $10^{3} \, Hz$)	&     $v$ (in $10^6 \, \frac{m}{s}$)	\\
 			\hline
-			$\frac{\lambda}{4}$ 				&     ($938,0 \pm 1,9$)			&     $(187,60 \pm 0,38)$ 				\\
+			$\frac{\lambda}{4}$ 				&     ($938,0 \pm 1,9$)			&     $(187,6 \pm \textcolor{red}{9,4})$ 				\\
 
-			$\frac{\lambda}{2}$ 				&     ($1892,0 \pm 5,2$)	 	&     $(189,20 \pm 0,52)$ 				\\
+			$\frac{\lambda}{2}$ 				&     ($1892,0 \pm 5,2$)	 	&     $(189,2 \pm \textcolor{red}{9,5})$ 				\\
 
-			$\frac{3 \cdot \lambda}{4}$ 		&     ($2875,0 \pm 1,9$) 		&     $(191,66 \pm 0,13)$ 				\\
+			$\frac{3 \cdot \lambda}{4}$ 		&     ($2875,0 \pm 1,9$) 		&     $(191,7 \pm \textcolor{red}{9,6})$ 				\\
 
 			\end{tabular*}  
 			\caption{Ausbreitungsgeschwindigkeit im Koaxialkabel} 			   %siehe Graphik: Beschriftung
 			\label{TabAusbreitungsgeschwindigkeit}                             %siehe Graphik: zum Zitieren
 		\end{table}
-		\noindent Für die Elektrizitätskonstante ergibt sich:
+		\noindent Für die \textcolor{red}{relative Permittivität} ergibt sich:
 		\begin{table}[H]          %so funktionieren die Tabellen in LaTeX
 			\centering
 			\begin{tabular}{c|c}
 
 			$\lambda$ (in $m$) & $\epsilon_r$ \\
 			\hline
-			$\frac{\lambda}{4}$ & $(2,554 \pm 0,010)$ \\
+			$\frac{\lambda}{4}$ & $(2,55 \pm \textcolor{red}{0,26})$ \\
 
-			$\frac{\lambda}{2}$ & $(2,511 \pm 0,014)$ \\
+			$\frac{\lambda}{2}$ & $(2,51 \pm \textcolor{red}{0,25})$ \\
 
-			$\frac{3 \cdot \lambda}{4}$ & $(2,4466 \pm  0,0033)$ \\
+			$\frac{3 \cdot \lambda}{4}$ & $(2,5 \pm \textcolor{red}{0,24})$ \\
 			\end{tabular}  
-			\caption{Elektrizitätskonstante in Wellenlängenabhängigkeit} 			   %siehe Graphik: Beschriftung
+			\caption{\textcolor{red}{relative Permittivität} in Wellenlängenabhängigkeit} 			   %siehe Graphik: Beschriftung
 			\label{TabElektrizitaetskonstante}                             %siehe Graphik: zum Zitieren
 		\end{table}
 
@@ -526,7 +527,9 @@
 	Spannungspulse umgewandelt, welche am Oszilloskop beobachtet werden.
 	Das Fenser $F_1$ der Linse L bildet die Lichtquelle in das Unendliche ab. Der 
 	Tripelspiegel $T_1$ faltet den Strahlengang in sich zurück, sodass die LED auf
-	sich selbst abgebildet wird. Der Strahlteiler $S$ reflektiert das von $T_1$ 
+	sich selbst abgebildet wird, \textcolor{red}{das bedeutet, dass der Strahlengang
+	der LED die Strecke s geht, am Ende reflektiert wird und auf den Ursprung (die LED) zurückfällt.}
+	Der Strahlteiler $S$ reflektiert das von $T_1$ 
 	kommende Lichtsignal auf die Photodiode $D$. Zudem reflektiert dieser die Hälfte 
 	des Lichts nach oben durch das Fenster $F_2$ auf den Tripelspiegel $T_2$ welcher
 	das Signal ebenfalls auf die Photodiode $D$ sendet, was als Referenzsignal dient.
