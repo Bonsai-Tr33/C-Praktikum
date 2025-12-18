@@ -86,6 +86,19 @@ SoP4 = SoP(f4, lam4, Df=Df4)
 SoP34 = SoP(f34, lam34, Df=Df34)
 SoP2 = SoP(f2, lam2, Df=Df2)
 
+# correcting error to 5% as per instructions
+def calculate_5_percent(value):
+    return 0.05 * value
+
+SoP4 = [SoP4[0], None]
+SoP34 = [SoP34[0], None]
+SoP2 = [SoP2[0], None]
+
+SoP4[1] = calculate_5_percent(SoP4[0])
+SoP34[1] = calculate_5_percent(SoP34[0])
+SoP2[1] = calculate_5_percent(SoP2[0])
+
+
 print(f'λ/4: f = {f4} ± {Df4} Hz')
 print(f'3λ/4: f = {f34} ± {Df34} Hz')
 print(f'λ/2: f = {f2} ± {Df2} Hz')
