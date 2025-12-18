@@ -39,9 +39,14 @@ Dl_D = np.sqrt((1/(len(L_D)-1)) * sum([(x[0]-l_D)**2 for x in L_D]))
 vProp_C = vProp(T_C, l_C, DT_C, Dl_C)
 vProp_D = vProp(T_D, l_D, DT_D, Dl_D)
 
-print(f't for coaxial cable: {T_C} s ± {DT_C} s')
-print(f't for delay cable: {T_D} s ± {DT_D} s')
-
+# print(f't for coaxial cable: {T_C} s ± {DT_C} s')
+# print(f't for delay cable: {T_D} s ± {DT_D} s')
 
 # print(f'Best value and error of the propagation speed of the coaxial cable in m/s: {vProp_C}')
-# print(f'Best value and error of the propagation speed of the delay cable in m/s: {vProp_D}') # will remain 0 until length of delay cable is measured
+print(f'Best value and error of the propagation speed of the delay cable in m/s: {vProp_D}') # will remain 0 until length of delay cable is measured
+
+print('using a different starting point for the reflected pulse (delay cable)')
+T_D2 = 2.14*10**(-6) - 500*10**(-9)
+print(f't for delay cable: {T_D2} s ± {DT_D} s')
+vProp_D2 = vProp(T_D2, l_D, DT_D, Dl_D)
+print(f'Best value and error of the propagation speed of the delay cable in m/s: {vProp_D2}')
