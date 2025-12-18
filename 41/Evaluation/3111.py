@@ -54,7 +54,7 @@ plt.plot(xval, lin(xval, m, b), label='Lineare Ausgleichsrechnung', color='red')
 plt.xlabel('Zeit t [s]')
 plt.ylabel('Distanz l [m]')
 plt.title('Lichtgeschwindigkeit', loc='left')
-plt.text(1, 1.05, 'Hannes Winkler und Moritz Langer, 13.11.2025', ha='right', va='top', transform=plt.gca().transAxes, fontsize=10)
+# plt.text(1, 1.05, 'Hannes Winkler und Moritz Langer, 13.11.2025', ha='right', va='top', transform=plt.gca().transAxes, fontsize=10)
 plt.legend()
 
 
