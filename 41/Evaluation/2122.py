@@ -183,8 +183,8 @@ plt.xlim(830000, 3000100)
 plt.tight_layout()
 
 # plot location
-# plt.savefig(img_path / 'DoverF.png')
-# plt.show() # shows plot every run of the code, used for debugging
+plt.savefig(img_path / 'DoverF.png')
+plt.show() # shows plot every run of the code, used for debugging
 
 er4 = e_r(299792458, SoP4[0], SoP4[1])
 er34 = e_r(299792458, SoP34[0], SoP34[1])
