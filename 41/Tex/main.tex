@@ -61,8 +61,8 @@
 \vspace{1em}
 
 	\noindent An einem Koaxialkabel des Typs RG213/U wird durch Reflexionsunterdrückung der Wellenwiderstand $Z = (50,0 \pm 1,0) \, \Omega$ bestimmt. Das Reflexionsverhalten wird durch benutzen
-	verschiedener Abschlusswiderstände untersucht. An selbigem Kabel und an einem Verzögerungskabel wird durch Laufzeitmessung die Ausbreitungsgeschwindigkeit \textcolor{red}{Ausbreitungsgeschwindigkeit einfügen}
-	von Signalen gemessen und an dem RG213/U Koaxialkabel auch mittels stehender Wellen. Bei der Methode der stehenden Wellen lässt sich die Dispersion der 
+	verschiedener Abschlusswiderstände untersucht. An selbigem Kabel und an einem Verzögerungskabel wird durch Laufzeitmessung die Ausbreitungsgeschwindigkeit 
+	von Signalen gemessen \textcolor{red}{und auf $v_{koaxial} = (192 \pm 18) \cdot 10^6 \, \frac{m}{s}$ und $v_{verzoegert} = (459 \pm 12) \cdot 10^3 \, \frac{m}{s}$ bestimmt.} An dem RG213/U Koaxialkabel \textcolor{red}{wurde die Ausbreitungsgeschwindigkeit} auch mittels stehender Wellen \textcolor{red}{bestimmt}. Bei der Methode der stehenden Wellen lässt sich die Dispersion der 
 	Ausbreitungsgeschwindigkeit und die Dämpfung im Kabel beobachten. Des weiteren wurde ebenfalls durch Laufzeitmessung die Lichtgeschwindigkeit bestimmt welche
 	ein Wert von $c = (293 \pm 16)\cdot 10^6 \, \frac{m}{s}$ ergab.
 \end{abstract}
@@ -373,11 +373,11 @@
 		Es ergeben sich folgende Werte:
 
 		\begin{equation*}
-			v_{Koaxialkabel} = (192 \pm 18) \cdot 10^{6} \, \frac{m}{s}
+			v_{Koaxialkabel} = (192 \pm 18) \cdot 10^{6}  \frac{m}{s}
 		\end{equation*}
 		\vspace{-2em}
 		\begin{equation*}
-			v_{Verzögerungskabel} = (459 \pm 12) \cdot 10^{3} \, \frac{m}{s}
+			v_{Verzögerungskabel} = (459 \pm 12) \cdot 10^{3}  \frac{m}{s}
 		\end{equation*}
 
 		\noindent Die Fehler ergeben sich mithilfe Gaußscherfehlerfortpflanzung. Da die Messung der Länge des Verzögerungskabels ungenau war, wurde eine Messreihe von
@@ -469,7 +469,7 @@
 		eine Ausbreitungsgeschwindigkeit von $~66\%$\\ der Lichtgeschwindigkeit besitzt\cite{Koaxialkabel1}, während nach unsere Messungen es ~63\%-64\% der Lichtgeschwindigkeit
 		sind. Die Begründung dieser Abweichung liegt in größtenteils an der Ungenauigkeit der Bestimmung der Resonanzfrequenz. Diese Unsicherheit rührt daher, 
 		dass der Knotenpunkt durch Dämpfung nicht ein Nullpunkt, sondern eher ein kontinuierliches lokales Minimunm ist. Dadurch lässt sich die genaue Resonanzfrequenz 
-		nicht gut einstellen. \\
+		nicht gut einstellen \textcolor{red}{daher wurde ein großzügiger Fehler von 5\% für die Frequenzbestimmung gewählt}. \\
 		Das im Koaxialkabel verbaute Dielektrikum ist ein Polyethylen niedriger Dichte. Dieser Werkstoff besitzt eine 
 		Dielektrizitätskonstante von $\epsilon_r = 2,4$ \cite{Koaxialkabel2}.
 		Die gemessenen Werte sind in der gleichen Größenordnung, weichen allerdings auch innerhalb des Fehlers leicht von dem Literaturwert ab.
@@ -535,10 +535,10 @@
 	das Signal ebenfalls auf die Photodiode $D$ sendet, was als Referenzsignal dient.
 	Diese Laufzeitverzögerung ist allerdings vernachlässigbar klein. \\
 	Die Laufzeit wird für 9 verschiedene Lichtwege gemessen. Dabei ist darauf zu achten,
-	dass die LED bei der Startposition $s_{LED} = (23,150 \pm 0,050) \, cm$ steht.
+	dass die LED bei der Startposition $s_{LED} = (23,2 \pm \textcolor{red}{0,1}) \, cm$ steht.
 	Daraus lässt sich die Lichtgeschwindigkeit berechnen:
 	\begin{equation*}
-		c = \frac{s}{\Delta t}
+		c = \frac{\textcolor{red}{2 \cdot}s}{\Delta t}
 	\end{equation*}
 	Der Fehler der Lichtgeschwindigkeit ergibt sich durch Gaußschefehlerfortpflanzung.
 	Der letztendliche Wert der Lichtgeschwindigkeit ergibt sich aus dem Bestwert der
@@ -550,6 +550,11 @@
 	Der Bestwert stimmt mit dem Literaturwert $c_{Literaturwert} = 299792458 \, \frac{m}{s}$ \cite{Lichtgeschwindigkeit} (also $c \approx 300 \cdot 10^{6} \, \frac{m}{s}$)
 	innerhalb des Fehlers überein. Bei manchen der Messungen wurde allerdings Überlichtgeschwindigkeit gemessen,
 	was unphysikalisch ist. Das liegt an der Ungenauigkeit in der Messmethode.
+	\textcolor{red}{Die Ungenauigkeiten rühren daher, dass die Wahl der Startposition der Flanken zur Zeitmessung nur sehr ungenau wählbar ist.
+	Zudem überlappen sich die Signale der Photodiode, was die genaue Bestimmung der Zeitdifferenz erschwert.
+	Des Weiteren ist die Ablesegenauigkeit des Oszilloskops begrenzt.}
+
+
 
 \section{Zusammenfassung}
 
