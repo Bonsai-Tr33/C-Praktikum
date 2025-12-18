@@ -84,6 +84,7 @@ for key, rows in groups.items():
 # =========================
 U_ref = min(r['U'] for r in results)
 
+
 for r in results:
     r['D_dB'] = damping_db(r['U'], U_ref)
     r['D_dB_per_m'] = r['D_dB'] / L_CABLE   # <<< WICHTIG!
@@ -140,4 +141,4 @@ plt.xlim(0.7, 3)
 plt.tight_layout()
 plt.savefig(img_path / 'DoverF.png')
 # plt.tight_layout()
-# plt.show()
+plt.show()
