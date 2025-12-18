@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1766066141 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/31/Tex/main.tex" "main.pdf" "main" 1766066142
+["pdflatex"] 1766069350 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/31/Tex/main.tex" "main.pdf" "main" 1766069351
   "../Images/Versuchsaufbau.png" 1765019359 25329 d5f693ec0b39ea2690d7b02b549ad4c8 ""
   "../Images/pV_all.png" 1765008038 36531 acb929d5326dba869a48d84bb0429561 ""
   "/etc/texmf/web2c/texmf.cnf" 1702837203 475 c0e671620eb5563b2130f56340a5fde8 ""
@@ -157,13 +157,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1702837220 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1712739328 2800261 4ad0ae65a236e35c0b7c8e1185fd73ae ""
   "Anhang.tex" 1764866993 135 c1e74abb18906bc2287f4854f93ad218 ""
-  "Auswertung.tex" 1766066141 1233 244f37ddb5dc9e0d1c27b79fd2a6aed3 ""
+  "Auswertung.tex" 1766069349 2190 fbcafc6f210a402d64924927e0bcf8f0 ""
   "Einleitung.tex" 1765022474 893 55ce1aac42e753894e64966c3a1b40a2 ""
-  "Experiment.tex" 1766065339 1068 a9c6ee493296c06efb182e0280d5095b ""
+  "Experiment.tex" 1766067588 1068 a9c6ee493296c06efb182e0280d5095b ""
   "Theorie.tex" 1765019259 1813 46768eb75fdfe10527fcb2ee80812769 ""
   "Zusammenfassung.tex" 1764866803 53 e9f78d4111008b0204b824accf89ba07 ""
-  "main.aux" 1766066142 5653 041082ee46cb6e8b26cc44bc7a7a4177 "pdflatex"
-  "main.out" 1766066142 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1766069351 6187 b57911f88a991d57ced404c05e885ad2 "pdflatex"
+  "main.out" 1766069351 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1765008038 3875 2219fbf209acb4e14fa9805aa340a494 ""
   (generated)
   "main.aux"
