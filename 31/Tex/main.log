@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  14 JAN 2026 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.10)  14 JAN 2026 14:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -524,19 +524,19 @@ LaTeX Font Info:    Font shape `T1/aess/b/n' in size <14.4> not available
 ) (./Theorie.tex
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <12> not available
 (Font)              Font shape `T1/aess/bx/n' tried instead on input line 4.
-) (./Experiment.tex
-<../Images/Versuchsaufbau.png, id=5, 448.67625pt x 477.785pt>
-File: ../Images/Versuchsaufbau.png Graphic file (type png)
-<use ../Images/Versuchsaufbau.png>
-Package pdftex.def Info: ../Images/Versuchsaufbau.png  used on input line 9.
-(pdftex.def)             Requested size: 145.64404pt x 155.08873pt.
- [1
+) (./Experiment.tex [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
-]) (./Auswertung.tex
+]
+<../Images/Versuchsaufbau.png, id=27, 448.67625pt x 477.785pt>
+File: ../Images/Versuchsaufbau.png Graphic file (type png)
+<use ../Images/Versuchsaufbau.png>
+Package pdftex.def Info: ../Images/Versuchsaufbau.png  used on input line 9.
+(pdftex.def)             Requested size: 145.64404pt x 155.08873pt.
+) (./Auswertung.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 4.
@@ -545,33 +545,47 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 4.
 
-<../Images/pV_all.png, id=32, 414.8298pt x 325.215pt>
+<../Images/pV_all.png, id=30, 414.8298pt x 325.215pt>
 File: ../Images/pV_all.png Graphic file (type png)
 <use ../Images/pV_all.png>
 Package pdftex.def Info: ../Images/pV_all.png  used on input line 10.
 (pdftex.def)             Requested size: 194.18712pt x 152.23573pt.
-<../Images/Kritischer_Druck_und_Volumen.png.pdf, id=35, 845.04686pt x 597.50786pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<../Images/Kritischer_Druck_und_Volumen.png.pdf, id=33, 845.04686pt x 597.50786pt>
 File: ../Images/Kritischer_Druck_und_Volumen.png.pdf Graphic file (type pdf)
 <use ../Images/Kritischer_Druck_und_Volumen.png.pdf>
 Package pdftex.def Info: ../Images/Kritischer_Druck_und_Volumen.png.pdf  used on input line 40.
-(pdftex.def)             Requested size: 194.18712pt x 137.30539pt.
-[2 <../Images/Versuchsaufbau.png> <../Images/pV_all.png> <../Images/Kritischer_Druck_und_Volumen.png.pdf>]
-<../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png, id=66, 774.7344pt x 593.0958pt>
+(pdftex.def)             Requested size: 242.73761pt x 171.63173pt.
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 40--41
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <../Images/Versuchsaufbau.png> <../Images/pV_all.png>]
+<../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png, id=62, 774.7344pt x 593.0958pt>
 File: ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png Graphic file (type png)
 <use ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png>
 Package pdftex.def Info: ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png  used on input line 72.
-(pdftex.def)             Requested size: 194.18712pt x 148.65367pt.
+(pdftex.def)             Requested size: 218.46236pt x 167.24217pt.
 
 Underfull \hbox (badness 5077) in paragraph at lines 73--73
 [][]|\T1/aer/m/n/9 Auf-tra-gung der lo-ga-rith-mier-ten Dampf-
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1072) in paragraph at lines 87--89
 \T1/aer/m/n/10 Aus dem lo-ga-rith-mier-ten Dia-gramm der Dampf-
  []
 
-
+[3 <../Images/Kritischer_Druck_und_Volumen.png.pdf> <../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png (PNG copy)>]
 Underfull \hbox (badness 4699) in paragraph at lines 120--122
 \T1/aer/m/n/10 Der Feh-ler wird mit-tels Gauÿ-scher Feh-ler-fort-
  []
@@ -581,11 +595,16 @@ Underfull \hbox (badness 7081) in paragraph at lines 120--122
 \T1/aer/m/n/10 pflan-zung des Ge-rä-te-feh-lers und der des Y-
  []
 
-<../Images/Stoffmenge.png, id=72, 774.7344pt x 593.0958pt>
+<../Images/Stoffmenge.png, id=92, 774.7344pt x 593.0958pt>
 File: ../Images/Stoffmenge.png Graphic file (type png)
 <use ../Images/Stoffmenge.png>
 Package pdftex.def Info: ../Images/Stoffmenge.png  used on input line 128.
-(pdftex.def)             Requested size: 194.18712pt x 148.65367pt.
+(pdftex.def)             Requested size: 242.73761pt x 185.82162pt.
+
+Overfull \hbox (12.5pt too wide) in paragraph at lines 128--129
+ [][] 
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 133.
@@ -602,42 +621,47 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 133.
 
-[3 <../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png (PNG copy)>]) (./Zusammenfassung.tex
+<../Images/HA_VdW_Maxwell_COMP.png, id=99, 462.528pt x 346.896pt>
+File: ../Images/HA_VdW_Maxwell_COMP.png Graphic file (type png)
+<use ../Images/HA_VdW_Maxwell_COMP.png>
+Package pdftex.def Info: ../Images/HA_VdW_Maxwell_COMP.png  used on input line 167.
+(pdftex.def)             Requested size: 194.18712pt x 145.64238pt.
+) (./Zusammenfassung.tex [4 <../Images/Stoffmenge.png (PNG copy)> <../Images/HA_VdW_Maxwell_COMP.png>]
 Underfull \hbox (badness 1137) in paragraph at lines 20--21
 \T1/aer/m/n/10 fungs-ener-gie, die Stoff-men-ge, die stoffs-pe-zi-fi-schen
  []
 
-) (./Anhang.tex)
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 85.
+)
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 [][]$\T1/aett/m/n/10 https : / / gestis . dguv . de / data ? name = 005220$[]
  []
 
-[4 <../Images/Stoffmenge.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 [][]$\T1/aett/m/n/10 https : / / www . chemeo . com / cid / 68-[]061-[]9 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \T1/aett/m/n/10 Sulfur-[]hexafluoride$[] \T1/aer/m/n/10 zu-letzt ab-ge-ru-fen am
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 [][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 [][]$\T1/aett/m/n/10 https : / / www . chemeo . com / cid / 68-[]061-[]9 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 \T1/aett/m/n/10 Sulfur-[]hexafluoride$[] \T1/aer/m/n/10 zu-letzt be-sucht am
  []
 
@@ -651,17 +675,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  16566 strings out of 478287
- 314075 string characters out of 5849289
- 769993 words of memory out of 5000000
- 34449 multiletter control sequences out of 15000+600000
+ 314260 string characters out of 5849289
+ 767993 words of memory out of 5000000
+ 34451 multiletter control sequences out of 15000+600000
  506262 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,106p,10656b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,20n,106p,10656b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (5 pages, 538009 bytes).
+Output written on main.pdf (5 pages, 562278 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
+ 274 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
  50 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
