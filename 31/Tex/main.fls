@@ -813,6 +813,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aer7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aer5.tfm
 INPUT ./Einleitung.tex
 INPUT ./Einleitung.tex
 INPUT ./Einleitung.tex
@@ -869,8 +871,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aesl10.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aer7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aer5.tfm
 INPUT ./Auswertung.tex
 INPUT ./Auswertung.tex
 INPUT ./Auswertung.tex
