@@ -29,18 +29,28 @@
     Daraus ergeben sich für die kritischen Parameter \(T_K\), \(p_K\) und \(V_K\) folgende Werte:
 
     \begin{equation}
-        p_K = (38,5 \pm 4,0) \, \text{bar} \\
-        V_K = (0,32 \pm 0,14) \, \text{cm}^3
+        p_K = (38,5 \pm 4,0) \, \text{bar} 
+    \end{equation}
+    \begin{equation}
+           V_K = (0,32 \pm 0,14) \, \text{cm}^3
     \end{equation}
 
-    \textcolor{red}{BILD EINFÜGEN VON SCHNITTPUNKT}
-    
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.4\textwidth]{../Images/Kritischer_Druck_und_Volumen.png.pdf}
+        \caption{Bestimmung der kritischen Parameter von \(SF_6\) durch lineare Anpassung der Start- und Endpunkte der Maxwell-Geraden}
+        \label{fig:KritischeParameter}
+    \end{figure}    
+
     Der kritische Druck stimmt innerhalb des Fehlers mit dem Literaturwert von \(p_{K,lit} = 37,53 \, \text{bar}\) überein \cite{SF6LITERATUR} überein.
     Um das kritische Volumen mit dem Literaturwert vergleichen zu können, muss dieses noch in die Einheiten \(ml/mol\) umgerechnet werden.
     Die Stoffmenge ist ebenfalls experimentell bestimmt worden.
     \begin{equation}
-        V_{K,mol} = (\textcolor{red}{HIER UMRECHNEN}) \frac{m^3}{mol}
+        V_{K,mol} = (243 \pm 106) \cdot 10^{-6} \frac{m^3}{mol}
     \end{equation}
+    Der experimentell bestimmte Wert liegt innerhalb des Fehlers mit dem Literaturwert von $V_{K,mol}^{lit} = 200 \cdot 10^{-6} \frac{m^3}{mol}$ \cite{SF6LITERATUR} überein. \\
+    Das liegt allerdings auch daran, dass der Fehler des experimentell bestimmten Wert bei ca. 43\% liegt. Der große Fehler kommt hauptsächlich dadurch, dass wir zu Beginn und zum Ende der Maxwell-Geraden
+    zu wenig Messpunkte aufgenommen haben, was zu einer großen Streuung und dadurch zu einem großen Fehler kommt.
     \subsection{Ermittlung der Dampfdruckkurve}
 
     \subsubsection{Kritische Temeratur}
@@ -69,6 +79,8 @@
     \begin{equation}
         T_K = (322 \pm 12) \, K
     \end{equation}
+
+    Der Literaturwert der kritischen Temperatur ist \(T_{K,lit} = 318,75 \, K\) \cite{kritischeTemperatur}. Somit stimmt der experimentell bestimmte Wert innerhalb des Fehlers mit dem Literaturwert überein.
     
     \subsubsection{Verdampfungsenergie}
 
@@ -108,7 +120,7 @@
     \end{equation}
     Der Fehler wird mittels Gaußscher Fehlerfortpflanzung des Gerätefehlers und der des Y-Achsenabschnitts bestimmt. Daraus ergibt sich:
     \begin{equation}
-        \nu = (1.319 \pm 0.014) \, mol
+        \nu = (1.319 \pm 0.014) \cdot 10^{-3} \, mol
     \end{equation}
 
     \begin{figure}
@@ -120,24 +132,33 @@
 
     \subsubsection{Ermittlung der Konstanten \(a\) und \(b\) der Van-der-Waals-Gleichung und des kritischen Koeffizienten \(K_K\)}
      
-    Mit den Gleichungen \ref{eq:VanDerWaals} und \ref{eq:Ableitungen} lassen sich die Konstanten \(a\) und \(b\) bestimmen.
-
-    \textcolor{red}{HIER STIMMT WAS NICHT, IRGENDWIE DIE WERTE NICHT GESCHEIT, LEIDER CHECKE ICH ICNHT DEN CODE BZW ER RUNT NICHT AUF MEINEM LAPTOP}
+    Mit den Gleichungen \ref{eq:VanDerWaals} und \ref{eq:Ableitungen} und den kritischen Parametern lassen sich die Konstanten \(a\) und \(b\) bestimmen.
 
     \begin{equation}
-        a = \frac{27 R^2 T_K^2}{64 p_K} = (78,1 \pm 9,7) \cdot 10^{3} \, J^2 \frac{ml}{mol^2}
+        a = \frac{27 R^2 T_K^2}{64 p_K} = (0.79 \pm 0.10) \, Pa \frac{m^6}{mol^2}
     \label{eq:KonstanteA}
     \end{equation}
 
     \begin{equation}
-        b = \frac{R T_K}{8 p_K} = (8,67 \pm 0,95) \, \frac{ml}{mol}
+        b = \frac{R T_K}{8 p_K} = (86.7 \pm 9.6) 10^{-6} \, \frac{m^3}{mol}
     \label{eq:KonstanteB}
     \end{equation}
     Der kritische Koeffizient \(K_K\) ergibt sich aus dem Verhältnis der kritischen Parameter:
     \begin{equation}
-        K_K = \frac{R T_K}{p_K V_K} = (217 \pm 91)
+        K_K = \frac{R T_K}{p_K V_{K,mol}} = \frac{\nu R T_K}{p_K V_K} = (2.87 \pm 0.12)
     \label{eq:KritischerKoeffizient}
     \end{equation}
-    
-    
-    \textcolor{red}{VGL MIT LITERATURWERTE}
+
+    Die Fehler wurden mittels Gaußscher Fehlerfortpflanzung bestimmt, wobei R als fehlerfrei angenommen wurde. \\
+    Die experimentell bestimmten Werte für die gasspezifischen Parameter \(a\) und \(b\) stimmen innerhalb der Fehlerintervalle mit den Literaturwerten $a = 0.786 \frac{Pa \cdot m^6}{mol^2}$ und $b = 88.0 \cdot 10^{-6} \frac{m^3}{mol}$ \cite{KritischeKoeffizienten} überein. \\
+    Bei Verwendung der Van-der-Waals-Gleichung ist bekannt, dass der kritische Koeffizient größer-gleich $\frac{8}{3} \approx 2.66$ ist. Der experimentell bestimmte Wert für \(K_K\) erfüllt somit diese Bedingung.
+
+    \subsection{Vergleich der Messung zur Theorie}
+
+    Um nun das theoretische Verhalten von realen Gasen mit den gemessenen Daten zu vergleichen, werden die bestimmten stoffspezifischen Parameter a,b und $\nu$ sowohl in die
+    Van-der-Waals-Gleichung \ref{eq:VanDerWaals} als auch in die ideale Gasgleichung \ref{eq:idealesGas} eingesetzt. Die beiden Kurven werden gemeinsam mit der Isothermen \textcolor{red}{Hier verwendete isotherme}
+    in Abb. \textcolor{red}{ref zu abbildung} dargestellt. \\
+    Hierbei ist erkennbar, dass die ideale Gasgleichung erst bei sehr hohen Volumina ein ähnliches Verhalten hat, wie die gemessenen Werte.
+    Wie zu erwarten war, verhält sich Schwefelhexafluorid bei hohen Drücken nicht wie ein ideales Gas. \\
+    Bei dem Vergleich mit der Van-der-Waals-Kurve erkennt man eine gute Anpassung der gemessenen Werte mit der theoretischen Kurve.
+    Jedoch hat die Van-der-Waals-Kurve in dem Bereich der Maxwell-Geraden ein konvexes Verhalten. Bei dem realen Verlauf ist in diesem Bereich eine Koexistenz von flüssiger und gasförmiger Phase. Diese Koexistenz wird von der Van-der-Waals-Kurve nicht korrekt beschrieben.
