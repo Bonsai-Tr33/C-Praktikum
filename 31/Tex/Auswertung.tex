@@ -43,6 +43,8 @@
     \end{equation}
     \subsection{Ermittlung der Dampfdruckkurve}
 
+    \subsubsection{Kritische Temeratur}
+
     Mithilfe des kritischen Drucks wird nun die kritische Temperatur \(T_K\) bestimmt. \\
     In einem p(T)-Diagramm gibt die Sättigungsdampfdruckkurve die Werte an, bei denen ein Gas
     gleichzeitig flüssig und gasförmig vorliegt. Diese Kurve endet im kritischen Punkt \((T_K, p_K)\).
@@ -52,12 +54,75 @@
     \end{equation}
     Hier ist \(E\) die Verdampfungsenergie pro Molekül, \(k_B\) die Boltzmann-Konstante und \(b\) eine Konstante, welche geringfügig 
     temperaturabhängig ist, was allerdings in der folgenden Auswertung vernachlässigt wird. \\
-    Um die kritische Temperatur zu bestimmen, wird die Gleichung \ref{eq:Dampfdruck} logarithmiert und \(ln(p)\) gegen \(\frac{1}{T}\) aufgetragen.
-    An dem Punkt von \(ln(p_{K})\) wird die kritische Temperatur \(T_K\) abgelesen.
+    Um die kritische Temperatur zu bestimmen, wird die Gleichung \ref{eq:Dampfdruck} logarithmiert und \(ln(p)\) gegen \(\frac{1}{T}\) aufgetragen. 
+    Die Werte für T sind die Mittelwerte aus Start- und Endtemperaturen der Maxwell-Geraden.
 
-    \subsection{Ermittlung der Konstanten \(a\) und \(b\) der Van-der-Waals-Gleichung und des kritischen Koeffizienten \(K_K\)}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\textwidth]{../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png}
+        \caption{Auftragung der logarithmierten Dampfdruckkurve von \(SF_6\)}
+        \label{fig:Dampfdruckkurve}
+    \end{figure}
+
+    Die kritische Temperatur \(T_K\) ergibt sich aus dem Schnittpunkt der linearen Regression mit dem kritischen Druck \(p_K\):
+
+    \begin{equation}
+        T_K = (322 \pm 12) \, K
+    \end{equation}
+    
+    \subsubsection{Verdampfungsenergie}
+
+    Aus dem logarithmierten Diagramm der Dampfdruckkurve (Abb. \ref{fig:Dampfdruckkurve}) lässt sich die molare Verdampfungsenergie \(\Lambda\) mit  aus der Steigung der linearen Regression bestimmen.
+    Es gilt:
+    \begin{equation}
+        \text{p} = -\frac{\Lambda}{RT}
+    \end{equation}
+    Durch umformen ergibt sich für die Verdampfungsenergie:
+    \begin{equation}
+        \Lambda = -  b\cdot R
+    \label{eq:Verdampfungsenergie}
+    \end{equation}
+
+    Hierbei ist b die Steigung der Dampdruckkurve und R=(8,3145 J/molK) \cite{Gaskonstante} die allgemeine Gaskonstante.
+    Daraus ergibt sich für die Verdampfungsenergie:
+    \begin{equation}
+        \Lambda = (20.9 \pm 0.50) kJ/mol
+    \end{equation}
+    Der Literaturwert ist \(\Lambda_{lit} = 18,10 \cdot 10^3 \, kJ/mol\) \cite{Verdampfungsenergie}. Damit ist der gemessene Wert nicht mit dem
+    Literaturwert vereinbar. Da $\Lambda$ auch von der Temperatur abhängt und bei dem Literaturwert keine Angabe dazu steht, kann hierher die Differenz kommen 
+    und eine definitive Aussage ist nicht möglich. 
+
+    \subsection{Bestimmung gas-spezifischer Parameter}
+
+    \subsubsection{Bestimmung der Stoffmenge}
+
+    Man bestimmt die Stoffmenge für die gemessene Isothermen mittels der Van-der-Waals-Gleichung \ref{eq:VanDerWaals}.
+    Im thermodynamischen Limes $V \to \infty$ vereinfacht sich die Gleichung zu der idealen Gasgleichung:
+    \begin{equation}
+        \nu RT = \lim_{\frac{1}{V} \to 0} pV
+    \end{equation}
+    Um die Stoffmenge $\nu$ zu bestimmen, wird pV über $\frac{1}{V}$ aufgetragen. Die Daten bei hohen Volumina werden linear angepasst
+    und mit dem Y-Achsenabschnitt b die Stoffmenge bestimmt:
+    \begin{equation}
+        \nu = \frac{b}{R T}
+    \end{equation}
+    Der Fehler wird mittels Gaußscher Fehlerfortpflanzung des Gerätefehlers und der des Y-Achsenabschnitts bestimmt. Daraus ergibt sich:
+    \begin{equation}
+        \nu = (1.319 \pm 0.014) \, mol
+    \end{equation}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\textwidth]{../Images/Stoffmenge.png}
+        \caption{Bestimmung der Stoffmenge von \(SF_6\) durch lineare Anpassung im thermodynamischen Limes}
+        \label{fig:Stoffmenge}
+    \end{figure}
+
+    \subsubsection{Ermittlung der Konstanten \(a\) und \(b\) der Van-der-Waals-Gleichung und des kritischen Koeffizienten \(K_K\)}
      
     Mit den Gleichungen \ref{eq:VanDerWaals} und \ref{eq:Ableitungen} lassen sich die Konstanten \(a\) und \(b\) bestimmen.
+
+    \textcolor{red}{HIER STIMMT WAS NICHT, IRGENDWIE DIE WERTE NICHT GESCHEIT, LEIDER CHECKE ICH ICNHT DEN CODE BZW ER RUNT NICHT AUF MEINEM LAPTOP}
 
     \begin{equation}
         a = \frac{27 R^2 T_K^2}{64 p_K} = (78,1 \pm 9,7) \cdot 10^{3} \, J^2 \frac{ml}{mol^2}
