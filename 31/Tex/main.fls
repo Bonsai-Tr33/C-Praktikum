@@ -831,13 +831,6 @@ INPUT ./Theorie.tex
 INPUT ./Theorie.tex
 INPUT Theorie.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aessbx10.tfm
-INPUT ./Experiment.tex
-INPUT ./Experiment.tex
-INPUT ./Experiment.tex
-INPUT Experiment.tex
-INPUT ./Experiment.tex
-INPUT ./Experiment.tex
-INPUT Experiment.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aesl10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aer10.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -864,6 +857,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aesl10.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ./Experiment.tex
+INPUT ./Experiment.tex
+INPUT ./Experiment.tex
+INPUT Experiment.tex
+INPUT ./Experiment.tex
+INPUT ./Experiment.tex
+INPUT Experiment.tex
 INPUT ../Images/Versuchsaufbau.png
 INPUT ../Images/Versuchsaufbau.png
 INPUT ../Images/Versuchsaufbau.png
