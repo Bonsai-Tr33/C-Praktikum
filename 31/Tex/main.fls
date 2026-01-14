@@ -907,6 +907,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png
+INPUT ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png
+INPUT ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png
+INPUT ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png
+INPUT ../Images/Verdampfungsentalpie_und_Kritische_Temperatur.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aeb10.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmb10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
@@ -915,6 +920,16 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aer9.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aessbx10.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT ../Images/Stoffmenge.png
+INPUT ../Images/Stoffmenge.png
+INPUT ../Images/Stoffmenge.png
+INPUT ../Images/Stoffmenge.png
+INPUT ../Images/Stoffmenge.png
 INPUT ./Zusammenfassung.tex
 INPUT ./Zusammenfassung.tex
 INPUT ./Zusammenfassung.tex
@@ -936,7 +951,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aett10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/ae/aett10.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
@@ -946,7 +960,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
