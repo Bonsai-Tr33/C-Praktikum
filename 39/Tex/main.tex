@@ -1,0 +1,86 @@
+%Diese LaTeX-Vorlage f�r Praktikumsprotokolle in Form einer Ver�ffentlichung f�r das 
+%F-Praktikum wurde erstellt von Andreas Nuber EP II, Uni W�rzburg.
+%Es wurde das Koma-Skript verwendet und sollte somit installiert sein
+%desweiteren sollten alle packages installiert sein, die mit \usepackage{} 
+%eingebunden werden.
+%Zum Testen dieser Vorlage wurde MikTex verwendet sowie TeXnicCenter als Editor
+%beim Compilieren waren 0 Fehler, 1 Warnung und 3 zu volle/leere Boxen. Das ist ok :)
+
+%F�r das Erstellen einfach den sinnfreien Text, der zum ausf�llen genommen wurde 
+%ersetzen. Was sonst noch ver�ndert werden sollte steht in den Kommentaren!
+
+
+\documentclass[a4paper,10pt,twocolumn]{scrartcl} %Koma-Skript-�quivalent zu "article"
+
+\usepackage{german}            %macht deutsche �berschriften
+\usepackage{amsmath}           %macht
+\usepackage{amsfonts}          %       Mathe
+\usepackage{amssymb}           %              m�chtiger
+\usepackage{graphicx}          %erlaubt Graphiken einzubinden (.eps f�r dvi und ps sowie .jpg f�r pdf)
+\usepackage[T1]{fontenc}       %Zeichenbelegung der verwendeten Schrift
+\usepackage{ae}                %macht sch�neres �
+\usepackage{typearea}	         %erm�glicht �nderung des Seitenspiegels
+\usepackage{scrlayer-scrpage}          %erm�glicht �nderung der Kopf-/Fu�zeile
+\usepackage{lastpage}         %l�sst auf die Seienanzahl zugreifen
+\usepackage[margin=10pt,font=small,labelfont=bf]{caption} %macht die Bildbeschriftungen richtig
+\usepackage{xcolor}			  % macht Farbe
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{comment}
+
+\renewcommand{\figurename}{Abb.}
+
+\pagestyle{scrheadings}        %sagt Koma-Skript, dass selbstdefiniers Kopfzeilen verwendet werden
+\typearea{16}                  %stellt Seitenspiegel ein
+\columnsep25pt								 %definiert Breite zwischen den zwei Spalten von \twocolumns
+
+\renewcommand{\pnumfont}{%     %�ndert die Schriftart der Seitennummerierung
+\normalfont\rmfamily\slshape}  %�ndert die Schriftart der Seitennummerierung 
+
+
+
+\begin{document}
+\cfoot{\thepage /\pageref{LastPage}}     %macht die Seitennumerierung der Fom 2/5 (ausser auf der Titelseite)
+
+\twocolumn[{\csname @twocolumnfalse\endcsname                %erlaubt "Abstrakt" �ber beide Spalten
+\titlehead{                                                  %Kopfzeile
+	\begin{tabular*}{\textwidth}[]{@{\extracolsep{\fill}}lr}   %Kopfzeile
+	Betreuer: Prof. Dr. V. Hinkov & \today\\                          %Kopfzeile      hier den Betreuer eintragen!!!
+	\end{tabular*}                                             %Kopfzeile
+	}
+\title{Bestimmung der kritischen Parameter von Schwefelhexafluorid und Vergleich des Verlaufs einiger Isothermen mit der Van-der-Waals-Zustandsgleichung}  %Titel der Versuchs
+\author{Moritz Langer \and Sebastian Schillinger \and Hannes Winkler}                     %Namen der Studenten
+\date{}			                                               %ben�tigt um automatisches Datum auszuschalten
+\maketitle                                                      %erzeugt Titelseite
+\vspace{-8ex}                                                   %verringert Abstand zur �berschrift
+\begin{abstract}                                                %Beginn des Abstracts
+\vspace{1em}
+
+	\noindent Durch Messung von 7 Isothermen des realen Gases Schwefelhexafluorid \(SF_6\) wurden die kritischen Parameter des Gases bestimmt. Diese ergeben sich zu:
+	$T_K = (318.6 \pm 2.1) \, K$, $p_K = (38,5 \pm 4,0) \, \text{bar}$ und $V_K = (0,32 \pm 0,14) \, \text{cm}^3$.
+	Mithilfe dieser Parameter konnten die Verdampfungsenthalpie \(\Lambda = (20.9 \pm 0.50) kJ/mol\), die Stoffmenge \(\nu = (1.319 \pm 0.014) \cdot 10^{-3} \, mol\), die stoffspezifischen Van-der-Waals-Parameter
+	$a = (0.79 \pm 0.10) \, Pa \frac{m^6}{mol^2}$ und $b = (86.7 \pm 9.6) 10^{-6} \, \frac{m^3}{mol}$ sowie der kritische Koeffizient \(K_K = (2.87 \pm 0.12)\) bestimmt werden.
+	Anschließend wurden die Messergebnisse mit den theoretischen Vorhersagen der idealen Gasgleichung und der Van-der-Waals-Gleichung verglichen und deren Gültigkeit diskutiert.
+\end{abstract}
+\vspace{1em}
+\noindent Versuchsdurchführung: 15. Jänner 2026\\% Datum ändern!
+\noindent Protokollabgabe: 29. Februar 2026% Datum ändern!
+\vspace{1em}
+}]
+
+\input{Einleitung}
+
+\input{Theorie}	
+
+\input{Experiment}
+
+\input{Auswertung}
+
+\input{Zusammenfassung}
+	
+\begin{thebibliography}{}    %so wird das Literaturverzeicnis erstellt
+\bibitem{kritischeTemperatur}
+	\url{https://gestis.dguv.de/data?name=005220} zuletzt besucht am 14.01.2026
+\end{thebibliography}
+\end{document}
