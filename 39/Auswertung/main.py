@@ -27,15 +27,15 @@ img_path = base_path / 'Images'
 
 # ---------
 # First measurements
-messreihe1 = Messreihe(data_path / 'Ringspule1_39.csv', N1=605, N2=80, F=0.9)
+messreihe1 = Messreihe(data_path / 'Ringspule1_39.csv', N1=605, N2=80, R=67.3, F=0.9)
 Data1 = messreihe1.dataArray()
 
 # shift correction
-B_Shift = symmetric(Data1.iloc[:, 0], Data1.iloc[:,1], symPX=19000)
-DataH = Data1.iloc[:, 0] 
-DataB = Data1.iloc[:,1] - B_Shift
+B_Shift = symmetric(Data1.iloc[:, 1], Data1.iloc[:,2], symPX=58)
+DataH = Data1.iloc[:, 1] 
+DataB = Data1.iloc[:,2] - B_Shift
 
 plt1 = ScatterPlotter(xlabel='H [A/m]', ylabel='B [T]')
-plt1.plot(DataH, DataB, grid=True, label='Messpunkte')
+plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=True, xlimit=85, xstep=20, ylim=True, ylimit=1.2, ystep=0.2)
 plt1.show()
-plt1.save(img_path / 'Hyster1.png')
+# plt1.save(img_path / 'Hyster1.png')
