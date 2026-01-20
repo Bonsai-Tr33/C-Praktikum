@@ -38,4 +38,3 @@ DataB = Data1.iloc[:,2] - B_Shift
 plt1 = ScatterPlotter(xlabel='H [A/m]', ylabel='B [T]')
 plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=True, xlimit=85, xstep=20, ylim=True, ylimit=1.2, ystep=0.2)
 plt1.show()
-# plt1.save(img_path / 'Hyster1.png')
