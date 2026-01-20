@@ -3,13 +3,15 @@ import math
 
 class Messreihe:
     def __init__(self, filepath, N1, N2, R=0.2, F=0.9):           # Loading CSV
+        self.N1 = N1
+        self.N2 = N2
         self.filepath = filepath
         self.data = pd.read_csv(filepath)
         first = self.data.columns[0]
         second = self.data.columns[1]
 
-        self.data[first] = self.data[first].apply(lambda x: self.H(x, N1, R))
-        self.data[second] = self.data[second].apply(lambda x: self.B(x, N2, F))
+        self.data[first] = self.data[first].apply(lambda x: self.H(x, self.N1, R))
+        self.data[second] = self.data[second].apply(lambda x: self.B(x, self.N2, F))
         self.data.columns = ['H(A/m)', 'B(T)']
 
     def H(self, U, N1, R):
@@ -27,5 +29,3 @@ class Messreihe:
 
     def show_head(self, n=5):               # Show first n Data frames
         return self.data.head(n)
-
-    

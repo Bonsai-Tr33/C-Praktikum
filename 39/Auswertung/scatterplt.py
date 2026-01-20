@@ -26,6 +26,6 @@ class ScatterPlotter:
     def show(self):
         plt.show()
 
-    def save(self, filepath, dpi=3000):
-        plt.savefig(filepath, dpi=dpi)
+    def save(self, filepath):
+        plt.savefig(filepath)
         plt.close()
