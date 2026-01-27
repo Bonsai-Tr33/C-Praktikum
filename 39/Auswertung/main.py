@@ -6,7 +6,7 @@ import numpy as np
 
 def symmetric(dataX, dataY, symPX=1000):
     dataX = np.asarray(dataX)
-    dataY = np.asarray(dataY)
+    dataY = np.asarray(dataY)l
 
     # find indizes
     idx_pos = np.argmin(np.abs(dataX - symPX))
