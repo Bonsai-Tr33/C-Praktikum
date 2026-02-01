@@ -9,7 +9,7 @@ class ScatterPlotter:
         self.ylabel = ylabel
 
     def plot(self, x, y, label=None, color='black', size=1, legend=True, grid=False, xlim=False, ylim=False, xlimit=100, ylimit=1.2, xstep=10, ystep=10):
-        plt.scatter(x, y, label=label, c=color, s=size, zorder=5)
+        plt.scatter(x, y, label=label, c=color, s=size, zorder=4)
         plt.axvline(x=0, color='grey', linestyle='--', zorder=1, alpha=0.5)
         plt.axhline(y=0, color='grey', linestyle='--', zorder=1, alpha=0.5)
         plt.title(self.title)

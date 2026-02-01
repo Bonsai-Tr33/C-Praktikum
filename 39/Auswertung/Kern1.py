@@ -37,6 +37,24 @@ def HC(H, B, B_Tolerance=0.1):
 
     return H_C, D_HC
 
+def Br(H, B, H_Tolerance=0.5):
+    H = np.asarray(H)
+    B = np.asarray(B)
+
+    # select points close to B = 0
+    mask = (np.abs(H) <= H_Tolerance) & (B>0)
+
+    if np.sum(mask) < 2:
+        raise ValueError("Zu wenige Punkte nahe H = 0. H_toleranz erhöhen!")
+
+    B_0 = B[mask]
+
+    # Median = Koerzitivfeldstärke
+    B_R = np.mean(B_0)
+    D_BR = np.std(B_0, ddof=1) / np.sqrt(len(B_0))
+
+    return B_R, D_BR
+
 # ---------
 # Data Path initialization
 base_path = Path.cwd() / '39'
@@ -58,7 +76,13 @@ print('Symmetrisierungsfaktor Ringkern 1: ' + str(B_Shift) + 'T')
 HC1, DHC1 = HC(DataH, DataB)
 print('Koerzitivfeldstärke Ringkern 1: (' + str(HC1) + ' ± ' + str(DHC1) + ') A/m')
 
+# remanenz measurement 1
+BR1, DBR1 = Br(DataH, DataB)
+print('Remanenz Ringkern 1: (' + str(BR1) + ' ± ' + str(DBR1) + ') T')
+
 plt1 = ScatterPlotter(xlabel='H [A/m]', ylabel='B [T]')
-plt.scatter(HC1, 0, marker='x', color='red', label='H_C')
+plt.scatter(HC1, 0, marker='x', color='red', label='H_C', zorder=5)
+plt.scatter(0, BR1, marker='x', color='orange', label='B_r', zorder=5)
 plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=True, xlimit=85, xstep=20, ylim=True, ylimit=1.2, ystep=0.2)
+plt1.save(img_path)
 plt1.show()
