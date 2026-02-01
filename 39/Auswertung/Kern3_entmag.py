@@ -1,11 +1,8 @@
 from pathlib import Path
 from importer import Messreihe
+from scatterplt import ScatterPlotter
 import matplotlib.pyplot as plt
 import numpy as np
-from mpl_toolkits.axes_grid1.inset_locator import inset_axes, mark_inset
-from matplotlib.ticker import AutoMinorLocator
-
-
 
 def symmetric(dataX, dataY, symPX=1000):
     dataX = np.asarray(dataX)
@@ -66,7 +63,7 @@ img_path = base_path / 'Images'
 
 # ---------
 # First measurements
-messreihe3 = Messreihe(data_path / 'Ringkern3Irre_39.csv', N1=1010, N2=53, R=67.3, F=1)
+messreihe3 = Messreihe(data_path / 'Ringkern3entmag_39.csv', N1=1010, N2=53, R=67.3, F=1)
 Data3 = messreihe3.dataArray()
 
 # shift correction
@@ -75,21 +72,7 @@ DataH = Data3.iloc[:, 1]
 DataB = Data3.iloc[:,2] - B_Shift
 print('Symmetrisierungsfaktor Ringkern 1: ' + str(B_Shift) + 'T')
 
-
-fig, plt3 = plt.subplots(figsize=(8,5))
-plt3.scatter(DataH, DataB, label='Messpunkte', c='black', s=0.5, zorder=4)
-plt3.axvline(x=0, color='grey', linestyle='--', zorder=1, alpha=0.5)
-plt3.axhline(y=0, color='grey', linestyle='--', zorder=1, alpha=0.5)
-plt3.set_xlabel('H [A/m]')
-plt3.set_ylabel(ylabel='B [T]')
-plt3.tick_params(axis='both', which='minor', direction='in', right=True, top=True)
-plt3.tick_params(axis='both', which='major', direction='in', right=True, top=True, length=5)
-plt3.legend()
-
-plt3in = inset_axes(plt3, width='40%', height='40%', loc='lower right',bbox_to_anchor=(0, 0.08, 1, 1), bbox_transform=plt3.transAxes)
-plt3in.scatter(DataH, DataB, c='black', marker='.', s=1)
-plt3in.set_xlim(2,6.5)
-plt3in.set_ylim(0.8, 1.2)
-mark_inset(plt3, plt3in, loc1=1, loc2=2, lw=1)
-plt.savefig(img_path / 'Hyster3_irre.png')
-plt.show()
+plt3 = ScatterPlotter(xlabel='H [A/m]', ylabel='B [T]')
+plt3.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=False, ylim=False, size=0.4)
+plt3.save(img_path / 'Hyster3_entmag.png')
+plt3.show()
