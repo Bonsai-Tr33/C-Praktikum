@@ -55,6 +55,16 @@ def Br(H, B, H_Tolerance=0.5):
 
     return B_R, D_BR
 
+def drift_correction(time, B, degree=1):
+    time = np.asarray(time)
+    B = np.asarray(B)
+
+    coeffs = np.polyfit(time, B, degree)
+    drift = np.polyval(coeffs, time)
+
+    B_corr = B - drift
+    return B_corr, drift, coeffs
+
 # ---------
 # Data Path initialization
 base_path = Path.cwd() / '39'
@@ -62,27 +72,36 @@ data_path = base_path / 'Auswertung' / 'Data'
 img_path = base_path / 'Images'
 
 # ---------
-# First measurements
-messreihe1 = Messreihe(data_path / 'Ringspule1_39.csv', N1=605, N2=80, R=67.3, F=0.9)
-Data1 = messreihe1.dataArray()
+# third measurements
+messreihe3 = Messreihe(data_path / 'Ringkern3_2_39.csv', N1=1010, N2=53, R=67.3, F=1)
+Data3 = messreihe3.dataArray()
+
+# Driftkorrektur (zeitabhängig!)
+time = Data3.iloc[:, 0]
+H_raw = Data3.iloc[:, 1]
+B_raw = Data3.iloc[:, 2]
+
+B_driftcorr, drift, coeffs = drift_correction(time, B_raw, degree=1)
+
+print(f"Driftkoeffizienten (B(t)): {coeffs}")
 
 # shift correction
-B_Shift = symmetric(Data1.iloc[:, 1], Data1.iloc[:,2], symPX=58)
-DataH = Data1.iloc[:, 1] 
-DataB = Data1.iloc[:,2] - B_Shift
-print('Symmetrisierungsfaktor Ringkern 1: ' + str(B_Shift) + 'T')
+B_Shift = symmetric(H_raw, B_driftcorr, symPX=58)
+DataH = H_raw 
+DataB = B_driftcorr + B_Shift
+print('Symmetrisierungsfaktor Ringkern 3: ' + str(B_Shift) + 'T')
 
-# koerzitivfeldstärke measurement 1
-HC1, DHC1 = HC(DataH, DataB)
-print('Koerzitivfeldstärke Ringkern 1: (' + str(HC1) + ' ± ' + str(DHC1) + ') A/m')
+# koerzitivfeldstärke measurement 3
+HC3, DHC3 = HC(DataH, DataB, B_Tolerance=0.001)
+print('Koerzitivfeldstärke Ringkern 3: (' + str(HC3) + ' ± ' + str(DHC3) + ') A/m')
 
-# remanenz measurement 1
-BR1, DBR1 = Br(DataH, DataB)
-print('Remanenz Ringkern 1: (' + str(BR1) + ' ± ' + str(DBR1) + ') T')
+# remanenz measurement 3
+BR3, DBR3 = Br(DataH, DataB)
+print('Remanenz Ringkern 3: (' + str(BR3) + ' ± ' + str(DBR3) + ') T')
 
 plt1 = ScatterPlotter(xlabel='H [A/m]', ylabel='B [T]')
-plt.scatter(HC1, 0, marker='x', color='red', label='H_C', zorder=5)
-plt.scatter(0, BR1, marker='x', color='orange', label='B_r', zorder=5)
-plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=True, xlimit=85, xstep=20, ylim=True, ylimit=1.2, ystep=0.2)
+plt.scatter(HC3, 0, marker='x', color='red', label='H_C', zorder=5)
+plt.scatter(0, BR3, marker='x', color='orange', label='B_r', zorder=5)
+plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=False, ylim=False)
 # plt1.save(img_path)
 plt1.show()

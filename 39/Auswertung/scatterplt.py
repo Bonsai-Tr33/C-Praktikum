@@ -41,5 +41,5 @@ class ScatterPlotter:
     def show(self):
         plt.show()
 
-    def save(self, filepath):
-        plt.savefig(filepath)
+    def save(self, filepath, name):
+        plt.savefig(filepath + name)

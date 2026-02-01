@@ -63,26 +63,16 @@ img_path = base_path / 'Images'
 
 # ---------
 # First measurements
-messreihe1 = Messreihe(data_path / 'Ringspule1_39.csv', N1=605, N2=80, R=67.3, F=0.9)
-Data1 = messreihe1.dataArray()
+messreihe3 = Messreihe(data_path / 'Ringkern3Irre_39.csv', N1=1010, N2=53, R=67.3, F=1)
+Data3 = messreihe3.dataArray()
 
 # shift correction
-B_Shift = symmetric(Data1.iloc[:, 1], Data1.iloc[:,2], symPX=58)
-DataH = Data1.iloc[:, 1] 
-DataB = Data1.iloc[:,2] - B_Shift
+B_Shift = symmetric(Data3.iloc[:, 1], Data3.iloc[:,2], symPX=58)
+DataH = Data3.iloc[:, 1] 
+DataB = Data3.iloc[:,2] - B_Shift
 print('Symmetrisierungsfaktor Ringkern 1: ' + str(B_Shift) + 'T')
 
-# koerzitivfeldstärke measurement 1
-HC1, DHC1 = HC(DataH, DataB)
-print('Koerzitivfeldstärke Ringkern 1: (' + str(HC1) + ' ± ' + str(DHC1) + ') A/m')
-
-# remanenz measurement 1
-BR1, DBR1 = Br(DataH, DataB)
-print('Remanenz Ringkern 1: (' + str(BR1) + ' ± ' + str(DBR1) + ') T')
-
-plt1 = ScatterPlotter(xlabel='H [A/m]', ylabel='B [T]')
-plt.scatter(HC1, 0, marker='x', color='red', label='H_C', zorder=5)
-plt.scatter(0, BR1, marker='x', color='orange', label='B_r', zorder=5)
-plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=True, xlimit=85, xstep=20, ylim=True, ylimit=1.2, ystep=0.2)
-# plt1.save(img_path)
-plt1.show()
+plt3 = ScatterPlotter(xlabel='H [A/m]', ylabel='B [T]')
+plt3.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=False, ylim=False)
+# plt3.save(img_path)
+plt3.show()
