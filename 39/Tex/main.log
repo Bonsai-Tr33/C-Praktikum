@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  2 FEB 2026 09:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.1.30)  2 FEB 2026 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -484,6 +484,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 31.
 LaTeX Info: Redefining \pageref on input line 31.
 LaTeX Info: Redefining \nameref on input line 31.
+ (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -546,48 +547,93 @@ Underfull \vbox (badness 1184) has occurred while \output is active []
 
 
 ]) (./Experiment.tex
+<../Images/Versuchsaufbau.png, id=25, 286.06876pt x 274.02374pt>
+File: ../Images/Versuchsaufbau.png Graphic file (type png)
+<use ../Images/Versuchsaufbau.png>
+Package pdftex.def Info: ../Images/Versuchsaufbau.png  used on input line 6.
+(pdftex.def)             Requested size: 194.18712pt x 186.01172pt.
+
+
+LaTeX Warning: Citation `Versuchsaufbau' on page 2 undefined on input line 7.
+
+
+LaTeX Warning: Citation `Versuchsaufbau' on page 2 undefined on input line 7.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 28--61
+
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 28--61
+\T1/aer/m/n/10 Zur Auf-nah-me der Hy-ste-re-se-schlei-fe wird die
+ []
+
+(./Auswertung.tex
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <12> not available
 (Font)              Font shape `T1/aess/bx/n' tried instead on input line 3.
+<../Images/Hyster1.png, id=27, 462.528pt x 346.896pt>
+File: ../Images/Hyster1.png Graphic file (type png)
+<use ../Images/Hyster1.png>
+Package pdftex.def Info: ../Images/Hyster1.png  used on input line 12.
+(pdftex.def)             Requested size: 218.46236pt x 163.8457pt.
 
+Underfull \hbox (badness 6157) in paragraph at lines 5--15
+\T1/aer/m/n/10 PERMENORM 500 H2 ist ei-ne Nickel-Eisen-
+ []
 
-LaTeX Warning: Reference `fig:Versuchsaufbau' on page 2 undefined on input line 5.
+<../Images/Hyster1_Saett.png, id=30, 462.528pt x 346.896pt>
+File: ../Images/Hyster1_Saett.png Graphic file (type png)
+<use ../Images/Hyster1_Saett.png>
+Package pdftex.def Info: ../Images/Hyster1_Saett.png  used on input line 23.
+(pdftex.def)             Requested size: 218.46236pt x 163.8457pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/aer/m/n/9 Sät-ti-gungs-in-duk-ti-on der Nickel-Eisen-
+ []
 
-LaTeX Warning: File `Versuchsaufbau.png' not found on input line 8.
-
-
-./Experiment.tex:8: Package pdftex.def Error: File `Versuchsaufbau.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...cs[width=0.4\textwidth]{Versuchsaufbau.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 8.
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
+[2 <../Images/Versuchsaufbau.png> <../Images/Hyster1.png>]
+<../Images/Hyster2.png, id=54, 462.528pt x 346.896pt>
+File: ../Images/Hyster2.png Graphic file (type png)
+<use ../Images/Hyster2.png>
+Package pdftex.def Info: ../Images/Hyster2.png  used on input line 58.
+(pdftex.def)             Requested size: 218.46236pt x 163.8457pt.
+File: ../Images/Hyster2.png Graphic file (type png)
+<use ../Images/Hyster2.png>
+Package pdftex.def Info: ../Images/Hyster2.png  used on input line 72.
+(pdftex.def)             Requested size: 218.46236pt x 163.8457pt.
+ [3 <../Images/Hyster1_Saett.png> <../Images/Hyster2.png>]) (./Zusammenfassung.tex)
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 68.
+ (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-
-LaTeX Warning: Citation `Versuchsaufbau' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Citation `Versuchsaufbau' on page 2 undefined on input line 9.
-
-) (./Auswertung.tex) (./Zusammenfassung.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
-[][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
+[][]$\T1/aett/m/n/10 https : / / vacuumschmelze . com / 03 _ Documents /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/aett/m/n/10 Brochures / Datasheet % 20PERMENORM % 205000 %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/aett/m/n/10 20H2 % 20Solid . pdf$[] \T1/aer/m/n/10 zu-letzt ab-ge-ru-fen am
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[][]$\T1/aett/m/n/10 https : / / www . chemie . de / lexikon /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\T1/aett/m/n/10 Diamagnetismus . html$[] \T1/aer/m/n/10 zu-letzt ab-ge-ru-fen am
  []
 
 
 AED: lastpage setting LastPage
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 70.
-
-[2
+[4
 
 ] (./main.aux)
 
@@ -596,31 +642,22 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16456 strings out of 478287
- 311775 string characters out of 5849289
- 761185 words of memory out of 5000000
- 34384 multiletter control sequences out of 15000+600000
+ 16472 strings out of 478287
+ 312004 string characters out of 5849289
+ 767991 words of memory out of 5000000
+ 34391 multiletter control sequences out of 15000+600000
  499852 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,106p,10656b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (2 pages, 167887 bytes).
+ 108i,20n,106p,10656b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (4 pages, 267719 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

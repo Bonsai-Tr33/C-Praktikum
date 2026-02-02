@@ -1,17 +1,37 @@
 \section{Experiment}
-
-    \subsection{Versuchsaufbau}
         Die Messung der Hysteresekurven, also die magnetische Flussdichte $B$ in Abhängigkeit des äußeren Magnetfeldes $H$,
         erfolgt mit einer Hysteresemessbrücke, welche in Abbildung \ref{fig:Versuchsaufbau} dargestellt ist.
         \begin{figure}[H]
             \centering
-            \includegraphics[width=0.4\textwidth]{Versuchsaufbau.png}
+            \includegraphics[width=0.4\textwidth]{../Images/Versuchsaufbau.png}
             \caption{Versuchsaufbau zur Messung der Hysteresekurven \cite{Versuchsaufbau}.}
             \label{fig:Versuchsaufbau}
         \end{figure}
         Am X-Eingang wird die Spannung $U_f$ über ein Widerstand R abgegriffen. Diese Spannung ist proportional zur
         Feldstärke $H$, welche sich mit dem Ampere'schen Gesetz berechnen lässt:
         \begin{equation}
-            \int H ds = N_1 I \implies H = \frac{N_1 I}{\pi d R}
+            \int H ds = N_1 I \implies H = \frac{N_1 U_f}{\pi d R}
             \label{eq:Feldstaerke}
         \end{equation}
+        Dabei ist $N_1$ die Windungszahl der Spule und $d = \frac{d_i + d_a}{2}$ der zugehörige Durchmesser. \\
+        Am Y-Eingang wird die Spannung $U_B$ von der Sekundärspule abgegriffen. Diese Spannung ist proportional zur
+        magnetischen Flussdichte $B$, welche sich mit dem Induktionsgesetz berechnen lässt:
+        \begin{equation}
+            \int_{t_1}^{t_2} U_{ind} dt = N_2 A \Delta B \implies \Delta B = \frac{\int_{t_1}^{t_2} U_{ind} dt}{N_2 A}
+            \label{eq:FlussdichteInduktion}
+        \end{equation}
+        Dabei ist $N_2$ die Windungszahl der Sekundärspule und $A = hd$ die Querschnittsfläche mit Höhe h und Kernbreite $d = \frac{d_a - d_i}{2}$. \\
+        Mithilfe der Spannung $U_B$ lässt sich B berechnen:
+        \begin{equation}
+            B = \frac{2 \gamma U_B}{N_2 (d_a - d_i) h F}
+            \label{eq:FlussdichteB}
+        \end{equation}
+        Dabei ist $\gamma$ der Proportionalitätsfaktor der Fluxmeterempfindlichkeit und F der Füllfaktor des Kerns. \\
+        \\
+        Zur Aufnahme der Hystereseschleife wird die Stromstärke zunächst von $I_{max}$ auf 0 geregelt, und anschließend
+        nach Umpolung des Stromes wieder auf $I_{max}$ erhöht. Währenddessen werden die Spannungen vom Fluxmeter und vom Messwiderstand
+        simultan aufgezeichnet und anschließend in $B$ und $H$ umgerechnet. \\
+        Das Fluxmeter weist einen zeitlichen Offsetdrift auf, wodurch die gemessenen Kurven nicht geschlossen erscheinen.
+        Zur Korrektur wird der Drift über die Messdauer bestimmt und der Datensatz entsprechend bereinigt.
+        Erst danach wird die resultierende Schleife symmetrisiert um Remanenz und Koerzitivfeldstärke zu bestimmen. \\
+        Die Verwendeten Kernparameter sind im Anhang aufgelistet \textcolor{red}{REF zu anhang}
