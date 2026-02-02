@@ -80,3 +80,7 @@ plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=True, xlimit=150, x
 plt.plot(H_plot, B_best, color='red', label='Linearer Fit')
 plt.legend()
 plt1.show()
+
+nu = m_fit / (1.256637*10**(-6))
+Dnu = sigma_m / (1.256637*10**(-6))
+print('permeabilität: (' + str(nu) + ' ± ' + str(Dnu) + ')')

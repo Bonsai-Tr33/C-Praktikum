@@ -9,7 +9,8 @@ import numpy as np
 from scipy import odr
 
 
-filename=r"/Users/Moritz/Documents/GitHub/C-Praktikum/39/Auswertung/AuswertungTim/Capstone Data Holz.txt.tsv"
+#filename=r"/Users/Moritz/Documents/GitHub/C-Praktikum/39/Auswertung/AuswertungTim/2_4 5 mVs.txt"
+filename=r"/Users/Moritz/Documents/GitHub/C-Praktikum/39/Auswertung/AuswertungTim/Capstone Data Holz.txt"
 
 def sci(x):
     # ersetzt Komma durch Punkt, damit float() und wissenschaftliche Notation funktioniert
@@ -21,6 +22,15 @@ skiprows=1,     # erste Überschriftenzeile überspringen
 names=["t", "Uind", "UR"],
 converters={"t": sci, "Uind": sci, "UR": sci}
 )
+
+
+plt.scatter( x=df["Uind"], y=df["UR"], color="blue", s=2, label="")
+plt.show()
+plt.scatter( x=df["t"], y=df["Uind"], color="blue", s=2, label="")
+plt.show()
+plt.scatter( x=df["t"], y=df["UR"], color="blue", s=2, label="")
+plt.show()
+
 
 
 """
@@ -189,8 +199,8 @@ plt.plot(x_fit, y_fit_min, color="red", linestyle="--", linewidth=0.5)
 # Normale Zahlen an den Achsen (keine e-6 Notation)
 plt.ticklabel_format(style='plain')
 
-plt.xlim(-170,170)
-plt.ylim(-0.50,0.50)
+#plt.xlim(-170,170)
+#plt.ylim(-0.50,0.50)
 
 # Achsenbeschriftungen
 plt.xlabel("Magnetfeldstärke H [A/m]")
@@ -209,8 +219,9 @@ plt.show()
 print(df)
 
 
-
+"""
 plt.scatter( x=df["B"], y=df["B_err"], color="blue", s=2, label="")
 plt.show()
 plt.scatter( x=df["H"], y=df["H_err"], color="blue", s=2, label="")
 plt.show()
+"""
