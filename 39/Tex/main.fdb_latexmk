@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1770046260 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" "main.pdf" "main" 1770046261
+["pdflatex"] 1770047790 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" "main.pdf" "main" 1770047791
   "../Images/Holz.png" 1770019273 32800 8c01e64403cc53055ee5e273886ffa76 ""
   "../Images/HolzDriftkorr.png" 1770019273 39436 66e50b1361accac61e2100f53474aa7b ""
   "../Images/Hyster1.png" 1770019273 26783 41e07f994ee6c6fb04c7b6d4009a1207 ""
@@ -10,7 +10,7 @@
   "../Images/Hyster3_irre.png" 1770039372 46364 7768b531d8275bf9fcca0c66031f3e7f ""
   "../Images/Versuchsaufbau.png" 1770019680 25652 8777e84bc70cd0cf78168358089b6be2 ""
   "/etc/texmf/web2c/texmf.cnf" 1702837203 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" 1770046260 4671 cac24758fb025bcc3ecf1a5aed6f58ea ""
+  "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" 1770047788 5042 0d828cc6ea465d221b9b7fb8a4bed2ee ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -165,14 +165,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1702837220 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1769778552 2797460 6093d94cfe0eddad1fb6bdd349606a08 ""
   "Anhang.tex" 1770038441 1151 016b434fc24231f5c56d00dc8af1a276 ""
-  "Auswertung.tex" 1770045870 10261 04428b831f9881f43633e7d1ae2b7264 ""
+  "Auswertung.tex" 1770047622 10247 6553f23fd5b8a2aa0694c1e7ea6d0fc8 ""
   "Einleitung.tex" 1770039139 688 493bcbb38d3e6a087fd88d275ca4f2de ""
-  "Experiment.tex" 1770021539 2698 b492ce384859dec6957bfabad5fddfc5 ""
+  "Experiment.tex" 1770046900 2704 2d9bab4eb4e9f47ef47cc50b73af1f7c ""
   "Theorie.tex" 1770043408 4079 2d9df042947f044e22c4b0d5bfb693ad ""
-  "Zusammenfassung.tex" 1770046182 2493 23479949d4369be8b5eff12cffa1679e ""
-  "main.aux" 1770046261 11014 c6234c95941aed29a6d93d4ab92546d3 "pdflatex"
-  "main.out" 1770046261 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1770046260 4671 cac24758fb025bcc3ecf1a5aed6f58ea ""
+  "Zusammenfassung.tex" 1770047636 2477 0c58a6dbc9a83883599699adc1dc27ba ""
+  "main.aux" 1770047791 11066 a1c301e91c9f47899c6049a8b76c7e5e "pdflatex"
+  "main.out" 1770047790 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1770047788 5042 0d828cc6ea465d221b9b7fb8a4bed2ee ""
   (generated)
   "main.aux"
   "main.log"
