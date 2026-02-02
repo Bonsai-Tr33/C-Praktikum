@@ -65,6 +65,15 @@ def drift_correction(time, B, degree=1):
     B_corr = B - drift
     return B_corr, drift, coeffs
 
+def hysteresis_area(H, B):
+    H = np.asarray(H)
+    B = np.asarray(B)
+
+    # numerisches Linienintegral
+    area = np.trapz(B, H)
+
+    return abs(area)
+
 # ---------
 # Data Path initialization
 base_path = Path.cwd() / '39'
@@ -105,3 +114,8 @@ plt.scatter(0, BR3, marker='x', color='orange', label='B_r', zorder=5)
 plt1.plot(DataH, DataB, grid=False, label='Messpunkte', xlim=False, ylim=False)
 # plt1.save(img_path)
 plt1.show()
+
+# numeric integral
+A = hysteresis_area(DataH, DataB)
+print('Flächeninhalt der Hysteresekurve: ' + str(A))
+print('Ummagnetisierungsverluste: ' + str(A/(8.25*10**3)) + ' J/kg')
