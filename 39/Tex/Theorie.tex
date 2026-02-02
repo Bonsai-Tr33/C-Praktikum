@@ -42,6 +42,13 @@ $\mu_0 = 1.25663706127 10^{-6} \frac{N}{A^2}$ \cite{VacuumPerm}.\\
     Die Fläche innerhalb der Hysteresekurve entspricht der Energie, welche für die Verschiebung und Ausrichtung der Bloch-Wände und Weiss'schen Bezierke aufgebracht werden muss.
     Ab einer bestimmten Feldstärke, der Sättigungsfeldstärke $H_c$, sind alle Domänen ausgerichtet und die Magnetisierung ändert sich nicht mehr mit zunehmendem äußeren Feld.
     Bei Abnahme des äußeren Feldes wird der Effekt umgekehrt, jedoch bleibt eine Restmagnetisierung, die sogenannte Remanenz $B_r$ bestehen.
-    Wird ein hinreichend starkes Feld in entgegengesetzter Richtung angelegt, so wird das Material entmagnetiseiert. Die hierfür notwendige Feldstärke wird als Koerzitivfeldstärke $H_c$ bezeichnet.
+    Wird ein hinreichend starkes Feld in entgegengesetzter Richtung angelegt, so wird das Material entmagnetiseiert. Die hierfür notwendige Feldstärke wird als Koerzitivfeldstärke $H_c$ bezeichnet. 
 
 \end{itemize}
+Die Umorientierung der Domänen ist mit Energieverlust verbunden, welcher als Wärme abgegeben wird.
+Die pro Messeinheit m dissipierte Energie während eines vollständigen Zyklus der Hysteresekurve lässt sich durch Integration
+über die Fläche der Hysteresekurve bestimmen:
+\begin{equation}
+    E_{verlust} = \frac{1}{\rho}\int B dH
+    \label{eq:Energieverlust}
+\end{equation}
