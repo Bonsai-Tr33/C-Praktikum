@@ -82,26 +82,26 @@ img_path = base_path / 'Images'
 
 # ---------
 # third measurements
-messreihe3 = Messreihe(data_path / 'Ringkern3_Saett.csv', N1=1010, N2=53, R=67.3, F=1)
+messreihe3 = Messreihe(data_path / 'Ringkern3_2_39.csv', N1=1010, N2=53, R=67.3, F=1)
 Data3 = messreihe3.dataArray()
 
 # Driftkorrektur (zeitabhängig!)
 time = Data3.iloc[:, 0]
 H_raw = Data3.iloc[:, 1]
 B_raw = Data3.iloc[:, 2]
-'''
+
 B_driftcorr, drift, coeffs = drift_correction(time, B_raw, degree=1)
 
 print(f"Driftkoeffizienten (B(t)): {coeffs}")
-'''
+
 # shift correction
-B_Shift = symmetric(H_raw, B_raw, symPX=58)
+B_Shift = symmetric(H_raw, B_driftcorr, symPX=58)
 DataH = H_raw 
-DataB = B_raw + B_Shift
+DataB = B_driftcorr + B_Shift
 print('Symmetrisierungsfaktor Ringkern 3: ' + str(B_Shift) + 'T')
 
 # koerzitivfeldstärke measurement 3
-HC3, DHC3 = HC(DataH, DataB, B_Tolerance=0.1)
+HC3, DHC3 = HC(DataH, DataB, B_Tolerance=0.001)
 print('Koerzitivfeldstärke Ringkern 3: (' + str(HC3) + ' ± ' + str(DHC3) + ') A/m')
 
 # remanenz measurement 3
