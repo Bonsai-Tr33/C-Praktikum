@@ -88,6 +88,49 @@ plt3.legend()
 
 plt3in = inset_axes(plt3, width='40%', height='40%', loc='lower right',bbox_to_anchor=(0, 0.08, 1, 1), bbox_transform=plt3.transAxes)
 plt3in.scatter(DataH, DataB, c='black', marker='.', s=1)
+plt3in.annotate('',
+    xy=(3.496, 1.07),     # Pfeilspitze (H, B)
+    xytext=(4.164, 1.129), # Pfeilanfang (H, B)
+    arrowprops=dict(
+        arrowstyle='->',
+        color='red',
+        lw=2
+    ),
+    zorder=10
+)
+plt3in.annotate(
+    '',
+    xy=(4.346, 0.981),     # Pfeilspitze (H, B)
+    xytext=(3.865, 0.965), # Pfeilanfang (H, B)
+    arrowprops=dict(
+        arrowstyle='->',
+        color='red',
+        lw=2
+    ),
+    zorder=10
+)
+plt3in.annotate(
+    '',
+    xy=(4.954, 1.083),     # Pfeilspitze (H, B)
+    xytext=(5.387, 1.094), # Pfeilanfang (H, B)
+    arrowprops=dict(
+        arrowstyle='->',
+        color='blue',
+        lw=2
+    ),
+    zorder=10
+)
+plt3in.annotate(
+    '',
+    xy=(2.512, 0.9449),     # Pfeilspitze (H, B)
+    xytext=(2.927, 0.995), # Pfeilanfang (H, B)
+    arrowprops=dict(
+        arrowstyle='->',
+        color='blue',
+        lw=2
+    ),
+    zorder=10
+)
 plt3in.set_xlim(2,6.5)
 plt3in.set_ylim(0.8, 1.2)
 mark_inset(plt3, plt3in, loc1=1, loc2=2, lw=1)
