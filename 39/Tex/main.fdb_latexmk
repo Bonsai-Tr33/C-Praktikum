@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1770039301 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" "main.pdf" "main" 1770039302
+["pdflatex"] 1770039573 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" "main.pdf" "main" 1770039574
   "../Images/Hyster1.png" 1770019273 26783 41e07f994ee6c6fb04c7b6d4009a1207 ""
   "../Images/Hyster1_Saett.png" 1770019273 20811 3aa8bd64311694199dcb76882af8a105 ""
   "../Images/Hyster2.png" 1770025654 21936 5ef9d3788064bad80ba45b2a60f7b8c2 ""
   "../Images/Hyster3.png" 1770019273 26060 b55f959f885a23bc199fa380005a8c46 ""
-  "../Images/Hyster3_entmag.png" 1770031768 32201 c17376172bfe6bfe8e50c1dce60a9289 ""
-  "../Images/Hyster3_irre.png" 1770019273 44916 44735e698d5565b5f3eb7368108676b5 ""
+  "../Images/Hyster3_entmag.png" 1770039572 62354 c13e37d3dc387a6dfaa6767269e50819 ""
+  "../Images/Hyster3_irre.png" 1770039372 46364 7768b531d8275bf9fcca0c66031f3e7f ""
   "../Images/Versuchsaufbau.png" 1770019680 25652 8777e84bc70cd0cf78168358089b6be2 ""
   "/etc/texmf/web2c/texmf.cnf" 1702837203 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" 1770035909 3253 14251794169d76a0979c1e658fffa4c3 ""
@@ -155,8 +155,8 @@
   "Experiment.tex" 1770021539 2698 b492ce384859dec6957bfabad5fddfc5 ""
   "Theorie.tex" 1770032049 4071 e2f82a37ceb7045f1b30e0f180449a24 ""
   "Zusammenfassung.tex" 1770039300 1715 e4197b18f0b719c505fb97cae87a60d1 ""
-  "main.aux" 1770039302 10165 6ef7a793f0a0736093b6922234ceed2e "pdflatex"
-  "main.out" 1770039301 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1770039574 10165 6ef7a793f0a0736093b6922234ceed2e "pdflatex"
+  "main.out" 1770039573 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1770035909 3253 14251794169d76a0979c1e658fffa4c3 ""
   (generated)
   "main.aux"

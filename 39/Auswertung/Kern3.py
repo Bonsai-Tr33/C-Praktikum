@@ -118,4 +118,4 @@ plt1.show()
 # numeric integral
 A = hysteresis_area(DataH, DataB)
 print('Flächeninhalt der Hysteresekurve: ' + str(A))
-print('Ummagnetisierungsverluste: ' + str(A/(8.25*10**3)) + ' J/kg')
+print('Ummagnetisierungsverluste: ' + str(A/(7.8*10**3)) + ' J/kg')
