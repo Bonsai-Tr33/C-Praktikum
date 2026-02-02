@@ -48,20 +48,46 @@
     \subsection{Hysterese von Holz}
     Holz besitzt als diamagnetischer Werkstoff \cite{Holz} keine nennenswerte Hysteresekurve. Daher ist ein linearer Zusammenhang zwischen
     magnetischer Feldstärke $H$ und magnetischer Flussdichte $B$ zu erwarten. 
-    Die Steigung dieser Geraden entspricht der Permeabilität des Materials: $ \frac{dB}{dH} = \mu_0 \mu_r $.
+    Die Steigung dieser Geraden entspricht der Permeabilität des Materials: $ \frac{dB}{dH} = \mu_0 \mu_r $.\\
+    In Abb. \ref{fig:Holz}
 
 
     \subsection{Hysteresekurve eines Eisenkerns}
     Die Messung der Hysteresekurve eines Flachstahs wurde analog zu Abschnitt \ref{sec:H2} durchgeführt.
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.45\textwidth]{../Images/Hyster2.png}
+        \includegraphics[width=0.45\textwidth]{../Images/Hyster3.png}
         \caption{Aufgenommene Hysteresekurve eines Eisenkerns.}
         \label{fig:Eisen_Hysteresekurve}
     \end{figure}
-
-    \textcolor{red}{NEIN HIER WEITERMACHEN ARGH KERN 3 SHEHEESHH}
-       
+    Aus den jeweiligen Achsenschnittpunkten wurde die Remanenz $B_r$ und die Koerzitivfeldstärke $H_c$ bestimmt:
+    \begin{equation*}
+        B_r = 0.01620 \pm 0.00012 \, T \quad , \quad H_c = 45.13 \pm 0.44 \, A/m
+    \end{equation*}
+    Der Energieverlust wird mithilfe Gl. \ref{eq:Energieverlust} bestimmt:
+    \textcolor{red}{Wert}
+    
+    Des weiteren wurde die Irreversibilität der Magnetisierung durch Richtungsänderung analysiert.
+    Hierzu wurde zuerst ein vollständiger Hystereseverlauf aufgezeichnet, anschließend wurde bei erneutem
+    Durchlaufen an zwei Stellen am abnehmenden Zweig die Richtung durch Erhöhen der magnetischen Feldstärke umgekehrt.
+    Dadurch entstehen innere Hystereseschleifen (vgl. Abb. \ref{fig:Irreversibilitaet}), welche die selbe Durchlaufrichtung wie die Hystereseschleife hat.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{../Images/Hyster3_irre.png}
+        \caption{Untersuchung der Irreversibilität der Magnetisierung eines Eisenkerns durch Richtungsänderung.}
+        \label{fig:Irreversibilitaet}
+    \end{figure}
+    Das Prinzip der inneren Hystereseschleifen lässt sich auch dazu verwenden, den Spulenkern zu entmagnetiseiert. Hierzu wird
+    das maximal eingestellte Magnetfeld nach jeder Spannungsumpolung verringert, wodurch sich die Hystereseschleife dem Nullpunkt
+    spiralartig nähert. Das ist in Abb. \ref{fig:Entmagnetisierung} dargestellt.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{../Images/Hyster3_entmag.png}
+        \caption{Entmagnetisierung eines Eisenkerns durch sukzessive Verringerung des maximalen Magnetfeldes nach jeder Umpolung.}
+        \label{fig:Entmagnetisierung}
+    \end{figure}
+    Für die vollständige Entladung darf das Magnetfeld erst nach Erreichen der Koerzitivfeldstärke umgepolt
+    werden, sodass die Hysteresekurve im Nullpunkt endet. Dies wurde händisch nicht erreicht, wordurch eine Restmagnetisierung bleibt.
 
     \subsection{Hysteresekurve einer Nickel-Eisen-Legierung (5000 Z)}
         \label{sec:Z}
@@ -84,4 +110,15 @@
     \end{equation*}
     Die kleine Koerzitivfeldstärke von PERMENORM 5000 Z deutet ebenfalls auf einen weichmagnetischen Werkstoff hin.
     Aufgrund der geringen Ummagnetisierungsverluste eignet sich die Legierung gut für Anwendungen 
-    mit häufigem Magnetisierungswechsel, wie z.B. in Transformatoren oder Induktivitäten.
+    mit häufigem Magnetisierungswechsel, wie z.B. in Transformatoren oder Induktivitäten. \\
+    Leider finde ich keine Datenblatt für PERMENORM 5000 Z, um die gemessenen Werte mit den Literaturwerten zu vergleichen.
+    
+    \subsection{Vergleich der Messergebnisse}
+    \subsubsection{Ummagnetisierungsverluste}    
+    \subsubsection{Hysteresekurven im Vergleich}
+    Die Hysteresekurven der Fe-Ni-Legierungen weisen schmale Schleifen mit niedriger Koerzitivfeldstärke auf.
+    Das ist charakteristisch für weichmagnetische Werkstoffe, welche sich durch geringe Ummagnetisierungsverluste
+    auszeichnen. \\
+    Im Vergleich dazu zeigt der Eisenkern eine deutlich breitere Hystereseschleife mit höherer Koerzitivfeldstärke,
+    was auf höhere Ummagnetisierungsverluste und eine stärkere Remanenz hinweist. Daraus lässt sich folgern, dass der Eisenkern
+    ein hartmagnetisches Material ist. \\
