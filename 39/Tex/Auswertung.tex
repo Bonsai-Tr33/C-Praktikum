@@ -47,8 +47,32 @@
     Holz besitzt als diamagnetischer Werkstoff \cite{Holz} keine nennenswerte Hysteresekurve. Daher ist ein linearer Zusammenhang zwischen
     magnetischer Feldstärke $H$ und magnetischer Flussdichte $B$ zu erwarten. 
     Die Steigung dieser Geraden entspricht der Permeabilität des Materials: $ \frac{dB}{dH} = \mu_0 \mu_r $.\\
-    In Abb. \ref{fig:Holz}
-
+    In Abbildung \ref{fig:Holz} ist die gemessene Abhängigkeit von $B$ und $H$ für Holz dargestellt.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{../Images/Holz.png}
+        \caption{Messung der magnetischen Flussdichte $B$ in Abhängigkeit der magnetischen Feldstärke $H$ für Holz.}
+        \label{fig:Holz}
+    \end{figure}
+    Der Plot ist nicht ideal, da das Fluxmeter einen Offsetdrift aufweist, welcher die Messung verfälscht. Das Messgerät ist zu unempfindlich,
+    was der Grund für die markanten Linien sind. Zudem lässt sich erkennen, dass der hin und rücklaufende Ast der Hysteresekurve nicht zusammenfällt.
+    Dieser Effekt lässt sich nicht auf magnetische Eigenschaften sondern ebenfalls vollständig auf den Offsetdrift zurückführen. \\
+    Da die magnetische Antwort von Holz sehr gering ist, müsste ein größerer Messbereich des Fluxmeters verwendet werden. \\
+    Nach Anwendung der Driftkorrektur (vgl. Abb. \ref{fig:HolzKorr}) lässt sich ein linearer Zusammenhang zwischen $B$ und $H$ erkennen.
+    Durch eine lineare Regression lässt sich die Permeabilität bestimmen:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{../Images/HolzDriftkorr.png}
+        \caption{Messung der magnetischen Flussdichte $B$ in Abhängigkeit der magnetischen Feldstärke $H$ für Holz nach Driftkorrektur.}
+        \label{fig:HolzKorr}
+    \end{figure}
+    Der Wert der relativen Permeabilität ergibt sich zu:
+    \begin{equation*}
+        \mu_r = 4.571 \pm 0.082
+    \end{equation*}
+    Der Fehler ergibt sich aus der Min-Max-Methode. Der theoretisch erwartete Wert für Holz liegt bei $\mu_{r, lit} < 1$ \cite{Holz}, was deutlich von dem gemessenen Wert abweicht.
+    Dies ist auf die unzureichende Empfindlichkeit des Messgerätes zurückzuführen, wodurch die Messung stark verrauscht ist.
+    Zudem hat Holz eine sehr geringe magnetische Antwort auf ein äußeres Magnetfeld, was die Messung zusätzlich erschwert.
 
     \subsection{Hysteresekurve eines Eisenkerns}
     Die Messung der Hysteresekurve eines Flachstahs wurde analog zu Abschnitt \ref{sec:H2} durchgeführt.
