@@ -82,8 +82,8 @@ for key, rows in groups.items():
 # =========================
 # Referenzspannung (kleinste Frequenz)
 # =========================
-U_ref = min(r['U'] for r in results)
-
+# U_ref = min(r['U'] for r in results)
+U_ref = max(r['U'] for r in results)
 
 for r in results:
     r['D_dB'] = damping_db(r['U'], U_ref)
@@ -111,7 +111,6 @@ freqs = [r['freq_MHz'] for r in results]
 damps = [r['D_dB_per_m'] for r in results]
 damp_err = np.array([r['DD_dB_per_m'] for r in results])
 
-
 plt.errorbar(
     freqs,
     damps,
@@ -131,12 +130,12 @@ plt.legend()
 plt.gca().yaxis.set_minor_locator(AutoMinorLocator(2))
 plt.gca().xaxis.set_minor_locator(AutoMinorLocator(2))
 plt.xticks(np.arange(0,3.5,0.5))
-plt.yticks(np.arange(-0.14, 0.04, 0.02))
+#plt.yticks(np.arange(-0.14, 0.04, 0.02))
 plt.tick_params(axis='both', which='minor', direction='in', right=True, top=True)
 plt.tick_params(axis='both', which='major', direction='in', right=True, top=True, length=5)
 
 # limiting and setting plot layout
-plt.ylim(-0.13, 0.03)
+plt.ylim(-0.02, 0.15)
 plt.xlim(0.7, 3)
 plt.tight_layout()
 plt.savefig(img_path / 'DoverF.png')

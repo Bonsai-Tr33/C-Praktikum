@@ -1,0 +1,7 @@
+Korrekturen von Hinkov zu Versuch C41 vom 24.02.2026
+
+- Irgendwie sind Sie bei der Beschriftung der y-Achse "ausgerutscht": Sie schreiben jetzt db/m, was ok ist, aber de Werte sind negativ...
+
+- (Kleiner Schreibfehler) Auf Seite 4 haben Sie in der linken Spalte \rho = -frac13 in rot stehen...
+
+bitte insbesondere 1. korrigieren und mir die finale Version schicken - Sie können davon ausgehen, dass das Protokoll erledigt ist.
