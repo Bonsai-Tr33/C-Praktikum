@@ -50,7 +50,7 @@
 	\end{tabular*}                                             %Kopfzeile
 	}
 \title{Plancksches Wirkungsquantum und Boltzmann-Konstante}  %Titel der Versuchs
-\author{Moritz Langer \and Hannes Wikler}                     %Namen der Studenten
+\author{Moritz Langer \and Hannes Winkler}                     %Namen der Studenten
 \date{}			                                               %ben�tigt um automatisches Datum auszuschalten
 \maketitle                                                      %erzeugt Titelseite
 \vspace{-8ex}                                                   %verringert Abstand zur �berschrift
@@ -71,10 +71,10 @@
 \section{Einleitung}
 	Die Plankschen Wirkungsquantum (\textit{h}) und die Boltzmannkonstante (\textit{$k_B$}) sind zwei fundamentalen Naturkonstanten der Physik.\\
 	Das Wirkungsquantum spielt eine zentrale Rolle in der Quantenmechanik um diskrete Energieniveaus zu beschreiben. Es wurde durch Planck's Versuche deutlich,
-	dass das Wirklungsquantum proportional zur Frequenz ist. Dass der Trägere dieser Energiepakete elektromagnetische Wellen, also Photonen sind, 
-	wurde durch Einstein's Erklärung des Photoelektrischen Effekts gezeigt. \\
+	dass das Wirklungsquantum \textcolor{red}{mit der Energie und Frequenz zusammen hängt}. Dass der Trägere dieser Energiepakete elektromagnetische Wellen, also Photonen sind, 
+	wurde durch Einstein's Erklärung des Photoelektrischen Effekts gezeigt. \textcolor{red}{Hierbei wird eine Photokathode mit monochromatischem Licht bestrahlt und über ein Anodenring und das anlegen von Bremsspannung die Photostromstärke gemessen.} \\
 	Die Boltzmannkonstante verknüpft die makroskopische Welt der Thermodynamik mit der mikroskopischen Welt der Atome und Moleküle und ist unverzichtbar für die
-	statistische Physik. Sie beschreibt die Verteilung der Teilchenenergien in einem System in Abhängigkeit von der Temperatur.\\
+	statistische Physik. Sie beschreibt die Verteilung der Teilchenenergien in einem System in Abhängigkeit von der Temperatur.\textcolor{red}{Um diese Konstante zu bestimmen wurde der Diffusionsstrom eines npn-Leistungstransistors bei verschiedenen Temperaturen gemessen.}\\
 	Ziel dieses Versuchs ist es, sowohl das Planck'sche Wirkungsquantum als auch die Boltzmannkonstante experimentell zu bestimmen und deren Bedeutung in der Physik zu verstehen.\\
 	Die dazu verwendeten Methoden werden im folgenden Abschnitt erläutert.
 \section{Theorie}
@@ -86,14 +86,14 @@
 		Bestrahlt man eine Photozelle, so lässt sich die kinetische Energie der ausgelösten
 		Photoelektronen schreiben als:
 		\begin{equation}
-			E_{kin} = U \cdot e = h \cdot \nu - A
+			E_{kin} = U_B \cdot e = h \cdot \nu - A
 		\label{eq:EinsteinGleichung}
 		\end{equation}
 		Hierbei ist U die Bremsspannung, \textit{e} die Elementarladung, \textit{h} das Planck'sche Wirkungsquantum,
 		$\nu$ die Frequenz der Photonen und A die Arbeit, welche benötigt wird um das Photoelektron 
 		aus dem Material zu lösen. \\
 		Nach überwinden der Austrittsarbeit werden die Photoelektronen von der Anode
-		"eingefangen" und es entsteht ein sogenannter Photostrom. Die Austrittsarbeit ist eine 
+		''eingefangen'' und es entsteht ein sogenannter Photostrom. Die Austrittsarbeit ist eine 
 		materialspezifische Größe. Die Bremsspannung
 		ist die Gegenspannung, welche man einstellen muss, um kein Photostrom mehr zu messen. \\
 		Misst man nun für mehrere Frequenzen die Bremsspannung, so lässt sich $U(\nu)$ graphisch auftragen.
@@ -116,7 +116,7 @@
 		\end{equation*}
 		T ist hierbei die Temperatur des Transistors im Wärmebad und \textit{$k_B$} die Boltzmannkonstante.\\
 		Der Diffusionsstroms ergibt dann durch:
-		\begin{equation*}
+		\begin{equation*}	
 			I_D(U_A) = const. \cdot exp(-\frac{\textit{e} \cdot U_A}{k_B T})
 		\label{Diffusionsstrom1}
 		\end{equation*}
@@ -124,11 +124,15 @@
 		Wird an den p-n-Übergang nun eine Spannung $U_{BE}$ in Durchlassrichtung angelegt, benötigen Elektronen eine geringere Energie um
 		das verringerte Potential $\textit{e} \cdot (U_A-U_{BE})$ zu überwinden. Dadurch verändert sich der Diffusionsstroms zu:
 		\begin{equation*}
-			I_D(U_{BE}) = \mid I_0 \mid \cdot xp(-\frac{e \cdot U_{BE}}{k_B T})
+			I_D(U_{BE}) = \mid I_0 \mid \cdot exp(\frac{e \cdot U_{BE}}{k_B T})
 		\label{Diffusionsstrom2}
 		\end{equation*}
+
+		\textcolor{red}{Diese Gleichung ist die Approximation von der Shockley-Gleichung: $I_D = I_S(exp[\frac{e\cdot U}{k_B T}]-1)$ für $U>0$ und $eU>>k_B T$, welche die Strom-Spannungs-Charakteristik eines p-n-Übergangs beschreibt.}
+		\\
 		Durch wissen über die Temperatur und die Elementarladung lässt sich so durch Aufrtragung des 
-		Diffusionsstroms über die Spannung die Boltzmannkonstante mittels Steigung bestimmen.
+		Diffusionsstroms über die Spannung die Boltzmannkonstante mittels Steigung \textcolor{red}{des linearen Bereichs} bestimmen.
+		\textcolor{red}{Im theoretischen Modell wird ein idealer p-n-Übergang ohne Serienwiderstände und bei konstanter Temperatur angenommen. Daraus ergibt sich ein rein exponentieller Zusammenhang zwischen Strom und Spannung gemäß der Shockley-Gleichung. Im Experiment weicht ein realer Transistor jedoch von diesem Ideal ab: Serienwiderstände, Rekombinationseffekte und Selbsterwärmung führen insbesondere bei hohen Strömen zu Abweichungen vom exponentiellen Verlauf. Deshalb kann nur ein begrenzter Spannungsbereich zur Bestimmung der Boltzmannkonstanten herangezogen werden.}
 
 \section{Experiment und Auswertung}
 	\subsection{Messung des Planckschen Wirkungsquantums}
@@ -141,7 +145,7 @@
 		\end{figure}
 		Nach dem Aufbau in Abbildung \ref{Img:AufbauPlank} wird gemessen. 
 		Die Bestrahlung der Photozelle erfolgt mit einer Quecksilberhodrucklampe.
-		Bevor das Licht die Photozelle trifft wird es durch einen Interferenzfilter monochromatisiert um Beschädigungen an der Photodiode zu verhindern. 
+		Bevor das Licht die Photozelle trifft wird es durch einen Interferenzfilter monochromatisiert um \textcolor{red}{eine spektrale Selektion vorzunehmen und um} Beschädigungen an der Photodiode zu verhindern. 
 		Es wurde für die Wellenlängen $\lambda = 366 \, nm, 405 \, nm, 436 \, nm, 546 \, nm$ und $578 \, nm$ der Photostrom in Abhängigkeit der Bremsspannung gemessen.
 		Anschließend wird mittels Asymptotenverfahrens wird die Kniespannung bestimmt.\\
 		Beispielhaft für $\lambda = 366 \, nm$:
@@ -254,7 +258,7 @@
 		\subsection{Zusammenfassung}
 
 		Das Planck'sche Wirkungsquantum wurde durch Bestrahlen einer Photozelle mit verschiedenem monochromatisiertem Licht bestimmt.
-		Aus der Knickspannung der Photodiode wurde das Wirkungsquantum zu $h = (-3.32 \pm 0.12)\cdot 10^{-34} \, J s$ bestimmt.
+		Aus der Knickspannung der Photodiode wurde das Wirkungsquantum zu $h = (3.32 \pm 0.12)\cdot 10^{-34} \, J s$ bestimmt.
 		Damit ist es nicht mit dem Literaturwert von $h_{lit} = 6.62607015 \cdot 10^{-34} \, J s$ \cite{PlanckKonstante} vereinbar. \\
 		Die Boltzmannkonstante wurde durch Messung des Diffusionsstroms eines npn-Leistungstransistors bei verschiedenen Temperaturen bestimmt.
 		Aus den gemessenen Kennlinien wurde die Boltzmannkonstante zu $k_B = (1.4291 \pm 0.0087) \cdot 10^{-23} J/K$ bestimmt.
