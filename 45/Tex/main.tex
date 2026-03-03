@@ -89,13 +89,34 @@
 			E_{kin} = U_B \cdot e = h \cdot \nu - A
 		\label{eq:EinsteinGleichung}
 		\end{equation}
-		Hierbei ist U die Bremsspannung, \textit{e} die Elementarladung, \textit{h} das Planck'sche Wirkungsquantum,
-		$\nu$ die Frequenz der Photonen und A die Arbeit, welche benötigt wird um das Photoelektron 
-		aus dem Material zu lösen. \\
+		Hierbei ist $U_B$ die Bremsspannung, \textit{e} die Elementarladung, \textit{h} das Planck'sche Wirkungsquantum,
+		$\nu$ die Frequenz der Photonen, A die Arbeit, welche benötigt wird um das Photoelektron 
+		aus dem Material zu lösen und $E_{kin}$ ist die maximale kinetische Energie. \\
 		Nach überwinden der Austrittsarbeit werden die Photoelektronen von der Anode
 		''eingefangen'' und es entsteht ein sogenannter Photostrom. Die Austrittsarbeit ist eine 
 		materialspezifische Größe. Die Bremsspannung
 		ist die Gegenspannung, welche man einstellen muss, um kein Photostrom mehr zu messen. \\
+
+		\textcolor{red}{Zur experimentellen Bestimmung der Bremsspannung \( U_0 \) existieren zwei
+		gebräuchliche Methoden. Zum einen kann diejenige Spannung bestimmt werden,
+		bei der der gemessene Photostrom gerade verschwindet. Aufgrund des flachen
+		Auslaufens der Kennlinie ist diese Methode jedoch mit vergleichsweise großen
+		Unsicherheiten behaftet. Präziser ist es, den annähernd linearen Bereich der
+		abfallenden Kennlinie zu bestimmen und diesen graphisch bis zum Schnittpunkt
+		mit der Spannungsachse zu extrapolieren. Der so erhaltene Achsenabschnitt wird
+		als Bremsspannung \( U_0 \) verwendet.}
+
+		\textcolor{red}{In der idealisierten Betrachtung verschwindet der Photostrom bei Erreichen der
+		Bremsspannung \( U_0 \) schlagartig. In der Realität zeigt die Strom-Spannungs-
+		Kennlinie jedoch keinen scharfen Knick. Dies liegt daran, dass die ausgelösten
+		Photoelektronen keine einheitliche kinetische Energie besitzen, sondern einer
+		Energieverteilung unterliegen. Während einige Elektronen die maximale kinetische
+		Energie \( E_{\text{kin,max}} \) erreichen, besitzen viele geringere Energien und
+		werden daher bereits bei kleineren Gegenspannungen zurückgehalten. Zusätzlich
+		führen thermische Effekte sowie Winkelverteilungen der Austrittsrichtungen zu
+		einer weiteren Verbreiterung der Kennlinie. Der Photostrom nimmt daher mit
+		zunehmender Gegenspannung kontinuierlich ab und geht erst allmählich gegen null.}
+
 		Misst man nun für mehrere Frequenzen die Bremsspannung, so lässt sich $U(\nu)$ graphisch auftragen.
 		Die entstehende Steigung a ist dann gegeben als $a = \frac{\textit{h}}{\textit{e}}$. So lässt sich das Planck'sche Wirkungsquantum
 		ohne Wissen über die jeweilige Austrittsarbeit über die Steigung a bestimmen.
@@ -186,12 +207,12 @@
 		Dieser Wert ist nicht mit dem Literaturwert von $h_{lit} = 6.62607015 \cdot 10^{-34} \, J s$ \cite{PlanckKonstante} vereinbar. Die Hauptunsicherheit
 		resultiert hierbei aus der begrenzten Anzahl an Messpunkten im Übergangsbereich der $I_D(U_{BE})$-Kurve. Dadurch ist die Bestimmung der Kniespannung
 		mit dem Asymptotenverfahren nur ungenau möglich. Um diesen Fehler zu umgehen wäre größere Anzahl an Messpunkten sinnvoll. Diese könnten beistpielsweise
-		mittels digitaler aufzeichnung der Spannungen passieren. \\
+		mittels digitaler Aufzeichnung der Spannungen passieren. \\
 		Eine weiter Fehlerquelle könnte durch die Verschmutzung der Photozelle entstanden sein. Diese könnte die Austrittsarbeit A verändert haben, was
 		sich auf die Bestimmung der Kniespannung ausgewirkt hätte. \\
 		Des weiteren könnte die Monochromatisierung des Lichts durch den Interferenzfilter unzureichend gewesen sein.
 		Dies würde dazu führen, dass die Photozelle mit Licht verschiedener Frequenzen bestrahlt wird, was die Bestimmung der Kniespannung verfälscht.
-		\vspace{-50mm}
+		%\vspace{-50mm}
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=1\linewidth]{../Images/U_nu.png}
@@ -245,14 +266,46 @@
 			k_B = (1.4291 \pm 0.0087) \cdot 10^{-23} J/K
 		\end{equation*}
 		
-		Der errechnete Mittelwert ist nicht mit dem Literaturwert von $k_{B,lit} = 1.380649 \cdot 10^{-23} J/K$ \cite{BoltzmannKonstante} vereinbar, liegt
-		aber dennoch in der selben Größenordnung.
-		Die Hauptunsicherheit liegt hierbei an den zahlreichen Lötstellen in der Verkabelung des Transistors. Diese Löstellen haben einen Widerstand, 
-		welcher sich in der Messung des Stroms $I_D$ bemerkbar macht. Zudem ist aufgrund der begrenzten Zeit nur eine begrenzte Anzahl an Messpunkten
-		möglich gewesen. Duch digitale Erfassung könnten auch hier deutlich mehr Messungen vorgenommen werden, was den Fehler reduzieren und das Messergebnis
-		näher an den Literaturwert bringen würde. \\
-		Des weiteren könnte die Temperatur des Transistors aufgrund von Fehlern im Thermostat nicht konstant gehalten worden sein, was ebenfalls 
-		ein großen Einfluss auf die Bestimmung der Boltzmannkonstante hat, da die Temperatur (vgl. \ref{Diffusionsstrom2}) ebenfalls in die Gleichung eingeht.
+		%Der errechnete Mittelwert ist nicht mit dem Literaturwert von $k_{B,lit} = 1.380649 \cdot 10^{-23} J/K$ \cite{BoltzmannKonstante} vereinbar, liegt
+		%aber dennoch in der selben Größenordnung.
+		%Die Hauptunsicherheit liegt hierbei an den zahlreichen Lötstellen in der Verkabelung des Transistors. Diese Löstellen haben einen Widerstand, 
+		%welcher sich in der Messung des Stroms $I_D$ bemerkbar macht. Zudem ist aufgrund der begrenzten Zeit nur eine begrenzte Anzahl an Messpunkten
+		%möglich gewesen. Duch digitale Erfassung könnten auch hier deutlich mehr Messungen vorgenommen werden, was den Fehler reduzieren und das Messergebnis
+		%näher an den Literaturwert bringen würde. \\
+		%Des weiteren könnte die Temperatur des Transistors aufgrund von Fehlern im Thermostat nicht konstant gehalten worden sein, was ebenfalls 
+		%in großen Einfluss auf die Bestimmung der Boltzmannkonstante hat, da die Temperatur (vgl. \ref{Diffusionsstrom2}) ebenfalls in die Gleichung eingeht.
+		
+	\textcolor{red}{	Der bestimmte Mittelwert ist mit dem Literaturwert von 
+	\( k_{B,\text{lit}} = 1{,}380649 \cdot 10^{-23}\,\mathrm{J/K} \) 
+	nicht vereinbar, liegt jedoch in derselben Größenordnung. 
+	Die Abweichung ist vermutlich vor allem auf systematische Unsicherheiten zurückzuführen, 
+	die im verwendeten Modell nicht vollständig berücksichtigt wurden.}
+
+	\textcolor{red}{Eine wesentliche Fehlerquelle stellen zusätzliche Serienwiderstände in der Messschaltung dar, 
+	etwa durch Lötstellen und Leitungen. Diese führen zu zusätzlichen Spannungsabfällen, 
+	sodass die tatsächlich am p-n-Übergang anliegende Basis-Emitter-Spannung kleiner ist 
+	als die gemessene Spannung. Dadurch wird die Steigung der halblogarithmischen Auftragung verfälscht. 
+	Ebenso können Spannungsabfälle im Basis-Kollektor-Zweig sowie nichtideale Transistoreigenschaften 
+	das exponentielle Verhalten beeinflussen.}
+
+	\textcolor{red}{Zudem ist die zugrunde gelegte Näherung der Shockley-Gleichung
+	\[
+	I = I_S \left( \exp\left( \frac{eU}{k_B T} \right) - 1 \right)
+	\]
+	nur in einem begrenzten Strom- und Spannungsbereich gültig. 
+	Bei hohen Strömen treten Abweichungen durch Serienwiderstände und mögliche Selbsterwärmung auf, 
+	während bei kleinen Strömen Messunsicherheiten und Rekombinationseffekte stärker ins Gewicht fallen. 
+	Wird ein zu großer Bereich zur Auswertung verwendet, führt dies systematisch zu einer falschen 
+	Bestimmung der Steigung und damit von \( k_B \).}
+
+	\textcolor{red}{Im Vergleich zu statistischen Unsicherheiten durch die begrenzte Anzahl an Messpunkten 
+	dürften diese systematischen Effekte den größeren Beitrag zur Gesamtabweichung leisten. 
+	Zwar könnte eine digitale Datenerfassung die statistische Streuung reduzieren, 
+	die dominierenden systematischen Fehler -- insbesondere durch Spannungsabfälle 
+	und Temperaturabweichungen -- würden dadurch jedoch nicht beseitigt. 
+	Eine unzureichend konstante Temperatur wirkt sich zusätzlich direkt auf das Ergebnis aus, 
+	da \( T \) proportional in die Auswertung eingeht und somit linear in die Bestimmung 
+	der Boltzmannkonstanten einfließt.}
 
 
 		\subsection{Zusammenfassung}
