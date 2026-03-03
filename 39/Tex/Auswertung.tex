@@ -17,6 +17,7 @@
     \begin{equation*}
         B_r = 0.637 \pm 0.038 \, T \quad , \quad H_c = 3.86 \pm 0.12 \, A/m
     \end{equation*}
+    \textcolor{red}{Der Wert wurde numerisch bestimmt und der zugehörige Fehler ergibt sich aus der Stichprobenstandardabweichung.} \\
     Zur Bestimmung der Sättigungsinduktion $B_s$ wurde ein erweiterter Messbereich verwendet (vlg. Abb. \ref{fig:Saett1}).
     \begin{figure}[H]
         \centering
@@ -73,6 +74,7 @@
     Der Fehler ergibt sich aus der Min-Max-Methode. Der theoretisch erwartete Wert für Holz liegt bei $\mu_{r, lit} < 1$ \cite{Holz}, was deutlich von dem gemessenen Wert abweicht.
     Dies ist auf die unzureichende Empfindlichkeit des Messgerätes zurückzuführen, wodurch die Messung stark verrauscht ist.
     Zudem hat Holz eine sehr geringe magnetische Antwort auf ein äußeres Magnetfeld, was die Messung zusätzlich erschwert.
+    \textcolor{red}{Der Hauptfehler liegt allerdings darin, dass es Wechselwirkungen mit den Nachbarspulen gibt, welche trotz der Abwesenheit eines Stroms ein magnetisches Feld erzeugen.}
 
     \subsection{Hysteresekurve eines Eisenkerns}
     Die Messung der Hysteresekurve eines Flachstahs wurde analog zu Abschnitt \ref{sec:H2} durchgeführt.
@@ -107,6 +109,19 @@
         \caption{Entmagnetisierung eines Eisenkerns durch sukzessive Verringerung des maximalen Magnetfeldes nach jeder Umpolung.}
         \label{fig:Entmagnetisierung}
     \end{figure}
+    \textcolor{red}{Mikroskopisch entstehen diese inneren Hystereseschleifen durch die
+Domänenstruktur des Ferromagneten. Die Magnetisierung erfolgt
+zunächst durch reversible Prozesse wie die elastische Verschiebung
+von Domänenwänden sowie durch geringe Drehungen der magnetischen
+Momente. Bei größeren Feldstärken treten jedoch irreversible
+Prozesse auf, insbesondere das sprunghafte Überwinden von
+Gitterdefekten oder Versetzungen, an denen Domänenwände
+gepinnt sind. Wird das äußere Feld vor Erreichen der
+Sättigung umgekehrt, so werden nur die zuvor reversibel
+veränderten Anteile der Magnetisierung unmittelbar
+zurückgeführt, während irreversible Strukturänderungen
+bestehen bleiben. Dadurch entstehen die charakteristischen
+Mini-Schleifen innerhalb der Haupt-Hysteresekurve.}
     Für die vollständige Entladung darf das Magnetfeld erst nach Erreichen der Koerzitivfeldstärke umgepolt
     werden, sodass die Hysteresekurve im Nullpunkt endet. Dies wurde händisch nicht erreicht, wordurch eine Restmagnetisierung bleibt.
 
@@ -139,10 +154,10 @@
     Die Ummagnetisierungsverluste wurden bestimmt, indem die eingeschlossene Fläche der Hysteresekurve von Ringkern 1 \& 3
     mittels numerischer Integration (Trapezregel) berechnet wurde. Es ergibt sich:
     \begin{equation*}
-        \xi_{verlust, H2} = 3.88 \pm 0.68 \, \frac{mJ}{m^3} 
+        \textcolor{red}{\omega}_{verlust, H2} = 3.88 \pm 0.68 \, \frac{mJ}{m^3} 
     \end{equation*}
     \begin{equation*}
-        \xi_{verlust, Eisen} = 2.17 \pm 0.11 \, \frac{mJ}{m^3}
+        \textcolor{red}{\omega}_{verlust, Eisen} = 2.17 \pm 0.11 \, \frac{mJ}{m^3}
     \end{equation*}
     Die Ummagnetisierungsverluste von den Ringkernen treten in Form von Wärme auf.
     \subsubsection{Hysteresekurven im Vergleich}
