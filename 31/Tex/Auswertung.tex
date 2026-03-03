@@ -12,27 +12,27 @@
         \label{fig:pVDiagramm}
     \end{figure}
 
-    Die Maxwell Gerade zeigt den Bereich, in dem das Gas sowohl flüssig als auch gasförmig vorliegt. Je weiter die Temperatur von der 
+    \noindent Die Maxwell Gerade zeigt den Bereich, in dem das Gas sowohl flüssig als auch gasförmig vorliegt. Je weiter die Temperatur von der 
     kritischen Temperatur \(T_K\) entfernt ist, desto ausgeprägter ist dieser Bereich (vgl. \ref{fig:pVDiagramm}). \\
-    Bei der Isothermen der kritische Temperatur \(T_K\) ist erkennbar, dass die anstatt eines Plateaus ein Sattelpunkt Höhe ders kritischen Volumens \(V_K\) und des kritischen Drucks \(p_K\) vorliegt. 
+    \textcolor{red}{Bei der Isothermen der kritische Temperatur \(T_K\) ist erkennbar, dass anstatt eines Plateaus ein Sattelpunkt auf der Höhe des kritischen Volumens \(V_K\) und des kritischen Drucks \(p_K\) vorliegt.}
 
     \begin{equation}
         \frac{dp}{dV} = 0 |_{V=V_K} \quad \text{und} \quad \frac{d^2p}{dV^2} = 0 |_{V=V_K}
     \label{eq:Ableitungen}
     \end{equation}
 
-    Die Start- und Endvolumina der Maxwell-Geraden wurden experimentell beobachtet. Aus diesen Volumina und den zugehörigen
+    \noindent Die Start- und Endvolumina der Maxwell-Geraden wurden experimentell beobachtet. Aus diesen Volumina und den zugehörigen
     Drücken die kritischen Parameter \(p_K\) und \(V_K\) zu bestimmen, werden diese linear gefittet und aus dem Schnittpunkt der Geraden
     die Parameter bestimmt. Obwohl der reale Verlauf der Isothermen im Koexistenzbereich nicht linear ist,
     lassen sich die kritischen Parameter durch die Nutzung der Start- und Endwerte der Maxwell-Gerade gut annähern.
     Das funktioniert, da in diesen Bereichen eine lineare Näherung hinreichend genau ist.
-    Daraus ergeben sich für die kritischen Parameter \(T_K\), \(p_K\) und \(V_K\) folgende Werte:
+    Daraus ergeben sich für die kritischen Parameter \(p_K\) und \(V_K\) folgende Werte:
 
     \begin{equation}
         p_K = (38,5 \pm 4,0) \, \text{bar} 
     \end{equation}
     \begin{equation}
-           V_K = (0,32 \pm 0,14) \, \text{cm}^3
+        V_K = (0,32 \pm 0,14) \, \text{cm}^3
     \end{equation}
 
     \begin{figure}[h]
@@ -51,6 +51,7 @@
     Der experimentell bestimmte Wert liegt innerhalb des Fehlers mit dem Literaturwert von $V_{K,mol}^{lit} = 200 \cdot 10^{-6} \frac{m^3}{mol}$ \cite{SF6LITERATUR} überein. \\
     Das liegt allerdings auch daran, dass der Fehler des experimentell bestimmten Wert bei ca. 43\% liegt. Der große Fehler kommt hauptsächlich dadurch, dass wir zu Beginn und zum Ende der Maxwell-Geraden
     zu wenig Messpunkte aufgenommen haben, was zu einer großen Streuung und dadurch zu einem großen Fehler kommt.
+
     \subsection{Ermittlung der Dampfdruckkurve}
 
     \subsubsection{Kritische Temperatur}
@@ -80,29 +81,35 @@
         T_K = (322 \pm 12) \, K
     \end{equation}
 
-    Der Literaturwert der kritischen Temperatur ist \(T_{K,lit} = 318,75 \, K\) \cite{kritischeTemperatur}. Somit stimmt der experimentell bestimmte Wert innerhalb des Fehlers mit dem Literaturwert überein.
+    Der Literaturwert der kritischen Temperatur ist \(T_{K,lit} = 318,75 \, K\) \cite{kritischeTemperatur}. Somit stimmt der experimentell bestimmte Wert innerhalb des Fehlers mit dem Literaturwert überein.\\
+    \textcolor{red}{An sich ist es auch möglich die Temperatur wie im Abschnitt \ref{subsec:KritischeParameter} zu bestimmen, dabei würde man solange die Temperaturen variieren, bis man die Temperatur findet, bei der der Sattelpunkt am klarsten ist (also wirklich keine Gerade mehr vorliegt).
+    Diese Methode ist aber je nach Messaufbau relativ unpräzise, denn desto mehr Punkte man aufnehmen kann, desto besser kann man sicher gehen, dass nur noch ein Sattelpunkt vorliegt.}
     
     \subsubsection{Verdampfungsenergie}
 
-    Aus dem logarithmierten Diagramm der Dampfdruckkurve (Abb. \ref{fig:Dampfdruckkurve}) lässt sich die molare Verdampfungsenergie \(\Lambda\) mit  aus der Steigung der linearen Regression bestimmen.
+    Aus dem logarithmierten Diagramm der Dampfdruckkurve (Abb. \ref{fig:Dampfdruckkurve}) lässt sich die molare Verdampfungsenergie \(\Lambda\) mit aus der Steigung der linearen Regression bestimmen.
     Es gilt:
+    \textcolor{red}{
     \begin{equation}
-        \text{p} = -\frac{\Lambda}{RT}
+        \text{ln}(p) = -\frac{\Lambda}{RT} + C
     \end{equation}
-    Durch umformen ergibt sich für die Verdampfungsenergie:
+    Was der Form $y = m \, x + C$ mit der Steigung $b = -\frac{\Lambda}{R}$ entspricht.
+    Das Umgestellt ergibt:}
     \begin{equation}
         \Lambda = -  b\cdot R
     \label{eq:Verdampfungsenergie}
     \end{equation}
-
-    Hierbei ist b die Steigung der Dampdruckkurve und R=(8,3145 J/molK) \cite{Gaskonstante} die allgemeine Gaskonstante.
+    Hierbei ist R=(8,3145 J/molK) \cite{Gaskonstante} die allgemeine Gaskonstante.
     Daraus ergibt sich für die Verdampfungsenergie:
     \begin{equation}
         \Lambda = (20.9 \pm 0.50) kJ/mol
     \end{equation}
-    Der Literaturwert ist \(\Lambda_{lit} = 18,10 \cdot 10^3 \, kJ/mol\) \cite{Verdampfungsenergie}. Damit ist der gemessene Wert nicht mit dem
-    Literaturwert vereinbar. Da $\Lambda$ auch von der Temperatur abhängt und bei dem Literaturwert keine Angabe dazu steht, kann hierher die Differenz kommen 
+    Der Literaturwert ist \textcolor{red}{\(\Lambda_{lit} = 18,10 \cdot \, kJ/\text{mol}\)} \cite{Verdampfungsenergie}. Damit ist der gemessene Wert nicht mit dem
+    Literaturwert vereinbar. 
+    Da $\Lambda$ auch von der Temperatur abhängt und bei dem Literaturwert keine Angabe dazu steht, kann hierher die Differenz kommen 
     und eine definitive Aussage ist nicht möglich. 
+    \textcolor{red}{Außerdem ist die Messung abhängig von der Temperaturmessung. 
+    Wenn das Thermometer die Temperatur nicht gut misst oder die Temperatur nicht sehr konstant gehalten wird kann es zusätzlich zu Abweichungen vom eigentlichen Wert kommen.}
 
     \subsection{Bestimmung gas-spezifischer Parameter}
 
@@ -129,7 +136,18 @@
         \caption{Bestimmung der Stoffmenge von \(SF_6\) durch lineare Anpassung im thermodynamischen Limes}
         \label{fig:Stoffmenge}
     \end{figure}
-
+    \noindent \textcolor{red}{Alternativ lässt sich die Stoffmenge auch mithilfe der Ableitungsbedingungen bestimmen. 
+    Für ein Gas am kritischen Punkt muss
+    \begin{equation}
+        \left( \frac{\partial p}{\partial V} \right)_T = 0 \qquad \left( \frac{\partial^2 p}{\partial V^2} \right)_T = 0
+    \end{equation}
+    gelten. Daraus lässt sich dann für die Van der Waals Gleichung $V_k = 3 \nu b$,  $p_k = \frac{a}{27 b^2}$, $T_k = \frac{8 a}{27 R b}$ folgern.
+    Setzt man diese Relationen zusammen erhält man:
+    \begin{equation}
+        \nu = \frac{8 V_k p_k}{3 R T_k}
+    \end{equation}
+    Dieser Ansatz ist sehr empfindlich gegenüber Messfehlern in den kritischen Parametern und ist daher experimentell empfindlicher als $\nu$ über $V \rightarrow \infty$ zu bestimmen.
+    }
     \subsubsection{Ermittlung der Konstanten \(a\) und \(b\) der Van-der-Waals-Gleichung und des kritischen Koeffizienten \(K_K\)}
      
     Mit den Gleichungen \ref{eq:VanDerWaals} und \ref{eq:Ableitungen} und den kritischen Parametern lassen sich die Konstanten \(a\) und \(b\) bestimmen.
@@ -149,20 +167,29 @@
     \label{eq:KritischerKoeffizient}
     \end{equation}
 
-    Die Fehler wurden mittels Gaußscher Fehlerfortpflanzung bestimmt, wobei R als fehlerfrei angenommen wurde. \\
+    \noindent Die Fehler wurden mittels Gaußscher Fehlerfortpflanzung bestimmt, wobei R als fehlerfrei angenommen wurde. \\
     Die experimentell bestimmten Werte für die gasspezifischen Parameter \(a\) und \(b\) stimmen innerhalb der Fehlerintervalle mit den Literaturwerten $a = 0.786 \frac{Pa \cdot m^6}{mol^2}$ und $b = 88.0 \cdot 10^{-6} \frac{m^3}{mol}$ \cite{KritischeKoeffizienten} überein. \\
-    Bei Verwendung der Van-der-Waals-Gleichung ist bekannt, dass der kritische Koeffizient größer-gleich $\frac{8}{3} \approx 2.66$ ist. Der experimentell bestimmte Wert für \(K_K\) erfüllt somit diese Bedingung.
+    Bei Verwendung der Van-der-Waals-Gleichung ist bekannt, dass der kritische Koeffizient größer-gleich $\frac{8}{3} \approx 2.66$ ist.\\
+    \textcolor{red}{
+    Die Abweichung unseres experimentellen Wertes von $2,66$ ist zwar gering, innerhalb der Van der Waal Theore muss $K_K = \frac{8}{3} = 2,66$ erfüllt sein, wenn alle kritischen Parameter fehlerfrei bestimmt wurden.
+    Da $a$ und $b$ bereits unter Verwendung der Van-der-Waals-Beziehungen für den kritischen Punkt berechnet wurden, ist $K_K$ keine unabhängige Größe. 
+    Eine eigenständige experimentelle Überprüfung des theoretischen Wertes wäre nur möglich, wenn $T_K$, $p_K$ und $V_K$ vollständig unabhängig von den Van-der-Waals Relationen bestimmt würden.
+    }
 
     \subsection{Vergleich der Messung zur Theorie}
-
     Um nun das theoretische Verhalten von realen Gasen mit den gemessenen Daten zu vergleichen, werden die bestimmten stoffspezifischen Parameter a,b und $\nu$ sowohl in die
     Van-der-Waals-Gleichung \ref{eq:VanDerWaals} als auch in die ideale Gasgleichung \ref{eq:idealesGas} eingesetzt. Die beiden Kurven werden gemeinsam mit der Isothermen $T = 35 ^\circ C$
     in Abb. \ref{fig:VergleichTheorie} dargestellt. \\
-      Hierbei ist erkennbar, dass die ideale Gasgleichung erst bei sehr hohen Volumina ein ähnliches Verhalten hat, wie die gemessenen Werte.
+    Hierbei ist erkennbar, dass die ideale Gasgleichung erst bei sehr hohen Volumina ein ähnliches Verhalten hat, wie die gemessenen Werte.
     Wie zu erwarten war, verhält sich Schwefelhexafluorid bei hohen Drücken nicht wie ein ideales Gas. \\
     Bei dem Vergleich mit der Van-der-Waals-Kurve erkennt man eine gute Anpassung der gemessenen Werte mit der theoretischen Kurve.
-    Jedoch hat die Van-der-Waals-Kurve in dem Bereich der Maxwell-Geraden ein konvexes Verhalten. Bei dem realen Verlauf ist in diesem Bereich eine Koexistenz von flüssiger und gasförmiger Phase. Diese Koexistenz wird von der Van-der-Waals-Kurve nicht korrekt beschrieben.
-      \begin{figure}[h]
+    Jedoch hat die Van-der-Waals-Kurve in dem Bereich der Maxwell-Geraden ein konvexes Verhalten.\\
+    Bei dem realen Verlauf ist in diesem Bereich eine Koexistenz von flüssiger und gasförmiger Phase. Diese Koexistenz wird von der Van-der-Waals-Kurve nicht korrekt beschrieben.\\
+    \textcolor{red}{
+    Durch das Konstruieren der Maxwell Gerade wird die Van der Waals Theorie korrigiert, damit sie nicht mehr negative Kompressibilität vorhersagt, 
+    sondern stattdessen der beobachteten Gerade für das Gleichgewicht zwischen Flüssig- und Gasphase folgt (Siehe~\ref{fig:VergleichTheorie}).
+    }
+    \begin{figure}[h]
         \centering
         \includegraphics[width=0.4\textwidth]{../Images/HA_VdW_Maxwell_COMP.png}
         \caption{Vergleich der gemessenen Isotherme bei \(T = 35 ^\circ C\) mit der idealen Gasgleichung und der Van-der-Waals-Gleichung}

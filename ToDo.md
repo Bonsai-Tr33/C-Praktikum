@@ -1,7 +1,19 @@
 # ToDo Liste C-Praktikum
-## 41
-   - Auswertung Fehler für Ausbreitungsgeschwindigkeit Koaxialkabel sehr niedrig (?), schon sehr, vll nochmal mit standardfehler machen?
-   - Paper schreiben
-      - Biblography verfollständigen, Literatur ergänzen, Quelle 3 das prozebt ding fixen
-      - Formatfehler beheben
-      - Größe Bilder anpassen
+
+## Fragen an Hinkov:
+- C31 Große Formel auf Seite 4
+
+
+## Versuch C45:
+   - Auswertung Asymptotenverfahren und Fehler noch machen
+   - Diskussion dessen
+
+## Versuch C31:
+   - Antwort Basti zu Seite 2
+   - 
+
+## Versuch C39:
+   - Korrektur machen
+
+## Versuch C41:
+   - Hinkov schicken, Korrektur soweit fertig
