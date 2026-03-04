@@ -1,8 +1,7 @@
 # ToDo Liste C-Praktikum
 
 ## Fragen an Hinkov:
-- C31 Große Formel auf Seite 4
-
+   - C31 Seite 2 
 
 ## Versuch C45:
    - Auswertung Asymptotenverfahren und Fehler noch machen
@@ -10,7 +9,8 @@
 
 ## Versuch C31:
    - Antwort Basti zu Seite 2
-   - 
+   - Einleitung
+   - Zusammenfassung
 
 ## Versuch C39:
    - Korrektur machen

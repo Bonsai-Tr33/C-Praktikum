@@ -168,7 +168,8 @@
 		Die Bestrahlung der Photozelle erfolgt mit einer Quecksilberhodrucklampe.
 		Bevor das Licht die Photozelle trifft wird es durch einen Interferenzfilter monochromatisiert um \textcolor{red}{eine spektrale Selektion vorzunehmen und um} Beschädigungen an der Photodiode zu verhindern. 
 		Es wurde für die Wellenlängen $\lambda = 366 \, nm, 405 \, nm, 436 \, nm, 546 \, nm$ und $578 \, nm$ der Photostrom in Abhängigkeit der Bremsspannung gemessen.
-		Anschließend wird mittels Asymptotenverfahrens wird die Kniespannung bestimmt.\\
+		Anschließend wird die Bremsspannung über den Strom aufgetragen und der horizontale Teil der Kurve gefittet.
+		Der erste abweichende Punkt wird als Bremsspannung genommen.
 		Beispielhaft für $\lambda = 366 \, nm$:
 		\begin{figure}[H]
     		\centering
@@ -176,14 +177,15 @@
    			 \caption{Photostrom in Abhängigkeit der Bremsspannung für $\lambda = 366 \, nm$}
    			 \label{Img:Brems366}
 		\end{figure}
+		\noindent Da dieses Verfahren eine subjektive Komponente hat und dadurch der Fehler des Messgeräts zu klein ist, wird der Fehler auf $\pm 0.1 V$ geschätzt.\\
 		Dies wird nun für alle Wellenlängen durchgeführt. Die Ergebnisse sind:
 		\begin{table}[H]          %so funktionieren die Tabellen in LaTeX
 		\centering
 		\begin{tabular}{c|c}
-		$\lambda \, [nm]$  	& $U_B \, [V]$\\
+		$\lambda \, [nm]$  	& $\left\lvert U_B \right\rvert \, [V]$\\
 		\hline
-  		$366$				& $(-0.952 \pm 0.024)$\\
-		$405$				& $(-0.7841 \pm 0.0097)$\\
+  		$366$				& $(1.6 \pm 0.1)$\\
+		$405$				& $(1.3 \pm 0.1)$\\
 		$436$				& $(-0.631 \pm 0.010)$\\
 		$546$				& $(-0.388 \pm 0.012)$\\
 		$578$				& $(-0.31 \pm 0.11)$
