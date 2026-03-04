@@ -4,13 +4,10 @@
    - C31 Seite 2 
 
 ## Versuch C45:
-   - Auswertung Asymptotenverfahren und Fehler noch machen
-   - Diskussion dessen
+   - Hinkov schicken, Korrektur soweit fertig
 
 ## Versuch C31:
-   - Antwort Basti zu Seite 2
-   - Einleitung
-   - Zusammenfassung
+   - Hinkov schicken, Korrektur soweit fertig
 
 ## Versuch C39:
    - Korrektur machen
