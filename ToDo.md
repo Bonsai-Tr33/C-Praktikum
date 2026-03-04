@@ -3,8 +3,8 @@
 ## Fragen an Hinkov:
    - C31 Seite 2 
 
-## Versuch C45:
-   - Hinkov schicken, Korrektur soweit fertig
+## Versuch C45
+   - Werte abstract und Zusammenfassung anpassen
 
 ## Versuch C31:
    - Hinkov schicken, Korrektur soweit fertig
