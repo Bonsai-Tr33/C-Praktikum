@@ -168,8 +168,8 @@
 		Die Bestrahlung der Photozelle erfolgt mit einer Quecksilberhodrucklampe.
 		Bevor das Licht die Photozelle trifft wird es durch einen Interferenzfilter monochromatisiert um \textcolor{red}{eine spektrale Selektion vorzunehmen und um} Beschädigungen an der Photodiode zu verhindern. 
 		Es wurde für die Wellenlängen $\lambda = 366 \, nm, 405 \, nm, 436 \, nm, 546 \, nm$ und $578 \, nm$ der Photostrom in Abhängigkeit der Bremsspannung gemessen.
-		Anschließend wird die Bremsspannung über den Strom aufgetragen und der horizontale Teil der Kurve gefittet.
-		Der erste abweichende Punkt wird als Bremsspannung genommen.
+		\textcolor{red}{Anschließend wird die Bremsspannung über den Strom aufgetragen und der horizontale Teil der Kurve gefittet.
+		Der erste abweichende Punkt wird als Bremsspannung genommen.}
 		Beispielhaft für $\lambda = 366 \, nm$:
 		\begin{figure}[H]
     		\centering
@@ -177,22 +177,23 @@
    			 \caption{Photostrom in Abhängigkeit der Bremsspannung für $\lambda = 366 \, nm$}
    			 \label{Img:Brems366}
 		\end{figure}
-		\noindent Da dieses Verfahren eine subjektive Komponente hat und dadurch der Fehler des Messgeräts zu klein ist, wird der Fehler auf $\pm 0.1 V$ geschätzt.\\
+		\noindent \textcolor{red}{
+		Da dieses Verfahren eine subjektive Komponente hat und dadurch der Fehler des Messgeräts zu klein ist, wird der Fehler auf $\pm 0.10 V$ geschätzt.\\
 		Dies wird nun für alle Wellenlängen durchgeführt. Die Ergebnisse sind:
 		\begin{table}[H]          %so funktionieren die Tabellen in LaTeX
 		\centering
 		\begin{tabular}{c|c}
 		$\lambda \, [nm]$  	& $\left\lvert U_B \right\rvert \, [V]$\\
 		\hline
-  		$366$				& $(1.6 \pm 0.1)$\\
-		$405$				& $(1.3 \pm 0.1)$\\
-		$436$				& $(-0.631 \pm 0.010)$\\
-		$546$				& $(-0.388 \pm 0.012)$\\
-		$578$				& $(-0.31 \pm 0.11)$
+  		$366$				& $(1.60 \pm 0.10)$\\
+		$405$				& $(1.28 \pm 0.10)$\\
+		$436$				& $(0.98 \pm 0.10)$\\
+		$546$				& $(0.65 \pm 0.10)$\\
+		$578$				& $(0.55 \pm 0.10)$
 		\end{tabular}  
 		\caption{Kniespannungen der Photodiode für die unterschiedlichen Wellenlängen}  %siehe Graphik: Beschriftung
 		\label{Tab:WellenU}                             %siehe Graphik: zum Zitieren
-		\end{table}
+		\end{table}}
 		\noindent Nun wird mit der Lichtgeschwindigkeit ($c = 299792458 \, \frac{m}{s}$) \cite{Lichtgeschwindigkeit} und der Gleichung
 		\begin{equation*}
 			\nu = \frac{c}{\lambda}
@@ -200,15 +201,14 @@
 		die Lichtfrequenz berechnet. 
 		Mit (\ref{eq:EinsteinGleichung}) kann wie in \ref{sec:TheoPlanck} erklärt die Spannung in Abhängigkeit der Frequenz aufgetragen und
 		über die Steigung die Plankkonstante bestimmt werden.
-		Der Fit in Abb.\ref{Img:Inu} steigt mit $m = (-2.069 \pm 0.073)\cdot 10^{-15} \, V s$ an.
+		Der Fit in Abb.\ref{Img:Inu} steigt mit \textcolor{red}{$m = (-3.41 \pm 0.39)\cdot 10^{-15} \, V s$} an.
 		Aus
 		\begin{equation*}
 			h = -m \, e
 		\end{equation*}
-		(Gleichung resultiert aus (\ref{eq:EinsteinGleichung})) berechnet sich $h = (3.32 \pm 0.12)\cdot 10^{-34} \, J s$.
+		(Gleichung resultiert aus (\ref{eq:EinsteinGleichung})) berechnet sich \textcolor{red}{$h = (5.47 \pm 0.63)\cdot 10^{-34} \, J s$}.
 		Dieser Wert ist nicht mit dem Literaturwert von $h_{lit} = 6.62607015 \cdot 10^{-34} \, J s$ \cite{PlanckKonstante} vereinbar. Die Hauptunsicherheit
-		resultiert hierbei aus der begrenzten Anzahl an Messpunkten im Übergangsbereich der $I_D(U_{BE})$-Kurve. Dadurch ist die Bestimmung der Kniespannung
-		mit dem Asymptotenverfahren nur ungenau möglich. Um diesen Fehler zu umgehen wäre größere Anzahl an Messpunkten sinnvoll. Diese könnten beistpielsweise
+		resultiert hierbei aus der begrenzten Anzahl an Messpunkten im Übergangsbereich der $I_D(U_{BE})$-Kurve. Dadurch ist die Bestimmung der \textcolor{red}{Bremsspannung} nur ungenau möglich. Um diesen Fehler zu umgehen wäre größere Anzahl an Messpunkten sinnvoll. Diese könnten beistpielsweise
 		mittels digitaler Aufzeichnung der Spannungen passieren. \\
 		Eine weiter Fehlerquelle könnte durch die Verschmutzung der Photozelle entstanden sein. Diese könnte die Austrittsarbeit A verändert haben, was
 		sich auf die Bestimmung der Kniespannung ausgewirkt hätte. \\
@@ -256,14 +256,15 @@
 		\begin{tabular}{c|c|c}
 		T $[^\circ C]$  	& m $[\frac{1}{V}]$		& $k_B \, [10^{-23} J/K]$\\
 		\hline
-  		$40$			& $(35.60 \pm 0.16)$	& $(1.4374 \pm 0.0066)$\\
-		$80$			& $(31.75 \pm 0.15)$	& $(1.4291 \pm 0.0069)$\\
-		$120$			& $(28.70 \pm 0.12)$	& $(1.4199 \pm 0.0059)$
+  		\textcolor{red}{$(40.00 \pm 0.40)$}			& $(35.60 \pm 0.16)$	& \textcolor{red}{$(1.437 \pm 0.010)$}\\
+		\textcolor{red}{$(80 \pm 0.40)$}			& $(31.75 \pm 0.15)$	& \textcolor{red}{$(1.429 \pm 0.010)$}\\
+		\textcolor{red}{$(120 \pm 0.40)$}			& $(28.70 \pm 0.12)$	& \textcolor{red}{$(1.420 \pm 0.010)$}
 		\end{tabular}
 		\caption{Steigung des $I_D$(U)-Graphen und daraus berechnete Boltzmannkonstante für die jeweiligen Temperaturen}
 		\end{table}
 
-		\noindent Aus diesen drei Werten wird nun das arithmetische Mittel gebildet, um einen Endwert für die Boltzmannkonstante zu erhalten.
+		\noindent \textcolor{red}{Die Fehler der Temperaturen kommen vom Messgerät (Lauda Kältethermostat RE 104) und der Fehler für die Boltzmann Konstante folgt aus der gaußschen Fehlerrechnung.}
+		Aus diesen drei Werten wird nun das arithmetische Mittel gebildet, um einen Endwert für die Boltzmannkonstante zu erhalten.
 		\begin{equation*}
 			k_B = (1.4291 \pm 0.0087) \cdot 10^{-23} J/K
 		\end{equation*}
@@ -277,7 +278,7 @@
 		%Des weiteren könnte die Temperatur des Transistors aufgrund von Fehlern im Thermostat nicht konstant gehalten worden sein, was ebenfalls 
 		%in großen Einfluss auf die Bestimmung der Boltzmannkonstante hat, da die Temperatur (vgl. \ref{Diffusionsstrom2}) ebenfalls in die Gleichung eingeht.
 		
-	\textcolor{red}{	Der bestimmte Mittelwert ist mit dem Literaturwert von 
+	\noindent \textcolor{red}{Der bestimmte Mittelwert ist mit dem Literaturwert von 
 	\( k_{B,\text{lit}} = 1{,}380649 \cdot 10^{-23}\,\mathrm{J/K} \) 
 	nicht vereinbar, liegt jedoch in derselben Größenordnung. 
 	Die Abweichung ist vermutlich vor allem auf systematische Unsicherheiten zurückzuführen, 
