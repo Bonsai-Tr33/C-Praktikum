@@ -26,6 +26,19 @@
     die Parameter bestimmt. Obwohl der reale Verlauf der Isothermen im Koexistenzbereich nicht linear ist,
     lassen sich die kritischen Parameter durch die Nutzung der Start- und Endwerte der Maxwell-Gerade gut annähern.
     Das funktioniert, da in diesen Bereichen eine lineare Näherung hinreichend genau ist.
+    \textcolor{red}{Diese Vorgehensweise ist jedoch mit erheblichen Unsicherheiten
+behaftet. Mit zunehmender Annäherung an die kritische Temperatur
+wird der Koexistenzbereich zwischen Flüssigkeit und Gas immer
+kleiner, sodass die experimentell bestimmbaren Start- und
+Endvolumina der Maxwell-Geraden dichter zusammenrücken.
+Dadurch reagieren die extrapolierten Geraden sehr empfindlich
+auf kleine Messunsicherheiten in den Endpunkten.
+\\
+Insbesondere führen bereits geringe Unsicherheiten in Druck
+und Volumen zu deutlich veränderten Schnittpunkten der
+Extrapolationsgeraden. Die daraus resultierenden kritischen
+Parameter unterliegen daher einem erheblichen
+Extrapolationsfehler.}
     Daraus ergeben sich für die kritischen Parameter \(p_K\) und \(V_K\) folgende Werte:
 
     \begin{equation}
@@ -42,6 +55,30 @@
         \label{fig:KritischeParameter}
     \end{figure}    
 
+    \textcolor{red}{Ein weiteres Problem besteht darin, dass die Verbindungslinie
+der Maxwell-Endpunkte physikalisch nicht exakt durch eine
+Gerade beschrieben wird. Der reale Verlauf der Koexistenzkurve
+folgt in der Nähe des kritischen Punktes keinem strikt linearen
+Zusammenhang, sodass die lineare Extrapolation lediglich eine
+Näherung darstellt.
+\\
+Von allen kritischen Parametern ist daher insbesondere das
+kritische Volumen \( V_K \) mit der größten Unsicherheit
+behaftet, da es direkt aus dem Schnittpunkt der
+Volumenextrapolation resultiert und somit am stärksten von
+kleinen Steigungsänderungen beeinflusst wird. Der angegebene
+Fehler ist entsprechend groß.}\\
+\textcolor{red}{Wenn $a_r$ und $b_r$ Y‑Achsenabschnitt und Steigung der rechten Geraden (Abb.~\ref{fig:KritischeParameter}) sind, dann bestimmt sich \(V_K\) und der Fehler von \(V_K\) folgendermaßen:}
+
+\begin{equation}
+\textcolor{red}{V_K = \frac{a_l - a_r}{b_l - b_r} = \frac{\Delta a}{\Delta b}}
+\end{equation}
+\begin{equation}
+\textcolor{red}{\sigma_{V_K}
+    = \sqrt{\left(\frac{\sigma a_l^{2} + \sigma a_r^{2}}{\Delta a}\right)^{2}
+           + \left(\frac{\sigma b_l^{2} + \sigma b_r^{2}}{\Delta b}\right)^{2}}\,.}
+\end{equation}
+
     Der kritische Druck stimmt innerhalb des Fehlers mit dem Literaturwert von \(p_{K,lit} = 37,53 \, \text{bar}\) \cite{SF6LITERATUR} überein.
     Um das kritische Volumen mit dem Literaturwert vergleichen zu können, muss dieses noch in die Einheiten \(ml/mol\) umgerechnet werden.
     Die Stoffmenge ist ebenfalls experimentell bestimmt worden.
@@ -50,7 +87,17 @@
     \end{equation}
     Der experimentell bestimmte Wert liegt innerhalb des Fehlers mit dem Literaturwert von $V_{K,mol}^{lit} = 200 \cdot 10^{-6} \frac{m^3}{mol}$ \cite{SF6LITERATUR} überein. \\
     Das liegt allerdings auch daran, dass der Fehler des experimentell bestimmten Wert bei ca. 43\% liegt. Der große Fehler kommt hauptsächlich dadurch, dass wir zu Beginn und zum Ende der Maxwell-Geraden
-    zu wenig Messpunkte aufgenommen haben, was zu einer großen Streuung und dadurch zu einem großen Fehler kommt.
+    zu wenig Messpunkte aufgenommen haben, was zu einer großen Streuung und dadurch zu einem großen Fehler kommt.\\
+    \textcolor{red}{Darüber hinaus tragen insbesondere systematische Fehlerquellen zur
+Gesamtunsicherheit bei. Dazu zählen Unsicherheiten in der
+Temperaturregelung, da bereits kleine Temperaturschwankungen in der
+Nähe des kritischen Punktes deutliche Änderungen der Isothermenform
+bewirken. Ebenso beeinflussen Kalibrierunsicherheiten des
+Drucksensors sowie ein möglicherweise nicht exakt bekanntes
+Totvolumen des Messaufbaus direkt die Bestimmung des Volumens.
+Auch Verzögerungen beim Erreichen des thermodynamischen
+Gleichgewichts können zu Abweichungen von der idealisierten
+Maxwell-Konstruktion führen.}
 
     \subsection{Ermittlung der Dampfdruckkurve}
 
