@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  8 MAR 2026 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.23)  24 MAR 2026 17:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -529,24 +529,14 @@ Underfull \hbox (badness 4454) in paragraph at lines 69--69
  []
 
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <14.4> not available
-(Font)              Font shape `T1/aess/bx/n' tried instead on input line 71.
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <12> not available
-(Font)              Font shape `T1/aess/bx/n' tried instead on input line 82.
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 83.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 91--99
-\T1/aer/m/n/10 Nach über-win-den der Aus-tritts-ar-beit wer-den die
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--99
-
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 107--108
+Underfull \hbox (badness 1609) in paragraph at lines 92--118
 \T1/aer/m/n/10 schwin-det. Auf-grund des fla-chen Aus-lau-fens der
  []
 
@@ -557,19 +547,19 @@ Underfull \hbox (badness 1609) in paragraph at lines 107--108
 
 
 ]
-Underfull \hbox (badness 3503) in paragraph at lines 118--119
-[][]\T1/aer/m/n/10 In der idea-li-sier-ten Be-trach-tung ver-schwin-det
+Underfull \hbox (badness 1590) in paragraph at lines 149--158
+\T1/aer/m/n/10 Diese Glei-chung ist die Ap-pro-xi-ma-ti-on von der
  []
 
 <../Images/AufbauPlank.png, id=27, 458.71375pt x 248.93pt>
 File: ../Images/AufbauPlank.png Graphic file (type png)
 <use ../Images/AufbauPlank.png>
-Package pdftex.def Info: ../Images/AufbauPlank.png  used on input line 163.
+Package pdftex.def Info: ../Images/AufbauPlank.png  used on input line 164.
 (pdftex.def)             Requested size: 230.23761pt x 124.94328pt.
 <../Images/Planck366.png, id=31, 462.528pt x 346.896pt>
 File: ../Images/Planck366.png Graphic file (type png)
 <use ../Images/Planck366.png>
-Package pdftex.def Info: ../Images/Planck366.png  used on input line 176.
+Package pdftex.def Info: ../Images/Planck366.png  used on input line 177.
 (pdftex.def)             Requested size: 230.23761pt x 172.68005pt.
 [2 <../Images/AufbauPlank.png>]
 Underfull \hbox (badness 3954) in paragraph at lines 197--198
@@ -579,15 +569,15 @@ Underfull \hbox (badness 3954) in paragraph at lines 197--198
 <../Images/U_nu.png, id=54, 462.528pt x 346.896pt>
 File: ../Images/U_nu.png Graphic file (type png)
 <use ../Images/U_nu.png>
-Package pdftex.def Info: ../Images/U_nu.png  used on input line 220.
+Package pdftex.def Info: ../Images/U_nu.png  used on input line 224.
 (pdftex.def)             Requested size: 230.23761pt x 172.68005pt.
 <../Images/AufbauBoltzmann.png, id=55, 448.67625pt x 614.295pt>
 File: ../Images/AufbauBoltzmann.png Graphic file (type png)
 <use ../Images/AufbauBoltzmann.png>
-Package pdftex.def Info: ../Images/AufbauBoltzmann.png  used on input line 229.
+Package pdftex.def Info: ../Images/AufbauBoltzmann.png  used on input line 233.
 (pdftex.def)             Requested size: 230.23761pt x 315.22658pt.
 
-Underfull \hbox (badness 1983) in paragraph at lines 230--230
+Underfull \hbox (badness 1983) in paragraph at lines 234--234
 [][]|\T1/aer/m/n/9 Schaltskiz-ze zur Be-stim-mung der Boltz-
  []
 
@@ -598,92 +588,92 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../Images/Boltz40.png, id=71, 462.528pt x 346.896pt>
 File: ../Images/Boltz40.png Graphic file (type png)
 <use ../Images/Boltz40.png>
-Package pdftex.def Info: ../Images/Boltz40.png  used on input line 243.
+Package pdftex.def Info: ../Images/Boltz40.png  used on input line 247.
 (pdftex.def)             Requested size: 230.23761pt x 172.68005pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 294--295
-\T1/aer/m/n/10 Kollektor-Zweig so-wie nich-t-idea-le Tran-si-sto-rei-gen-
  []
 
 [4 <../Images/AufbauBoltzmann.png> <../Images/Boltz40.png>]
-Underfull \hbox (badness 1796) in paragraph at lines 317--332
+Underfull \hbox (badness 1796) in paragraph at lines 315--330
 \T1/aer/m/n/10 Das Planck'sche Wir-kungs-quan-tum wur-de durch
  []
 
 
-Underfull \hbox (badness 6461) in paragraph at lines 317--332
+Underfull \hbox (badness 6461) in paragraph at lines 315--330
 \T1/aer/m/n/10 Be-strah-len ei-ner Pho-to-zel-le mit ver-schie-de-nem
  []
 
 
-Underfull \hbox (badness 5533) in paragraph at lines 317--332
+Underfull \hbox (badness 5533) in paragraph at lines 315--330
 \T1/aer/m/n/10 mo-no-chro-ma-ti-sier-tem Licht be-stimmt. Aus der
  []
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 317--332
+Underfull \hbox (badness 3769) in paragraph at lines 315--330
 \T1/aer/m/n/10 kon-stan-te ist die Mes-sung mit-tels aku-sti-schem
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 317--332
+Underfull \hbox (badness 3713) in paragraph at lines 315--330
 \T1/aer/m/n/10 Gas-Thermometer [[]]. Hier-bei wird die Schall-
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 317--332
+Underfull \hbox (badness 1960) in paragraph at lines 315--330
 \T1/aer/m/n/10 ge-schwin-dig-keit in ei-nem Gas bei ver-schie-de-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--332
+Underfull \hbox (badness 10000) in paragraph at lines 315--330
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 336.
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 334.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 [][]$\T1/aett/m/n/10 https : / / www . physik . uni-[]wuerzburg .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 \T1/aett/m/n/10 de / fileadmin / 11000000 / 03 _ Studium / 02 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 \T1/aett/m/n/10 Bachelor / Grundpraktikum / _imported /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 \T1/aett/m/n/10 fileadmin / 11016800 / Modulbeschreibungen /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 \T1/aett/m/n/10 C-[]Modul / Versuch _ 41 _ ueberarbeitet . pdf$[]\T1/aer/m/n/10 , be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+[][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+\T1/aett/m/n/10 Value ? c | search _ for = Speed + of + light$[]\T1/aer/m/n/10 , be-sucht
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 338--339
 [][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
-\T1/aett/m/n/10 Value ? c | search _ for = Speed + of + light$[]\T1/aer/m/n/10 , be-sucht
  []
 
 
@@ -692,32 +682,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-[][]$\T1/aett/m/n/10 https : / / physics . nist . gov / cgi-[]bin / cuu /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 \T1/aett/m/n/10 Value ? k | search _ for = Boltzmann$[]\T1/aer/m/n/10 , be-sucht am
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 [][]$\T1/aett/m/n/10 https : / / arxiv . org / pdf / 1909 . 06286$[]\T1/aer/m/n/10 , be-sucht
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 [][]$\T1/aett/m/n/10 https : / / openresearch . surrey .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 \T1/aett/m/n/10 ac . uk / esploro / outputs / doctoral /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 \T1/aett/m/n/10 An-[]acoustic-[]gas-[]thermometer-[]for-[]the /
  []
 
@@ -730,13 +715,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  16663 strings out of 476025
  317710 string characters out of 5790016
- 1876388 words of memory out of 5000000
+ 1878388 words of memory out of 5000000
  36835 multiletter control sequences out of 15000+600000
  552009 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,106p,10645b,486s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,21n,106p,10645b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (5 pages, 351831 bytes).
+Output written on main.pdf (5 pages, 351880 bytes).
 PDF statistics:
  225 PDF objects out of 1000 (max. 8388607)
  168 compressed objects within 2 object streams
