@@ -1,16 +1,15 @@
 # ToDo Liste C-Praktikum
 
 ## Fragen an Hinkov:
-   - C31 Seite 2 
 
 ## Versuch C45
    - Korrektur wurde Hinkov geschickt, Protokoll abgeschlossen.
 
 ## Versuch C31:
-   - Hinkov schicken, Korrektur soweit fertig
+   - Korrektur wurde Hinkov geschickt, Protokoll abgeschlossen.
 
 ## Versuch C39:
    - Korrektur machen
 
 ## Versuch C41:
-   - Hinkov schicken, Korrektur soweit fertig
+   - Korrektur wurde Hinkov geschickt
