@@ -1,13 +1,13 @@
 # Fdb version 3
-["pdflatex"] 1774419573 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" "main.pdf" "main" 1774419574
+["pdflatex"] 1774424410 "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" "main.pdf" "main" 1774424411
   "../Images/Holz.png" 1770019273 32800 8c01e64403cc53055ee5e273886ffa76 ""
   "../Images/HolzDriftkorr.png" 1770019273 39436 66e50b1361accac61e2100f53474aa7b ""
   "../Images/Hyster1.png" 1770019273 26783 41e07f994ee6c6fb04c7b6d4009a1207 ""
   "../Images/Hyster1_Saett.png" 1770019273 20811 3aa8bd64311694199dcb76882af8a105 ""
   "../Images/Hyster2.png" 1770025654 21936 5ef9d3788064bad80ba45b2a60f7b8c2 ""
   "../Images/Hyster3.png" 1770019273 26060 b55f959f885a23bc199fa380005a8c46 ""
-  "../Images/Hyster3_entmag.png" 1770039572 62354 c13e37d3dc387a6dfaa6767269e50819 ""
-  "../Images/Hyster3_irre.png" 1770039372 46364 7768b531d8275bf9fcca0c66031f3e7f ""
+  "../Images/Hyster3_entmag.png" 1774424400 62354 c13e37d3dc387a6dfaa6767269e50819 ""
+  "../Images/Hyster3_irre.png" 1774424410 46637 ad41bbc220114d53846530f0cadd863b ""
   "../Images/Versuchsaufbau.png" 1770019680 25652 8777e84bc70cd0cf78168358089b6be2 ""
   "/etc/texmf/web2c/texmf.cnf" 1702837203 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/hannes/Desktop/Uni/C1-Praktikum/C-Praktikum/39/Tex/main.tex" 1774419573 5152 ce6429edca736742dff6efaabc20caae ""
@@ -171,8 +171,8 @@
   "Experiment.tex" 1770046900 2704 2d9bab4eb4e9f47ef47cc50b73af1f7c ""
   "Theorie.tex" 1772552633 4162 03e92b6a67dcd5776b0924238376f2f2 ""
   "Zusammenfassung.tex" 1772557481 4943 bd655c0d931e6c696cade3e1c9629da6 ""
-  "main.aux" 1774419574 11066 c4f664b417a1ee8da86c5b0d6933d9e1 "pdflatex"
-  "main.out" 1774419573 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1774424411 11066 c4f664b417a1ee8da86c5b0d6933d9e1 "pdflatex"
+  "main.out" 1774424411 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1774419573 5152 ce6429edca736742dff6efaabc20caae ""
   (generated)
   "main.aux"
