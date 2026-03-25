@@ -9,7 +9,7 @@
    - Korrektur wurde Hinkov geschickt, Protokoll abgeschlossen.
 
 ## Versuch C39:
-   - Korrektur machen
+   - Korrektur machen: Es fehlt nur noch die Korrektur zum eisenkern mit Abb6/7
 
 ## Versuch C41:
-   - Korrektur wurde Hinkov geschickt
+   - Korrektur wurde Hinkov geschickt, Protokoll abgeschlossen
