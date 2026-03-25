@@ -78,29 +78,23 @@
 
     \subsection{Hysteresekurve eines Eisenkerns}
     Die Messung der Hysteresekurve eines Flachstahs wurde analog zu Abschnitt \ref{sec:H2} durchgeführt.
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.45\textwidth]{../Images/Hyster3.png}
-        \caption{Aufgenommene Hysteresekurve eines Eisenkerns.}
-        \label{fig:Eisen_Hysteresekurve}
-    \end{figure}
-    Aus den jeweiligen Achsenschnittpunkten wurde die Remanenz $B_r$ und die Koerzitivfeldstärke $H_c$ bestimmt:
-    \begin{equation*}
-        B_r = 0.01620 \pm 0.00012 \, T \quad , \quad H_c = 45.13 \pm 0.44 \, A/m
-    \end{equation*}
-   Leider ließ sich für das Material $\textit{ST 37-K}$ kein Datenblatt finden, um die gemessenen Werte mit den Literaturwerten zu vergleichen.
-    
-    Des weiteren wurde die Irreversibilität der Magnetisierung durch Richtungsänderung analysiert.
-    Hierzu wurde zuerst ein vollständiger Hystereseverlauf aufgezeichnet, anschließend wurde bei erneutem
-    Durchlaufen an zwei Stellen am abnehmenden Zweig die Richtung durch Erhöhen der magnetischen Feldstärke umgekehrt.
-    Dadurch entstehen innere Hystereseschleifen (vgl. Abb. \ref{fig:Irreversibilitaet}), welche die selbe Durchlaufrichtung wie die Hystereseschleife hat.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{../Images/Hyster3_irre.png}
         \caption{Untersuchung der Irreversibilität der Magnetisierung eines Eisenkerns durch Richtungsänderung.}
         \label{fig:Irreversibilitaet}
     \end{figure}
-    Das Prinzip der inneren Hystereseschleifen lässt sich auch dazu verwenden, den Spulenkern zu entmagnetiseiert. Hierzu wird
+    \noindent Das
+    Aus den jeweiligen Achsenschnittpunkten wurde die Remanenz $B_r$ und die Koerzitivfeldstärke $H_c$ bestimmt:
+    \textcolor{red}{
+    \begin{equation*}
+        B_r = 0.5261 \pm 0.0018 \, T \quad , \quad H_c = 344.9 \pm 1.9 \, A/m
+    \end{equation*}}
+    Leider ließ sich für das Material $\textit{ST 37-K}$ kein Datenblatt finden, um die gemessenen Werte mit den Literaturwerten zu vergleichen.\\
+    \noindent Des weiteren wurde die Irreversibilität der Magnetisierung durch Richtungsänderung analysiert.
+    \textcolor{red}{Hierzu wurde zuerst ein vollständiger Hystereseverlauf aufgezeichnet, an zwei Stellen am abnehmenden Zweig wird die Richtung durch Erhöhen der magnetischen Feldstärke umgekehrt.}
+    Dadurch entstehen innere Hystereseschleifen (vgl. Abb. \ref{fig:Irreversibilitaet}), welche die selbe Durchlaufrichtung wie die Hystereseschleife hat.
+    Prinzip der inneren Hystereseschleifen lässt sich auch dazu verwenden, den Spulenkern zu entmagnetiseiert. Hierzu wird
     das maximal eingestellte Magnetfeld nach jeder Spannungsumpolung verringert, wodurch sich die Hystereseschleife dem Nullpunkt
     spiralartig nähert. Das ist in Abb. \ref{fig:Entmagnetisierung} dargestellt.
     \begin{figure}[H]
@@ -109,22 +103,21 @@
         \caption{Entmagnetisierung eines Eisenkerns durch sukzessive Verringerung des maximalen Magnetfeldes nach jeder Umpolung.}
         \label{fig:Entmagnetisierung}
     \end{figure}
-    \textcolor{red}{Mikroskopisch entstehen diese inneren Hystereseschleifen durch die
-Domänenstruktur des Ferromagneten. Die Magnetisierung erfolgt
-zunächst durch reversible Prozesse wie die elastische Verschiebung
-von Domänenwänden sowie durch geringe Drehungen der magnetischen
-Momente. Bei größeren Feldstärken treten jedoch irreversible
-Prozesse auf, insbesondere das sprunghafte Überwinden von
-Gitterdefekten oder Versetzungen, an denen Domänenwände
-gepinnt sind. Wird das äußere Feld vor Erreichen der
-Sättigung umgekehrt, so werden nur die zuvor reversibel
-veränderten Anteile der Magnetisierung unmittelbar
-zurückgeführt, während irreversible Strukturänderungen
-bestehen bleiben. Dadurch entstehen die charakteristischen
-Mini-Schleifen innerhalb der Haupt-Hysteresekurve.}
+    \noindent \textcolor{red}{Mikroskopisch entstehen diese inneren Hystereseschleifen durch die
+    Domänenstruktur des Ferromagneten. Die Magnetisierung erfolgt
+    zunächst durch reversible Prozesse wie die elastische Verschiebung
+    von Domänenwänden sowie durch geringe Drehungen der magnetischen
+    Momente. Bei größeren Feldstärken treten jedoch irreversible
+    Prozesse auf, insbesondere das sprunghafte Überwinden von
+    Gitterdefekten oder Versetzungen, an denen Domänenwände
+    gepinnt sind. Wird das äußere Feld vor Erreichen der
+    Sättigung umgekehrt, so werden nur die zuvor reversibel
+    veränderten Anteile der Magnetisierung unmittelbar
+    zurückgeführt, während irreversible Strukturänderungen
+    bestehen bleiben. Dadurch entstehen die charakteristischen
+    Mini-Schleifen innerhalb der Haupt-Hysteresekurve.}
     Für die vollständige Entladung darf das Magnetfeld erst nach Erreichen der Koerzitivfeldstärke umgepolt
     werden, sodass die Hysteresekurve im Nullpunkt endet. Dies wurde händisch nicht erreicht, wordurch eine Restmagnetisierung bleibt.
-
     \subsection{Hysteresekurve einer Nickel-Eisen-Legierung (5000 Z)}
         \label{sec:Z}
     PERMENORM 5000 Z ist eine weitere Nickel-Eisen-Legierung, deren magnetische Eigenschaften analog zu denen von
@@ -157,7 +150,7 @@ Mini-Schleifen innerhalb der Haupt-Hysteresekurve.}
         \textcolor{red}{\omega}_{verlust, H2} = 3.88 \pm 0.68 \, \frac{mJ}{m^3} 
     \end{equation*}
     \begin{equation*}
-        \textcolor{red}{\omega}_{verlust, Eisen} = 2.17 \pm 0.11 \, \frac{mJ}{m^3}
+        \textcolor{red}{\omega}_{verlust, Eisen} = \textcolor{red}{1.25 \pm 0.22} \, \frac{mJ}{m^3}
     \end{equation*}
     Die Ummagnetisierungsverluste von den Ringkernen treten in Form von Wärme auf.
     \subsubsection{Hysteresekurven im Vergleich}
